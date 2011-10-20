@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="20302">
+	<ForceSet name="arm26">
+		<defaults/>
+		<objects>
+			<CoordinateActuator name="r_shoulder_elev_reserve">
+				<isDisabled> false </isDisabled>
+				<!--Minimum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<min_control> -infinity </min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<max_control> infinity </max_control>
+				<coordinate> r_shoulder_elev </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+			<CoordinateActuator name="r_elbow_flex_reserve">
+				<isDisabled> false </isDisabled>
+				<!--Minimum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<min_control> -infinity </min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<max_control> infinity </max_control>
+				<coordinate> r_elbow_flex </coordinate>
+				<optimal_force>    1.00000000 </optimal_force>
+			</CoordinateActuator>
+		</objects>
+		<groups/>
+	</ForceSet>
+</OpenSimDocument>
+

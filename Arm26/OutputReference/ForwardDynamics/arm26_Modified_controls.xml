@@ -1,0 +1,3151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSimDocument Version="20302">
+	<ControlSet name="Control Set">
+		<defaults>
+			<Thelen2003Muscle name="default">
+				<isDisabled> false </isDisabled>
+				<!--Minimum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<min_control>       0.00000000 </min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<max_control>       1.00000000 </max_control>
+				<GeometryPath name="">
+					<PathPointSet name="">
+					<objects/>
+					<groups/>
+					</PathPointSet>
+				<VisibleObject name="">
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl,
+						    .obj-->
+						<GeometrySet name="">
+							<objects/>
+							<groups/>
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors>       1.00000000       1.00000000       1.00000000 </scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by
+						    3 translations rX rY rZ tx ty tz-->
+						<transform>      -0.00000000       0.00000000      -0.00000000       0.00000000       0.00000000       0.00000000 </transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes> false </show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for
+						    individual geometries-->
+						<display_preference> 4 </display_preference>
+				</VisibleObject>
+					<PathWrapSet name="">
+					<objects/>
+					<groups/>
+					</PathWrapSet>
+				</GeometryPath>
+				<optimal_force>       1.00000000 </optimal_force>
+				<!--Maximum isometric force that the fibers can generate-->
+				<max_isometric_force>     546.00000000 </max_isometric_force>
+				<!--Optimal length of the muscle fibers-->
+				<optimal_fiber_length>       0.05350000 </optimal_fiber_length>
+				<!--Resting length of the tendon-->
+				<tendon_slack_length>       0.07800000 </tendon_slack_length>
+				<!--Angle between tendon and fibers at optimal fiber length-->
+				<pennation_angle_at_optimal>       0.00000000 </pennation_angle_at_optimal>
+				<!--Maximum contraction velocity of the fibers, in optimal fiberlengths
+				    per second-->
+				<max_contraction_velocity>      10.00000000 </max_contraction_velocity>
+				<!--time constant for ramping up of muscle activation-->
+				<activation_time_constant>       0.01000000 </activation_time_constant>
+				<!--time constant for ramping down of muscle activation-->
+				<deactivation_time_constant>       0.04000000 </deactivation_time_constant>
+				<!--maximum contraction velocity at full activation in fiber lengths per
+				    second-->
+				<Vmax>      10.00000000 </Vmax>
+				<!--maximum contraction velocity at low activation in fiber lengths per
+				    second-->
+				<Vmax0>       5.00000000 </Vmax0>
+				<!--tendon strain due to maximum isometric muscle force-->
+				<FmaxTendonStrain>       0.03300000 </FmaxTendonStrain>
+				<!--passive muscle strain due to maximum isometric muscle force-->
+				<FmaxMuscleStrain>       0.60000000 </FmaxMuscleStrain>
+				<!--shape factor for Gaussian active muscle force-length relationship-->
+				<KshapeActive>       0.50000000 </KshapeActive>
+				<!--exponential shape factor for passive force-length relationship-->
+				<KshapePassive>       4.00000000 </KshapePassive>
+				<!--passive damping in the force-velocity relationship-->
+				<damping>       0.05000000 </damping>
+				<!--force-velocity shape factor-->
+				<Af>       0.30000000 </Af>
+				<!--maximum normalized lengthening force-->
+				<Flen>       1.80000000 </Flen>
+			</Thelen2003Muscle>
+			<Schutte1993Muscle name="default">
+				<isDisabled> false </isDisabled>
+				<!--Minimum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<min_control>       0.00000000 </min_control>
+				<!--Maximum allowed value for control signal. Used primarily when solving
+				    for control values-->
+				<max_control>       1.00000000 </max_control>
+				<GeometryPath name="">
+					<PathPointSet name="">
+					<objects/>
+					<groups/>
+					</PathPointSet>
+				<VisibleObject name="">
+						<!--Set of geometry files and associated attributes, allow .vtp, .stl,
+						    .obj-->
+						<GeometrySet name="">
+							<objects/>
+							<groups/>
+						</GeometrySet>
+						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+						<scale_factors>       1.00000000       1.00000000       1.00000000 </scale_factors>
+						<!--transform relative to owner specified as 3 rotations (rad) followed by
+						    3 translations rX rY rZ tx ty tz-->
+						<transform>      -0.00000000       0.00000000      -0.00000000       0.00000000       0.00000000       0.00000000 </transform>
+						<!--Whether to show a coordinate frame-->
+						<show_axes> false </show_axes>
+						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for
+						    individual geometries-->
+						<display_preference> 4 </display_preference>
+				</VisibleObject>
+					<PathWrapSet name="">
+					<objects/>
+					<groups/>
+					</PathWrapSet>
+				</GeometryPath>
+				<optimal_force>       1.00000000 </optimal_force>
+				<!--Maximum isometric force that the fibers can generate-->
+				<max_isometric_force>       0.00000000 </max_isometric_force>
+				<!--Optimal length of the muscle fibers-->
+				<optimal_fiber_length>       0.00000000 </optimal_fiber_length>
+				<!--Resting length of the tendon-->
+				<tendon_slack_length>       0.00000000 </tendon_slack_length>
+				<!--Angle between tendon and fibers at optimal fiber length-->
+				<pennation_angle_at_optimal>       0.00000000 </pennation_angle_at_optimal>
+				<!--Maximum contraction velocity of the fibers, in optimal fiberlengths
+				    per second-->
+				<max_contraction_velocity>       0.00000000 </max_contraction_velocity>
+				<!--Scale factor for normalizing time-->
+				<time_scale>       0.00000000 </time_scale>
+				<!--Parameter used in time constant of ramping up of muscle force-->
+				<activation1>       0.00000000 </activation1>
+				<!--Parameter used in time constant of ramping up and ramping down of
+				    muscle force-->
+				<activation2>       0.00000000 </activation2>
+				<!--Damping factor related to maximum contraction velocity-->
+				<damping>       0.05000000 </damping>
+				<!--Function representing force-length behavior of tendon-->
+				<tendon_force_length_curve>
+					<NaturalCubicSpline name="">
+						<x>     -10.00000000      -0.00200000      -0.00100000       0.00000000       0.00131000       0.00281000       0.00431000       0.00581000       0.00731000       0.00881000       0.01030000       0.01180000       0.01230000       9.20000000       9.20100000       9.20200000      20.00000000 </x>
+						<y>       0.00000000       0.00000000       0.00000000       0.00000000       0.01080000       0.02570000       0.04350000       0.06520000       0.09150000       0.12300000       0.16100000       0.20800000       0.22700000     345.00000000     345.00000000     345.00000000     345.00000000 </y>
+					</NaturalCubicSpline>
+				</tendon_force_length_curve>
+				<!--Function representing active force-length behavior of muscle fibers-->
+				<active_force_length_curve>
+					<NaturalCubicSpline name="">
+						<x>     -35.00000000       0.00000000       0.40100000       0.40200000       0.40350000       0.52725000       0.62875000       0.71875000       0.86125000       1.04500000       1.21750000       1.43875000       1.61875000       1.62000000       1.62100000       2.20000000      35.00000000 </x>
+						<y>       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000       0.22666700       0.63666700       0.85666700       0.95000000       0.99333300       0.77000000       0.24666700       0.00000000       0.00000000       0.00000000       0.00000000       0.00000000 </y>
+					</NaturalCubicSpline>
+				</active_force_length_curve>
+				<!--Function representing passive force-length behavior of muscle fibers-->
+				<passive_force_length_curve>
+					<NaturalCubicSpline name="">
+						<x>     -35.00000000       0.99800000       0.99900000       1.15000000       1.25000000       1.35000000       1.45000000       1.55000000       1.65000000       1.75000000       1.75010000       1.75020000      35.00000000 </x>
+						<y>       0.00000000       0.00000000       0.00000000       0.00000000       0.03500000       0.12000000       0.26000000       0.55000000       1.17000000       2.00000000       2.00000000       2.00000000       2.00000000 </y>
+					</NaturalCubicSpline>
+				</passive_force_length_curve>
+			</Schutte1993Muscle>
+		</defaults>
+		<objects>
+			<ControlLinear name="TRIlong">
+				<is_model_control> true </is_model_control>
+				<extrapolate> true </extrapolate>
+				<default_min>       0.00000000 </default_min>
+				<default_max>       1.00000000 </default_max>
+				<filter_on> false </filter_on>
+				<use_steps> false </use_steps>
+				<x_nodes>
+					<ControlLinearNode name="">
+						<t>      -0.00000002 </t>
+						<value>       0.01007432 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.00833331 </t>
+						<value>       0.01004425 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.01666665 </t>
+						<value>       0.01003337 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.02499998 </t>
+						<value>       0.01002704 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.03333331 </t>
+						<value>       0.01002289 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04166664 </t>
+						<value>       0.01002014 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04999998 </t>
+						<value>       0.01001820 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.05833331 </t>
+						<value>       0.01001686 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.06666664 </t>
+						<value>       0.01001593 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.07499998 </t>
+						<value>       0.01001529 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.08333331 </t>
+						<value>       0.01001489 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09166664 </t>
+						<value>       0.01001466 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09999998 </t>
+						<value>       0.01001456 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.10833331 </t>
+						<value>       0.01001457 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.11666664 </t>
+						<value>       0.01001465 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.12499997 </t>
+						<value>       0.01001477 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.13333331 </t>
+						<value>       0.01001491 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14166664 </t>
+						<value>       0.01001503 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14999997 </t>
+						<value>       0.01001511 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.15833331 </t>
+						<value>       0.01001513 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.16666664 </t>
+						<value>       0.01001507 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.17499997 </t>
+						<value>       0.01001494 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.18333331 </t>
+						<value>       0.01001472 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19166664 </t>
+						<value>       0.01001445 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19999997 </t>
+						<value>       0.01001412 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.20833330 </t>
+						<value>       0.01001377 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.21666664 </t>
+						<value>       0.01001343 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.22499997 </t>
+						<value>       0.01001306 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.23333330 </t>
+						<value>       0.01001270 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24166664 </t>
+						<value>       0.01001237 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24999997 </t>
+						<value>       0.01001207 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.25833330 </t>
+						<value>       0.01001180 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.26666664 </t>
+						<value>       0.01001155 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.27499997 </t>
+						<value>       0.01001133 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.28333330 </t>
+						<value>       0.01001113 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29166663 </t>
+						<value>       0.01001096 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29999997 </t>
+						<value>       0.01001079 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.30833330 </t>
+						<value>       0.01001064 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.31666663 </t>
+						<value>       0.01001049 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.32499997 </t>
+						<value>       0.01001035 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.33333330 </t>
+						<value>       0.01001020 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34166663 </t>
+						<value>       0.01001006 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34999997 </t>
+						<value>       0.01000990 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.35833330 </t>
+						<value>       0.01000975 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.36666663 </t>
+						<value>       0.01000959 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.37499996 </t>
+						<value>       0.01000943 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.38333330 </t>
+						<value>       0.01000927 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39166663 </t>
+						<value>       0.01000911 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39999996 </t>
+						<value>       0.01000895 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.40833330 </t>
+						<value>       0.01000880 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.41666663 </t>
+						<value>       0.01000864 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.42499996 </t>
+						<value>       0.01000850 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.43333330 </t>
+						<value>       0.01000838 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44166663 </t>
+						<value>       0.01000823 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44999996 </t>
+						<value>       0.01000809 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.45833329 </t>
+						<value>       0.01000796 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.46666663 </t>
+						<value>       0.01000783 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.47499996 </t>
+						<value>       0.01000770 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.48333329 </t>
+						<value>       0.01000757 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49166663 </t>
+						<value>       0.01000745 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49999996 </t>
+						<value>       0.01000733 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.50833329 </t>
+						<value>       0.01000720 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.51666663 </t>
+						<value>       0.01000707 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.52499996 </t>
+						<value>       0.01000695 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.53333329 </t>
+						<value>       0.01000682 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54166662 </t>
+						<value>       0.01000669 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54999996 </t>
+						<value>       0.01000656 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.55833329 </t>
+						<value>       0.01000644 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.56666662 </t>
+						<value>       0.01000631 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.57499996 </t>
+						<value>       0.01000618 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.58333329 </t>
+						<value>       0.01000605 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59166662 </t>
+						<value>       0.01000593 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59999996 </t>
+						<value>       0.01000581 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.60833329 </t>
+						<value>       0.01000569 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.61666662 </t>
+						<value>       0.01000558 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.62499995 </t>
+						<value>       0.01000548 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.63333329 </t>
+						<value>       0.01000537 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64166662 </t>
+						<value>       0.01000528 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64999995 </t>
+						<value>       0.01000560 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.65833329 </t>
+						<value>       0.01000539 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.66666662 </t>
+						<value>       0.01000519 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.67499995 </t>
+						<value>       0.01000507 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.68333329 </t>
+						<value>       0.01000496 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69166662 </t>
+						<value>       0.01000741 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69999995 </t>
+						<value>       0.01000483 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.70833328 </t>
+						<value>       0.01000478 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.71666662 </t>
+						<value>       0.01000469 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.72499995 </t>
+						<value>       0.01000471 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.73333328 </t>
+						<value>       0.01000463 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74166662 </t>
+						<value>       0.01000470 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74999995 </t>
+						<value>       0.01000440 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.75833328 </t>
+						<value>       0.01000433 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.76666662 </t>
+						<value>       0.01000427 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.77499995 </t>
+						<value>       0.01000421 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.78333328 </t>
+						<value>       0.01000415 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79166661 </t>
+						<value>       0.01000410 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79999995 </t>
+						<value>       0.01000404 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.80833328 </t>
+						<value>       0.01000400 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.81666661 </t>
+						<value>       0.01000397 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.82499995 </t>
+						<value>       0.01000395 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.83333328 </t>
+						<value>       0.01000393 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84166661 </t>
+						<value>       0.01000393 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84999995 </t>
+						<value>       0.01000394 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.85833328 </t>
+						<value>       0.01000395 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.86666661 </t>
+						<value>       0.01000397 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.87499994 </t>
+						<value>       0.01000400 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.88333328 </t>
+						<value>       0.01000403 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89166661 </t>
+						<value>       0.01000406 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89999994 </t>
+						<value>       0.01000408 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.90833328 </t>
+						<value>       0.01000410 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.91666661 </t>
+						<value>       0.01000410 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.92499994 </t>
+						<value>       0.01000409 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.93333328 </t>
+						<value>       0.01000406 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94166661 </t>
+						<value>       0.01000402 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94999994 </t>
+						<value>       0.01000395 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.95833327 </t>
+						<value>       0.01000387 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.96666661 </t>
+						<value>       0.01000378 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.97499994 </t>
+						<value>       0.01000368 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.98333327 </t>
+						<value>       0.01000357 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99166661 </t>
+						<value>       0.01000346 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99999994 </t>
+						<value>       0.01000335 </value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes/>
+				<max_nodes/>
+				<kp>     100.00000000 </kp>
+				<kv>      20.00000000 </kv>
+			</ControlLinear>
+			<ControlLinear name="TRIlat">
+				<is_model_control> true </is_model_control>
+				<extrapolate> true </extrapolate>
+				<default_min>       0.00000000 </default_min>
+				<default_max>       1.00000000 </default_max>
+				<filter_on> false </filter_on>
+				<use_steps> false </use_steps>
+				<x_nodes>
+					<ControlLinearNode name="">
+						<t>      -0.00000002 </t>
+						<value>       0.01028288 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.00833331 </t>
+						<value>       0.01079604 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.01666665 </t>
+						<value>       0.01122519 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.02499998 </t>
+						<value>       0.01147664 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.03333331 </t>
+						<value>       0.01169219 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04166664 </t>
+						<value>       0.01201289 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04999998 </t>
+						<value>       0.01175810 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.05833331 </t>
+						<value>       0.01198791 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.06666664 </t>
+						<value>       0.01219275 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.07499998 </t>
+						<value>       0.01237068 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.08333331 </t>
+						<value>       0.01247877 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09166664 </t>
+						<value>       0.01255657 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09999998 </t>
+						<value>       0.01259911 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.10833331 </t>
+						<value>       0.01261584 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.11666664 </t>
+						<value>       0.01261964 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.12499997 </t>
+						<value>       0.01262628 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.13333331 </t>
+						<value>       0.01265284 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14166664 </t>
+						<value>       0.01271700 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14999997 </t>
+						<value>       0.01283836 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.15833331 </t>
+						<value>       0.01303597 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.16666664 </t>
+						<value>       0.01332575 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.17499997 </t>
+						<value>       0.01372003 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.18333331 </t>
+						<value>       0.01422462 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19166664 </t>
+						<value>       0.01484135 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19999997 </t>
+						<value>       0.01555807 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.20833330 </t>
+						<value>       0.01632999 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.21666664 </t>
+						<value>       0.01706988 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.22499997 </t>
+						<value>       0.01800352 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.23333330 </t>
+						<value>       0.01895290 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24166664 </t>
+						<value>       0.01989441 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24999997 </t>
+						<value>       0.02081620 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.25833330 </t>
+						<value>       0.02169860 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.26666664 </t>
+						<value>       0.02254332 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.27499997 </t>
+						<value>       0.02333346 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.28333330 </t>
+						<value>       0.02407697 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29166663 </t>
+						<value>       0.02477433 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29999997 </t>
+						<value>       0.02544292 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.30833330 </t>
+						<value>       0.02608106 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.31666663 </t>
+						<value>       0.02670340 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.32499997 </t>
+						<value>       0.02734340 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.33333330 </t>
+						<value>       0.02798616 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34166663 </t>
+						<value>       0.02865469 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34999997 </t>
+						<value>       0.02934958 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.35833330 </t>
+						<value>       0.03008000 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.36666663 </t>
+						<value>       0.03084375 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.37499996 </t>
+						<value>       0.03165107 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.38333330 </t>
+						<value>       0.03248474 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39166663 </t>
+						<value>       0.03333775 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39999996 </t>
+						<value>       0.03422929 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.40833330 </t>
+						<value>       0.03514756 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.41666663 </t>
+						<value>       0.03608048 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.42499996 </t>
+						<value>       0.03703350 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.43333330 </t>
+						<value>       0.03864314 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44166663 </t>
+						<value>       0.03963766 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44999996 </t>
+						<value>       0.04059840 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.45833329 </t>
+						<value>       0.04161163 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.46666663 </t>
+						<value>       0.04261979 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.47499996 </t>
+						<value>       0.04363421 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.48333329 </t>
+						<value>       0.04468895 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49166663 </t>
+						<value>       0.04576404 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49999996 </t>
+						<value>       0.04690945 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.50833329 </t>
+						<value>       0.04862585 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.51666663 </t>
+						<value>       0.05008979 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.52499996 </t>
+						<value>       0.05163071 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.53333329 </t>
+						<value>       0.05326894 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54166662 </t>
+						<value>       0.05504514 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54999996 </t>
+						<value>       0.05680156 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.55833329 </t>
+						<value>       0.05867844 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.56666662 </t>
+						<value>       0.06065914 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.57499996 </t>
+						<value>       0.06274070 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.58333329 </t>
+						<value>       0.06491619 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59166662 </t>
+						<value>       0.06770883 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59999996 </t>
+						<value>       0.06983491 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.60833329 </t>
+						<value>       0.07212647 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.61666662 </t>
+						<value>       0.07449444 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.62499995 </t>
+						<value>       0.07687725 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.63333329 </t>
+						<value>       0.07928763 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64166662 </t>
+						<value>       0.08169336 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64999995 </t>
+						<value>       0.08471998 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.65833329 </t>
+						<value>       0.08704711 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.66666662 </t>
+						<value>       0.08938982 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.67499995 </t>
+						<value>       0.09185296 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.68333329 </t>
+						<value>       0.09435426 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69166662 </t>
+						<value>       0.09693578 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69999995 </t>
+						<value>       0.09892892 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.70833328 </t>
+						<value>       0.10074620 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.71666662 </t>
+						<value>       0.10272761 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.72499995 </t>
+						<value>       0.10490496 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.73333328 </t>
+						<value>       0.10720865 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74166662 </t>
+						<value>       0.10972029 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74999995 </t>
+						<value>       0.11234774 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.75833328 </t>
+						<value>       0.11508854 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.76666662 </t>
+						<value>       0.11791077 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.77499995 </t>
+						<value>       0.12075562 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.78333328 </t>
+						<value>       0.12357295 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79166661 </t>
+						<value>       0.12629074 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79999995 </t>
+						<value>       0.12877476 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.80833328 </t>
+						<value>       0.13114368 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.81666661 </t>
+						<value>       0.13325725 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.82499995 </t>
+						<value>       0.13508185 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.83333328 </t>
+						<value>       0.13660442 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84166661 </t>
+						<value>       0.13781292 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84999995 </t>
+						<value>       0.13873071 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.85833328 </t>
+						<value>       0.13940053 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.86666661 </t>
+						<value>       0.13988102 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.87499994 </t>
+						<value>       0.14024904 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.88333328 </t>
+						<value>       0.14059564 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89166661 </t>
+						<value>       0.14101637 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89999994 </t>
+						<value>       0.14161956 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.90833328 </t>
+						<value>       0.14251901 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.91666661 </t>
+						<value>       0.14379095 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.92499994 </t>
+						<value>       0.14552577 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.93333328 </t>
+						<value>       0.14779861 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94166661 </t>
+						<value>       0.15065063 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94999994 </t>
+						<value>       0.15410432 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.95833327 </t>
+						<value>       0.15814787 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.96666661 </t>
+						<value>       0.16273794 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.97499994 </t>
+						<value>       0.16779534 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.98333327 </t>
+						<value>       0.17320723 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99166661 </t>
+						<value>       0.17882929 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99999994 </t>
+						<value>       0.18449249 </value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes/>
+				<max_nodes/>
+				<kp>     100.00000000 </kp>
+				<kv>      20.00000000 </kv>
+			</ControlLinear>
+			<ControlLinear name="TRImed">
+				<is_model_control> true </is_model_control>
+				<extrapolate> true </extrapolate>
+				<default_min>       0.00000000 </default_min>
+				<default_max>       1.00000000 </default_max>
+				<filter_on> false </filter_on>
+				<use_steps> false </use_steps>
+				<x_nodes>
+					<ControlLinearNode name="">
+						<t>      -0.00000002 </t>
+						<value>       0.01030019 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.00833331 </t>
+						<value>       0.01081188 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.01666665 </t>
+						<value>       0.01122997 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.02499998 </t>
+						<value>       0.01146795 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.03333331 </t>
+						<value>       0.01166833 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04166664 </t>
+						<value>       0.01197384 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04999998 </t>
+						<value>       0.01169739 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.05833331 </t>
+						<value>       0.01191174 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.06666664 </t>
+						<value>       0.01210492 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.07499998 </t>
+						<value>       0.01227405 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.08333331 </t>
+						<value>       0.01224185 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09166664 </t>
+						<value>       0.01230967 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09999998 </t>
+						<value>       0.01234785 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.10833331 </t>
+						<value>       0.01236299 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.11666664 </t>
+						<value>       0.01236579 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.12499997 </t>
+						<value>       0.01237142 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.13333331 </t>
+						<value>       0.01239459 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14166664 </t>
+						<value>       0.01245059 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14999997 </t>
+						<value>       0.01255192 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.15833331 </t>
+						<value>       0.01271923 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.16666664 </t>
+						<value>       0.01296218 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.17499997 </t>
+						<value>       0.01328980 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.18333331 </t>
+						<value>       0.01371257 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19166664 </t>
+						<value>       0.01422536 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19999997 </t>
+						<value>       0.01483063 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.20833330 </t>
+						<value>       0.01553668 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.21666664 </t>
+						<value>       0.01649603 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.22499997 </t>
+						<value>       0.01732240 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.23333330 </t>
+						<value>       0.01816465 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24166664 </t>
+						<value>       0.01900447 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24999997 </t>
+						<value>       0.01982630 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.25833330 </t>
+						<value>       0.02062321 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.26666664 </t>
+						<value>       0.02138727 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.27499997 </t>
+						<value>       0.02210541 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.28333330 </t>
+						<value>       0.02278318 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29166663 </t>
+						<value>       0.02342936 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29999997 </t>
+						<value>       0.02404512 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.30833330 </t>
+						<value>       0.02464217 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.31666663 </t>
+						<value>       0.02522200 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.32499997 </t>
+						<value>       0.02582306 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.33333330 </t>
+						<value>       0.02642949 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34166663 </t>
+						<value>       0.02706262 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34999997 </t>
+						<value>       0.02771956 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.35833330 </t>
+						<value>       0.02841529 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.36666663 </t>
+						<value>       0.02914523 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.37499996 </t>
+						<value>       0.02991771 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.38333330 </t>
+						<value>       0.03071695 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39166663 </t>
+						<value>       0.03153696 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39999996 </t>
+						<value>       0.03239537 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.40833330 </t>
+						<value>       0.03328083 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.41666663 </t>
+						<value>       0.03418253 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.42499996 </t>
+						<value>       0.03510579 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.43333330 </t>
+						<value>       0.03679183 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44166663 </t>
+						<value>       0.03773691 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44999996 </t>
+						<value>       0.03864586 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.45833329 </t>
+						<value>       0.03961493 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.46666663 </t>
+						<value>       0.04057755 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.47499996 </t>
+						<value>       0.04155278 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.48333329 </t>
+						<value>       0.04257095 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49166663 </t>
+						<value>       0.04361333 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49999996 </t>
+						<value>       0.04472766 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.50833329 </t>
+						<value>       0.04640195 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.51666663 </t>
+						<value>       0.04782565 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.52499996 </t>
+						<value>       0.04932633 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.53333329 </t>
+						<value>       0.05092235 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54166662 </t>
+						<value>       0.05265286 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54999996 </t>
+						<value>       0.05436632 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.55833329 </t>
+						<value>       0.05619739 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.56666662 </t>
+						<value>       0.05813002 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.57499996 </t>
+						<value>       0.06016146 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.58333329 </t>
+						<value>       0.06228499 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59166662 </t>
+						<value>       0.06500347 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59999996 </t>
+						<value>       0.06708311 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.60833329 </t>
+						<value>       0.06932421 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.61666662 </t>
+						<value>       0.07164076 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.62499995 </t>
+						<value>       0.07397347 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.63333329 </t>
+						<value>       0.07633459 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64166662 </t>
+						<value>       0.07869297 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64999995 </t>
+						<value>       0.08158411 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.65833329 </t>
+						<value>       0.08388918 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.66666662 </t>
+						<value>       0.08619171 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.67499995 </t>
+						<value>       0.08862956 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.68333329 </t>
+						<value>       0.09108830 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69166662 </t>
+						<value>       0.09370124 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69999995 </t>
+						<value>       0.09559107 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.70833328 </t>
+						<value>       0.09737033 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.71666662 </t>
+						<value>       0.09935566 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.72499995 </t>
+						<value>       0.10149896 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.73333328 </t>
+						<value>       0.10375213 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74166662 </t>
+						<value>       0.10624362 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74999995 </t>
+						<value>       0.10887297 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.75833328 </t>
+						<value>       0.11157223 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.76666662 </t>
+						<value>       0.11435151 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.77499995 </t>
+						<value>       0.11715347 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.78333328 </t>
+						<value>       0.11992956 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79166661 </t>
+						<value>       0.12260932 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79999995 </t>
+						<value>       0.12506266 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.80833328 </t>
+						<value>       0.12740449 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.81666661 </t>
+						<value>       0.12949823 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.82499995 </t>
+						<value>       0.13131089 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.83333328 </t>
+						<value>       0.13282937 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84166661 </t>
+						<value>       0.13404169 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84999995 </t>
+						<value>       0.13497017 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.85833328 </t>
+						<value>       0.13565608 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.86666661 </t>
+						<value>       0.13615621 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.87499994 </t>
+						<value>       0.13654515 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.88333328 </t>
+						<value>       0.13691135 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89166661 </t>
+						<value>       0.13734779 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89999994 </t>
+						<value>       0.13795993 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.90833328 </t>
+						<value>       0.13885864 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.91666661 </t>
+						<value>       0.14011828 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.92499994 </t>
+						<value>       0.14182701 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.93333328 </t>
+						<value>       0.14405820 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94166661 </t>
+						<value>       0.14685215 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94999994 </t>
+						<value>       0.15023093 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.95833327 </t>
+						<value>       0.15418323 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.96666661 </t>
+						<value>       0.15866702 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.97499994 </t>
+						<value>       0.16360531 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.98333327 </t>
+						<value>       0.16888841 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99166661 </t>
+						<value>       0.17437591 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99999994 </t>
+						<value>       0.17990341 </value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes/>
+				<max_nodes/>
+				<kp>     100.00000000 </kp>
+				<kv>      20.00000000 </kv>
+			</ControlLinear>
+			<ControlLinear name="BIClong">
+				<is_model_control> true </is_model_control>
+				<extrapolate> true </extrapolate>
+				<default_min>       0.00000000 </default_min>
+				<default_max>       1.00000000 </default_max>
+				<filter_on> false </filter_on>
+				<use_steps> false </use_steps>
+				<x_nodes>
+					<ControlLinearNode name="">
+						<t>      -0.00000002 </t>
+						<value>       0.08276816 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.00833331 </t>
+						<value>       0.09852275 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.01666665 </t>
+						<value>       0.11388660 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.02499998 </t>
+						<value>       0.12843242 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.03333331 </t>
+						<value>       0.14175355 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04166664 </t>
+						<value>       0.15355464 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04999998 </t>
+						<value>       0.16382253 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.05833331 </t>
+						<value>       0.17211294 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.06666664 </t>
+						<value>       0.17853820 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.07499998 </t>
+						<value>       0.18314760 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.08333331 </t>
+						<value>       0.18653057 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09166664 </t>
+						<value>       0.18795376 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09999998 </t>
+						<value>       0.18812401 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.10833331 </t>
+						<value>       0.18732422 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.11666664 </t>
+						<value>       0.18585568 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.12499997 </t>
+						<value>       0.18401856 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.13333331 </t>
+						<value>       0.18209661 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14166664 </t>
+						<value>       0.18033428 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14999997 </t>
+						<value>       0.17893811 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.15833331 </t>
+						<value>       0.17805399 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.16666664 </t>
+						<value>       0.17777442 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.17499997 </t>
+						<value>       0.17813303 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.18333331 </t>
+						<value>       0.17911024 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19166664 </t>
+						<value>       0.18064565 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19999997 </t>
+						<value>       0.18264176 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.20833330 </t>
+						<value>       0.18496521 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.21666664 </t>
+						<value>       0.18737543 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.22499997 </t>
+						<value>       0.19004795 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.23333330 </t>
+						<value>       0.19268155 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24166664 </t>
+						<value>       0.19517824 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24999997 </t>
+						<value>       0.19747000 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.25833330 </t>
+						<value>       0.19950294 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.26666664 </t>
+						<value>       0.20127583 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.27499997 </t>
+						<value>       0.20275777 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.28333330 </t>
+						<value>       0.20398969 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29166663 </t>
+						<value>       0.20500398 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29999997 </t>
+						<value>       0.20586538 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.30833330 </t>
+						<value>       0.20660654 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.31666663 </t>
+						<value>       0.20729217 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.32499997 </t>
+						<value>       0.20798853 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.33333330 </t>
+						<value>       0.20870997 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34166663 </t>
+						<value>       0.20949597 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34999997 </t>
+						<value>       0.21037402 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.35833330 </t>
+						<value>       0.21133327 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.36666663 </t>
+						<value>       0.21238254 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.37499996 </t>
+						<value>       0.21352522 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.38333330 </t>
+						<value>       0.21471128 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39166663 </t>
+						<value>       0.21593547 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39999996 </t>
+						<value>       0.21720256 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.40833330 </t>
+						<value>       0.21847334 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.41666663 </t>
+						<value>       0.21974482 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.42499996 </t>
+						<value>       0.22099005 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.43333330 </t>
+						<value>       0.22161370 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44166663 </t>
+						<value>       0.22279074 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44999996 </t>
+						<value>       0.22394518 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.45833329 </t>
+						<value>       0.22506023 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.46666663 </t>
+						<value>       0.22620542 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.47499996 </t>
+						<value>       0.22733119 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.48333329 </t>
+						<value>       0.22846285 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49166663 </t>
+						<value>       0.22963182 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49999996 </t>
+						<value>       0.23086054 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.50833329 </t>
+						<value>       0.23178270 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.51666663 </t>
+						<value>       0.23303320 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.52499996 </t>
+						<value>       0.23428890 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.53333329 </t>
+						<value>       0.23562387 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54166662 </t>
+						<value>       0.23701867 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54999996 </t>
+						<value>       0.23848962 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.55833329 </t>
+						<value>       0.24005296 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.56666662 </t>
+						<value>       0.24163104 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.57499996 </t>
+						<value>       0.24317817 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.58333329 </t>
+						<value>       0.24471494 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59166662 </t>
+						<value>       0.24585567 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59999996 </t>
+						<value>       0.24740004 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.60833329 </t>
+						<value>       0.24881741 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.61666662 </t>
+						<value>       0.25009897 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.62499995 </t>
+						<value>       0.25120415 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.63333329 </t>
+						<value>       0.25220634 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64166662 </t>
+						<value>       0.25307008 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64999995 </t>
+						<value>       0.25346705 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.65833329 </t>
+						<value>       0.25412798 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.66666662 </t>
+						<value>       0.25470023 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.67499995 </t>
+						<value>       0.25517112 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.68333329 </t>
+						<value>       0.25564790 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69166662 </t>
+						<value>       0.25615012 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69999995 </t>
+						<value>       0.25668933 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.70833328 </t>
+						<value>       0.25737443 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.71666662 </t>
+						<value>       0.25818617 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.72499995 </t>
+						<value>       0.25917478 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.73333328 </t>
+						<value>       0.26038790 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74166662 </t>
+						<value>       0.26177392 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74999995 </t>
+						<value>       0.26335844 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.75833328 </t>
+						<value>       0.26512031 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.76666662 </t>
+						<value>       0.26699332 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.77499995 </t>
+						<value>       0.26891718 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.78333328 </t>
+						<value>       0.27080897 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79166661 </t>
+						<value>       0.27258561 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79999995 </t>
+						<value>       0.27418817 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.80833328 </t>
+						<value>       0.27543798 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.81666661 </t>
+						<value>       0.27629644 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.82499995 </t>
+						<value>       0.27669409 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.83333328 </t>
+						<value>       0.27658625 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84166661 </t>
+						<value>       0.27595415 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84999995 </t>
+						<value>       0.27481697 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.85833328 </t>
+						<value>       0.27322584 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.86666661 </t>
+						<value>       0.27127323 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.87499994 </t>
+						<value>       0.26907992 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.88333328 </t>
+						<value>       0.26680476 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89166661 </t>
+						<value>       0.26461681 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89999994 </t>
+						<value>       0.26270790 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.90833328 </t>
+						<value>       0.26127762 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.91666661 </t>
+						<value>       0.26048667 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.92499994 </t>
+						<value>       0.26050289 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.93333328 </t>
+						<value>       0.26146488 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94166661 </t>
+						<value>       0.26346541 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94999994 </t>
+						<value>       0.26656450 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.95833327 </t>
+						<value>       0.27077160 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.96666661 </t>
+						<value>       0.27605319 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.97499994 </t>
+						<value>       0.28232821 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.98333327 </t>
+						<value>       0.28947315 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99166661 </t>
+						<value>       0.29732537 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99999994 </t>
+						<value>       0.30568988 </value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes/>
+				<max_nodes/>
+				<kp>     100.00000000 </kp>
+				<kv>      20.00000000 </kv>
+			</ControlLinear>
+			<ControlLinear name="BICshort">
+				<is_model_control> true </is_model_control>
+				<extrapolate> true </extrapolate>
+				<default_min>       0.00000000 </default_min>
+				<default_max>       1.00000000 </default_max>
+				<filter_on> false </filter_on>
+				<use_steps> false </use_steps>
+				<x_nodes>
+					<ControlLinearNode name="">
+						<t>      -0.00000002 </t>
+						<value>       0.01196130 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.00833331 </t>
+						<value>       0.01460582 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.01666665 </t>
+						<value>       0.01727507 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.02499998 </t>
+						<value>       0.01985994 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.03333331 </t>
+						<value>       0.02245217 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04166664 </t>
+						<value>       0.02497697 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04999998 </t>
+						<value>       0.02657804 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.05833331 </t>
+						<value>       0.02841216 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.06666664 </t>
+						<value>       0.02985191 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.07499998 </t>
+						<value>       0.03087229 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.08333331 </t>
+						<value>       0.02967940 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09166664 </t>
+						<value>       0.02991622 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09999998 </t>
+						<value>       0.02985371 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.10833331 </t>
+						<value>       0.02955920 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.11666664 </t>
+						<value>       0.02910381 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.12499997 </t>
+						<value>       0.02855787 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.13333331 </t>
+						<value>       0.02798492 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14166664 </t>
+						<value>       0.02743567 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14999997 </t>
+						<value>       0.02694543 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.15833331 </t>
+						<value>       0.02654794 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.16666664 </t>
+						<value>       0.02625658 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.17499997 </t>
+						<value>       0.02607803 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.18333331 </t>
+						<value>       0.02601422 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19166664 </t>
+						<value>       0.02604624 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19999997 </t>
+						<value>       0.02616089 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.20833330 </t>
+						<value>       0.02639697 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.21666664 </t>
+						<value>       0.02717247 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.22499997 </t>
+						<value>       0.02726194 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.23333330 </t>
+						<value>       0.02736508 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24166664 </t>
+						<value>       0.02746694 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24999997 </t>
+						<value>       0.02751965 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.25833330 </t>
+						<value>       0.02755065 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.26666664 </t>
+						<value>       0.02750996 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.27499997 </t>
+						<value>       0.02741509 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.28333330 </t>
+						<value>       0.02726583 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29166663 </t>
+						<value>       0.02709255 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29999997 </t>
+						<value>       0.02685955 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.30833330 </t>
+						<value>       0.02662256 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.31666663 </t>
+						<value>       0.02634581 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.32499997 </t>
+						<value>       0.02606294 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.33333330 </t>
+						<value>       0.02577358 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34166663 </t>
+						<value>       0.02547771 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34999997 </t>
+						<value>       0.02515833 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.35833330 </t>
+						<value>       0.02485237 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.36666663 </t>
+						<value>       0.02454115 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.37499996 </t>
+						<value>       0.02421483 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.38333330 </t>
+						<value>       0.02386695 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39166663 </t>
+						<value>       0.02350828 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39999996 </t>
+						<value>       0.02312518 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.40833330 </t>
+						<value>       0.02270902 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.41666663 </t>
+						<value>       0.02227467 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.42499996 </t>
+						<value>       0.02182882 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.43333330 </t>
+						<value>       0.02369490 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44166663 </t>
+						<value>       0.02318209 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44999996 </t>
+						<value>       0.02252611 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.45833329 </t>
+						<value>       0.02191675 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.46666663 </t>
+						<value>       0.02115952 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.47499996 </t>
+						<value>       0.02034917 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.48333329 </t>
+						<value>       0.01950038 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49166663 </t>
+						<value>       0.01855224 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49999996 </t>
+						<value>       0.01744819 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.50833329 </t>
+						<value>       0.01773005 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.51666663 </t>
+						<value>       0.01693574 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.52499996 </t>
+						<value>       0.01622536 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.53333329 </t>
+						<value>       0.01551077 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54166662 </t>
+						<value>       0.01488149 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54999996 </t>
+						<value>       0.01404022 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.55833329 </t>
+						<value>       0.01320366 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.56666662 </t>
+						<value>       0.01245890 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.57499996 </t>
+						<value>       0.01185185 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.58333329 </t>
+						<value>       0.01131974 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59166662 </t>
+						<value>       0.01237096 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59999996 </t>
+						<value>       0.01151636 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.60833329 </t>
+						<value>       0.01101680 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.61666662 </t>
+						<value>       0.01070857 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.62499995 </t>
+						<value>       0.01054250 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.63333329 </t>
+						<value>       0.01041021 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64166662 </t>
+						<value>       0.01031288 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64999995 </t>
+						<value>       0.01164915 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.65833329 </t>
+						<value>       0.01141681 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.66666662 </t>
+						<value>       0.01115978 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.67499995 </t>
+						<value>       0.01109830 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.68333329 </t>
+						<value>       0.01092874 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69166662 </t>
+						<value>       0.01077473 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69999995 </t>
+						<value>       0.01075564 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.70833328 </t>
+						<value>       0.01063421 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.71666662 </t>
+						<value>       0.01061454 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.72499995 </t>
+						<value>       0.01061613 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.73333328 </t>
+						<value>       0.01051179 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74166662 </t>
+						<value>       0.01055249 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74999995 </t>
+						<value>       0.01056599 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.75833328 </t>
+						<value>       0.01051983 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.76666662 </t>
+						<value>       0.01048980 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.77499995 </t>
+						<value>       0.01045424 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.78333328 </t>
+						<value>       0.01042901 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79166661 </t>
+						<value>       0.01038548 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79999995 </t>
+						<value>       0.01016522 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.80833328 </t>
+						<value>       0.01015072 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.81666661 </t>
+						<value>       0.01013747 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.82499995 </t>
+						<value>       0.01012828 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.83333328 </t>
+						<value>       0.01011759 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84166661 </t>
+						<value>       0.01011319 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84999995 </t>
+						<value>       0.01010564 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.85833328 </t>
+						<value>       0.01010161 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.86666661 </t>
+						<value>       0.01009578 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.87499994 </t>
+						<value>       0.01009364 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.88333328 </t>
+						<value>       0.01008831 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89166661 </t>
+						<value>       0.01008312 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89999994 </t>
+						<value>       0.01007833 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.90833328 </t>
+						<value>       0.01007382 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.91666661 </t>
+						<value>       0.01006965 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.92499994 </t>
+						<value>       0.01006432 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.93333328 </t>
+						<value>       0.01005973 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94166661 </t>
+						<value>       0.01005599 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94999994 </t>
+						<value>       0.01005146 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.95833327 </t>
+						<value>       0.01004786 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.96666661 </t>
+						<value>       0.01004448 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.97499994 </t>
+						<value>       0.01004176 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.98333327 </t>
+						<value>       0.01003961 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99166661 </t>
+						<value>       0.01003773 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99999994 </t>
+						<value>       0.01003620 </value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes/>
+				<max_nodes/>
+				<kp>     100.00000000 </kp>
+				<kv>      20.00000000 </kv>
+			</ControlLinear>
+			<ControlLinear name="BRA">
+				<is_model_control> true </is_model_control>
+				<extrapolate> true </extrapolate>
+				<default_min>       0.00000000 </default_min>
+				<default_max>       1.00000000 </default_max>
+				<filter_on> false </filter_on>
+				<use_steps> false </use_steps>
+				<x_nodes>
+					<ControlLinearNode name="">
+						<t>      -0.00000002 </t>
+						<value>       0.01144788 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.00833331 </t>
+						<value>       0.01147451 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.01666665 </t>
+						<value>       0.01140151 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.02499998 </t>
+						<value>       0.01115284 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.03333331 </t>
+						<value>       0.01087957 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04166664 </t>
+						<value>       0.01076006 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.04999998 </t>
+						<value>       0.01013919 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.05833331 </t>
+						<value>       0.01005237 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.06666664 </t>
+						<value>       0.01000731 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.07499998 </t>
+						<value>       0.01000032 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.08333331 </t>
+						<value>       0.01026095 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09166664 </t>
+						<value>       0.01025889 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.09999998 </t>
+						<value>       0.01025930 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.10833331 </t>
+						<value>       0.01026021 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.11666664 </t>
+						<value>       0.01026070 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.12499997 </t>
+						<value>       0.01026126 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.13333331 </t>
+						<value>       0.01026120 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14166664 </t>
+						<value>       0.01025980 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.14999997 </t>
+						<value>       0.01025311 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.15833331 </t>
+						<value>       0.01024481 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.16666664 </t>
+						<value>       0.01023312 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.17499997 </t>
+						<value>       0.01021907 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.18333331 </t>
+						<value>       0.01020597 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19166664 </t>
+						<value>       0.01019199 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.19999997 </t>
+						<value>       0.01018035 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.20833330 </t>
+						<value>       0.01014106 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.21666664 </t>
+						<value>       0.01000769 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.22499997 </t>
+						<value>       0.01007304 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.23333330 </t>
+						<value>       0.01011874 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24166664 </t>
+						<value>       0.01013947 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.24999997 </t>
+						<value>       0.01015490 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.25833330 </t>
+						<value>       0.01015138 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.26666664 </t>
+						<value>       0.01015270 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.27499997 </t>
+						<value>       0.01015003 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.28333330 </t>
+						<value>       0.01014648 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29166663 </t>
+						<value>       0.01014012 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.29999997 </t>
+						<value>       0.01013745 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.30833330 </t>
+						<value>       0.01013265 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.31666663 </t>
+						<value>       0.01013050 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.32499997 </t>
+						<value>       0.01012778 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.33333330 </t>
+						<value>       0.01012554 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34166663 </t>
+						<value>       0.01012364 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.34999997 </t>
+						<value>       0.01012262 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.35833330 </t>
+						<value>       0.01012115 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.36666663 </t>
+						<value>       0.01011987 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.37499996 </t>
+						<value>       0.01011879 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.38333330 </t>
+						<value>       0.01011780 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39166663 </t>
+						<value>       0.01011682 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.39999996 </t>
+						<value>       0.01011578 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.40833330 </t>
+						<value>       0.01011452 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.41666663 </t>
+						<value>       0.01011335 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.42499996 </t>
+						<value>       0.01011213 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.43333330 </t>
+						<value>       0.01025116 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44166663 </t>
+						<value>       0.01024385 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.44999996 </t>
+						<value>       0.01022518 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.45833329 </t>
+						<value>       0.01020948 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.46666663 </t>
+						<value>       0.01018585 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.47499996 </t>
+						<value>       0.01015915 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.48333329 </t>
+						<value>       0.01014038 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49166663 </t>
+						<value>       0.01012153 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.49999996 </t>
+						<value>       0.01010254 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.50833329 </t>
+						<value>       0.01013475 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.51666663 </t>
+						<value>       0.01012013 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.52499996 </t>
+						<value>       0.01011075 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.53333329 </t>
+						<value>       0.01010209 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54166662 </t>
+						<value>       0.01009559 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.54999996 </t>
+						<value>       0.01008424 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.55833329 </t>
+						<value>       0.01007481 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.56666662 </t>
+						<value>       0.01006860 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.57499996 </t>
+						<value>       0.01006385 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.58333329 </t>
+						<value>       0.01006027 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59166662 </t>
+						<value>       0.01007131 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.59999996 </t>
+						<value>       0.01005876 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.60833329 </t>
+						<value>       0.01005524 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.61666662 </t>
+						<value>       0.01005160 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.62499995 </t>
+						<value>       0.01004858 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.63333329 </t>
+						<value>       0.01004579 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64166662 </t>
+						<value>       0.01004325 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.64999995 </t>
+						<value>       0.01011928 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.65833329 </t>
+						<value>       0.01009305 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.66666662 </t>
+						<value>       0.01007218 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.67499995 </t>
+						<value>       0.01005946 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.68333329 </t>
+						<value>       0.01005261 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69166662 </t>
+						<value>       0.01005198 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.69999995 </t>
+						<value>       0.01004836 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.70833328 </t>
+						<value>       0.01004694 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.71666662 </t>
+						<value>       0.01004070 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.72499995 </t>
+						<value>       0.01004476 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.73333328 </t>
+						<value>       0.01004301 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74166662 </t>
+						<value>       0.01004457 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.74999995 </t>
+						<value>       0.01003976 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.75833328 </t>
+						<value>       0.01003808 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.76666662 </t>
+						<value>       0.01003635 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.77499995 </t>
+						<value>       0.01003468 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.78333328 </t>
+						<value>       0.01003306 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79166661 </t>
+						<value>       0.01003206 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.79999995 </t>
+						<value>       0.01002395 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.80833328 </t>
+						<value>       0.01002331 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.81666661 </t>
+						<value>       0.01002275 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.82499995 </t>
+						<value>       0.01002228 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.83333328 </t>
+						<value>       0.01002185 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84166661 </t>
+						<value>       0.01002154 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.84999995 </t>
+						<value>       0.01002124 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.85833328 </t>
+						<value>       0.01002100 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.86666661 </t>
+						<value>       0.01002077 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.87499994 </t>
+						<value>       0.01002059 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.88333328 </t>
+						<value>       0.01002038 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89166661 </t>
+						<value>       0.01002015 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.89999994 </t>
+						<value>       0.01001989 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.90833328 </t>
+						<value>       0.01001960 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.91666661 </t>
+						<value>       0.01001927 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.92499994 </t>
+						<value>       0.01001888 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.93333328 </t>
+						<value>       0.01001843 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94166661 </t>
+						<value>       0.01001795 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.94999994 </t>
+						<value>       0.01001742 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.95833327 </t>
+						<value>       0.01001688 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.96666661 </t>
+						<value>       0.01001632 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.97499994 </t>
+						<value>       0.01001577 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.98333327 </t>
+						<value>       0.01001524 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99166661 </t>
+						<value>       0.01001474 </value>
+					</ControlLinearNode>
+					<ControlLinearNode name="">
+						<t>       0.99999994 </t>
+						<value>       0.01001429 </value>
+					</ControlLinearNode>
+				</x_nodes>
+				<min_nodes/>
+				<max_nodes/>
+				<kp>     100.00000000 </kp>
+				<kv>      20.00000000 </kv>
+			</ControlLinear>
+		</objects>
+		<groups/>
+	</ControlSet>
+</OpenSimDocument>
+
