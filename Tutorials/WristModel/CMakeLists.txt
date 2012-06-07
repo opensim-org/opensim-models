@@ -1,3 +1,3 @@
 SET(WRIST_FILES wrist.osim)
 
-INSTALL_FILES(/examples/WristModel/ FILES ${WRIST_FILES})
+INSTALL_FILES(/Models/WristModel/ FILES ${WRIST_FILES})

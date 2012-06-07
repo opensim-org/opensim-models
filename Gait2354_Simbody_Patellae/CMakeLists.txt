@@ -18,5 +18,5 @@ subject01_Setup_InverseDynamics.xml
 subject01_Setup_RRA.xml
 subject01_Setup_Scale.xml)
 
-INSTALL_FILES(/examples/Gait2354_Simbody/ FILES ${GAIT2354_FILES})
-INSTALL(DIRECTORY OutputReference DESTINATION examples/Gait2354_Simbody/ PATTERN ".svn" EXCLUDE)
+INSTALL_FILES(/Models/Gait2354_Simbody/ FILES ${GAIT2354_FILES})
+INSTALL(DIRECTORY OutputReference DESTINATION Models/Gait2354_Simbody/ PATTERN ".svn" EXCLUDE)

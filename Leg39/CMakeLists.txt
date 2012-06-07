@@ -11,7 +11,6 @@ SET(LEG39_FILES leg39.osim
 		leg39_ControlConstraints.xml
 		leg39_Setup_ComputedMuscleControl.xml
 		leg39_swing.trc)
-INSTALL_FILES(/examples/Leg39/ FILES ${LEG39_FILES})
-INSTALL_FILES(/Models  leg39.osim)
+INSTALL_FILES(/Models/Leg39/ FILES ${LEG39_FILES})
 
-INSTALL(DIRECTORY OutputReference DESTINATION examples/Leg39/ PATTERN ".svn" EXCLUDE)
+INSTALL(DIRECTORY OutputReference DESTINATION Models/Leg39/ PATTERN ".svn" EXCLUDE)
