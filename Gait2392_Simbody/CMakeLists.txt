@@ -15,7 +15,8 @@ subject01_Setup_CMC.xml
 subject01_Setup_Forward.xml
 subject01_Setup_IK.xml
 subject01_Setup_RRA.xml
-subject01_Setup_Scale.xml)
+subject01_Setup_Scale.xml
+subject01_walk1_grf.xml)
 
 INSTALL_FILES(/Models/Gait2392_Simbody/ FILES ${GAIT2392_FILES})
 ##INSTALL(DIRECTORY OutputReference DESTINATION Models/Gait2392_Simbody/ PATTERN ".svn" EXCLUDE)

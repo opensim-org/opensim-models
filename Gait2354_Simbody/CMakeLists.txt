@@ -16,7 +16,8 @@ subject01_Setup_Forward.xml
 subject01_Setup_IK.xml
 subject01_Setup_InverseDynamics.xml
 subject01_Setup_RRA.xml
-subject01_Setup_Scale.xml)
+subject01_Setup_Scale.xml
+subject01_walk1_grf.xml)
 
 INSTALL_FILES(/Models/Gait2354_Simbody/ FILES ${GAIT2354_FILES})
 INSTALL(DIRECTORY OutputReference DESTINATION Models/Gait2354_Simbody/ PATTERN ".svn" EXCLUDE)
