@@ -12,11 +12,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.0647515358388604</value>
+						<value>0.0647864526963654</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>0.554972746779573</value>
+						<value>0.557743346842323</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
@@ -24,7 +24,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>0.633449336526674</value>
+						<value>0.640379982537453</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
@@ -36,15 +36,15 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>0.02</value>
+						<value>0.022</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>0.0267210055426919</value>
+						<value>0.022</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>0.250504966692542</value>
+						<value>0.254747829704684</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
@@ -52,11 +52,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>0.137500771041146</value>
+						<value>0.0803377454304145</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.0731817518113626</value>
+						<value>0.161000827907845</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
@@ -64,7 +64,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>0.308031899820567</value>
+						<value>0.271103628085548</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
@@ -72,15 +72,15 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>0.224286939348075</value>
+						<value>0.205698667729189</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>0.02</value>
+						<value>0.030424270861256</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>0.252193951966871</value>
+						<value>0.259307932498435</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
@@ -88,7 +88,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.239029239696828</value>
+						<value>0.246283211940168</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
@@ -96,51 +96,51 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>0.179164029869362</value>
+						<value>0.177180365173574</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>0.0851009629318203</value>
+						<value>0.109758772632298</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>0.170197359360093</value>
+						<value>0.168988943165865</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>0.178247353907614</value>
+						<value>0.113477497651387</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.178998335769241</value>
+						<value>0.171197093157769</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>0.0627959169048562</value>
+						<value>0.173504298527335</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>0.177121191113492</value>
+						<value>0.100100682555752</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.115912092878478</value>
+						<value>0.169911008759789</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.108280485169322</value>
+						<value>0.131184527697264</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.169375538439667</value>
+						<value>0.197135273456885</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>0.220884070906482</value>
+						<value>0.194258017323518</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>0.724461460376503</value>
+						<value>0.737733218889921</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
@@ -172,7 +172,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>0.699662976659756</value>
+						<value>0.667537974653658</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
@@ -254,7 +254,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>0.039663493148985</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
@@ -270,59 +270,59 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.022</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.0266955295606192</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>0.0254340147671269</value>
+						<value>0.0222048875210833</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>0.0307987156869671</value>
+						<value>0.0271759963142573</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>0.0380033293065474</value>
+						<value>0.0406675215412548</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>0.0499128187577271</value>
+						<value>0.0388793481669244</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.0663995114475434</value>
+						<value>0.0497038909805044</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>0.022</value>
+						<value>0.0713352631496669</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>0.0623252213274399</value>
+						<value>0.0306209372913483</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.0606255118663813</value>
+						<value>0.0630389264050849</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.0936493186804245</value>
+						<value>0.0683124870654568</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.117133251674468</value>
+						<value>0.0766698820828525</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>0.0241660323202838</value>
+						<value>0.0856340146834238</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>0.0598284932416922</value>
+						<value>0.0629632333202369</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
@@ -330,11 +330,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>0.0449846006377917</value>
+						<value>0.0570235431209473</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>0.0859121609743932</value>
+						<value>0.0921435450408586</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
@@ -342,7 +342,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>0.177178602506938</value>
+						<value>0.183315913648838</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
@@ -354,11 +354,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>0.0911515732525377</value>
+						<value>0.0767612469310614</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>0.195485390049328</value>
+						<value>0.196837716904874</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -376,11 +376,11 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.155116693283278</value>
+						<value>0.155366848753715</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>0.229827129836665</value>
+						<value>0.22869463998248</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
@@ -388,7 +388,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>0.361028556629183</value>
+						<value>0.362286016044316</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
@@ -396,19 +396,19 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>0.0717058371615805</value>
+						<value>0.0925743448893024</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>0.118357314682327</value>
+						<value>0.116680409328009</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>0.157370993659006</value>
+						<value>0.132479296486141</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>0.175911046293978</value>
+						<value>0.181978186105432</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
@@ -416,11 +416,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>0.125482787653369</value>
+						<value>0.138598808614386</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.0902582414331324</value>
+						<value>0.0419475978346854</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
@@ -428,23 +428,23 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>0.0533226953098724</value>
+						<value>0.0843496086712424</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.02</value>
-					</ControlLinearNode>
-					<ControlLinearNode>
-						<t>0.98</t>
 						<value>0.022</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
+						<t>0.98</t>
+						<value>0.0444640014357955</value>
+					</ControlLinearNode>
+					<ControlLinearNode>
 						<t>0.99</t>
-						<value>0.026757425664241</value>
+						<value>0.0626761459365979</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>0.0881137105527427</value>
+						<value>0.0899758766074549</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
@@ -452,7 +452,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.0826092042933342</value>
+						<value>0.106690029995736</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
@@ -460,7 +460,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>0.024</value>
+						<value>0.022</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
@@ -468,7 +468,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>0.022</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
@@ -476,7 +476,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.022</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
@@ -504,7 +504,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>0.0221648330343329</value>
+						<value>0.0291873758777442</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
@@ -516,7 +516,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>0.574993118885464</value>
+						<value>0.550984879493678</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
@@ -536,7 +536,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>0.141022061849135</value>
+						<value>0.154415378520331</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
@@ -566,7 +566,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>0.224164830863479</value>
+						<value>0.227882293223083</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
@@ -574,7 +574,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>0.175002475653456</value>
+						<value>0.180496562542319</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
@@ -594,7 +594,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.0584821822975919</value>
+						<value>0.0602374726418006</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
@@ -606,7 +606,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>0.0266831968227083</value>
+						<value>0.0345691592547469</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
@@ -614,7 +614,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.035040825246741</value>
+						<value>0.0317601212373916</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
@@ -630,7 +630,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.0928122946969035</value>
+						<value>0.10928493871352</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
@@ -638,7 +638,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.0508663663735074</value>
+						<value>0.0686112853857376</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
@@ -654,35 +654,35 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>0.0317680710669395</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.0326028092209281</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>0.022</value>
+						<value>0.030010142284183</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>0.0304480252811978</value>
+						<value>0.0341081915164762</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.0438459913030337</value>
+						<value>0.0440279512847077</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.0508752105909105</value>
+						<value>0.0560462677856156</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.05652924808891</value>
+						<value>0.0672332335875544</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>0.0774421046785553</value>
+						<value>0.0782686867252981</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
@@ -690,11 +690,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>0.692706112570576</value>
+						<value>0.701119308392731</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>0.492103090768376</value>
+						<value>0.464809745801356</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
@@ -702,19 +702,19 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>0.302847267739286</value>
+						<value>0.292186486619594</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>0.436402282812005</value>
+						<value>0.42261213195387</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>0.02</value>
+						<value>0.0297047338682165</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>0.334208371355359</value>
+						<value>0.329872976882411</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
@@ -748,7 +748,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>0.724874195885042</value>
+						<value>0.728471064035943</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
@@ -788,7 +788,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>0.0221738655220581</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
@@ -796,7 +796,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.0463062543271858</value>
+						<value>0.0259793293837558</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
@@ -812,7 +812,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.0358232070111973</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
@@ -872,7 +872,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>0.26266846569273</value>
+						<value>0.279233826323761</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
@@ -884,7 +884,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>0.301264217001799</value>
+						<value>0.314371217518674</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
@@ -892,11 +892,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>0.073660787535871</value>
+						<value>0.0915032422105393</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>0.0459804951286419</value>
+						<value>0.0437435659712864</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
@@ -904,7 +904,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>0.473775970277515</value>
+						<value>0.380989970353558</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -922,55 +922,55 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.265461285463625</value>
+						<value>0.265461192548691</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>0.293767068423995</value>
+						<value>0.29438261954162</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>0.146716932938836</value>
+						<value>0.146099914622527</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>0.0569114119996338</value>
+						<value>0.0585308625265462</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>0.226702211543127</value>
+						<value>0.228719003427916</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>0.0706020309753319</value>
+						<value>0.0654694464808788</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>0.171529213852231</value>
+						<value>0.176774478230001</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>0.104572888997001</value>
+						<value>0.0980485530433507</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>0.12066902224754</value>
+						<value>0.120300214636271</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.132130124390907</value>
+						<value>0.141838069716025</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>0.0459945455265374</value>
+						<value>0.033637885476355</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.0429488928346077</value>
+						<value>0.0624107364035905</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>0.02</value>
+						<value>0.0268065426419163</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
@@ -978,7 +978,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.0503813671660384</value>
+						<value>0.0444394002348266</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
@@ -994,11 +994,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.0335656375300112</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.02</value>
+						<value>0.0304255523308727</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
@@ -1074,7 +1074,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>0.0224677727902952</value>
+						<value>0.0234932791604358</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
@@ -1128,111 +1128,111 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>0.02</value>
+						<value>0.0256862402999674</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>0.0451297380251845</value>
+						<value>0.0255950788474784</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>0.0574655481292747</value>
+						<value>0.063688508286696</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.02</value>
+						<value>0.062989241941631</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>0.0592402292631973</value>
+						<value>0.022</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.02</value>
+						<value>0.0523611443932312</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>0.0508221403633814</value>
+						<value>0.0471871395288178</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>0.02</value>
+						<value>0.0507756112426005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.173513290275242</value>
+						<value>0.157689719012888</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>0.102301604537178</value>
+						<value>0.161545990910593</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>0.180460508002356</value>
+						<value>0.187733802980354</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>0.168485947533519</value>
+						<value>0.0303509649735667</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.02</value>
+						<value>0.0263852390639231</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.172473806507739</value>
+						<value>0.173952843238349</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.143472302304872</value>
+						<value>0.189042933995409</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>0.216467717144187</value>
+						<value>0.188951463283827</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>0.174542960434646</value>
+						<value>0.215361674155433</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>0.200306716568947</value>
+						<value>0.119768851002894</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>0.168674760330209</value>
+						<value>0.235056377061998</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.209961619474552</value>
+						<value>0.215875877894848</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>0.29086375329821</value>
+						<value>0.229979130709717</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>0.177489239521227</value>
+						<value>0.27766900321837</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.273187702684912</value>
+						<value>0.232718429661571</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.271924982830814</value>
+						<value>0.285113572076105</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.318717917272055</value>
+						<value>0.313064428684157</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>0.35049469099811</value>
+						<value>0.343671408777967</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>0.059554287236383</value>
+						<value>0.0764254696747772</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
@@ -1240,11 +1240,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>0.200175022769641</value>
+						<value>0.214015131796017</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>0.858809693354279</value>
+						<value>0.891151396293854</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
@@ -1252,7 +1252,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>0.667051285813771</value>
+						<value>0.705784254766565</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
@@ -1268,7 +1268,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>0.43767353584989</value>
+						<value>0.34638930325411</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -1286,55 +1286,55 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.0288407625420651</value>
+						<value>0.0288180766521421</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>0.0734858592346576</value>
+						<value>0.073560707910405</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>0.0677624898909234</value>
+						<value>0.067095949690075</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>0.096772110539364</value>
+						<value>0.0976236050408372</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>0.10462356444361</value>
+						<value>0.103266453539286</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>0.115581547158754</value>
+						<value>0.117625048993567</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>0.151504617606653</value>
+						<value>0.145543218665933</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>0.0950377509023384</value>
+						<value>0.140005702460342</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>0.172734814386742</value>
+						<value>0.162306239007718</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.02</value>
+						<value>0.0332361385148856</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>0.2047894080291</value>
+						<value>0.195729157706812</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.02</value>
+						<value>0.0279580882557055</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>0.270656546436481</value>
+						<value>0.242002395293717</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
@@ -1342,7 +1342,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.253691335198666</value>
+						<value>0.228528120497202</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
@@ -1350,75 +1350,75 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>0.199149899578218</value>
+						<value>0.208441272968916</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>0.208165115439053</value>
+						<value>0.189819327173037</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.163191552243631</value>
+						<value>0.251267455778866</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.204846878129968</value>
+						<value>0.0792936303248351</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.185944782481874</value>
+						<value>0.208729444284099</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>0.161018307962609</value>
+						<value>0.121890651849637</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>0.18271424714689</value>
+						<value>0.196136484087315</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>0.161194930440935</value>
+						<value>0.142030032748693</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>0.182235482643788</value>
+						<value>0.160158295201427</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.173277610710733</value>
+						<value>0.159396703999841</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>0.129615036870721</value>
+						<value>0.177425117892062</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>0.173047879274075</value>
+						<value>0.1415702507004</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.170880460653254</value>
+						<value>0.174114980742066</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.173815917979149</value>
+						<value>0.170493344967402</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.181493523359165</value>
+						<value>0.177317484001856</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>0.179178942744891</value>
+						<value>0.181011535260701</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>0.232074142288184</value>
+						<value>0.230649788018004</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>0.384317439398426</value>
+						<value>0.378014051875643</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
@@ -1426,31 +1426,31 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>0.164807013474723</value>
+						<value>0.1594974356482</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>0.169102846500804</value>
+						<value>0.160083471952345</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>0.21795935630168</value>
+						<value>0.212138297437862</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>0.199902010050927</value>
+						<value>0.184290488465183</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>0.252811764229075</value>
+						<value>0.243275980309706</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>0.330111599879378</value>
+						<value>0.312477229299826</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>0.162345290931747</value>
+						<value>0.270656574083015</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -1504,7 +1504,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.0236217427056211</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
@@ -1512,7 +1512,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.0534645224190952</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
@@ -1520,7 +1520,7 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>0.109718337944774</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
@@ -1568,11 +1568,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.0270258302495769</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>0.02</value>
+						<value>0.02697712357435</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
@@ -1584,11 +1584,11 @@
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.0289325631594776</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.0420372691790188</value>
+						<value>0.02</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
@@ -1650,171 +1650,171 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>-10.3171538747974</value>
+						<value>-13.4879155536182</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>-21.8927335028711</value>
+						<value>-25.1367590341106</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>-8.73711232014466</value>
+						<value>-11.6577321146142</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>-6.72271908969196</value>
+						<value>-9.48790768547224</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>-6.10760342284993</value>
+						<value>-8.70302575047754</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>-6.30059976149641</value>
+						<value>-8.9831610117144</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>-6.59385156618555</value>
+						<value>-9.36546979522245</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>-7.17833499454537</value>
+						<value>-9.65996594721582</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>-10.1133481107136</value>
+						<value>-12.7550837403578</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>-7.08294662121443</value>
+						<value>-9.75066313822572</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>-6.70351054167259</value>
+						<value>-9.05934299722321</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>-6.02694376887848</value>
+						<value>-8.40010693562181</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>-3.05376968528253</value>
+						<value>-5.45714956832126</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>-6.24478288151113</value>
+						<value>-8.52188014486455</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>-6.81333239150808</value>
+						<value>-9.09831118952752</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>-7.2851257774837</value>
+						<value>-9.63787062594747</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>-6.67424621164901</value>
+						<value>-9.36417566293676</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>-9.85810659544404</value>
+						<value>-12.3774347898016</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>-5.4103534946189</value>
+						<value>-7.86235329410556</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>-4.76650718014389</value>
+						<value>-7.48598580225735</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>-5.09164937481182</value>
+						<value>-7.61712990651176</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>-5.57705446799628</value>
+						<value>-7.98718101235681</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>-5.51705855762339</value>
+						<value>-8.12790803541066</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>-5.66400143493047</value>
+						<value>-8.39128921552947</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>-5.61381682309184</value>
+						<value>-8.22727784402559</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>-5.61924676201306</value>
+						<value>-8.26517043404237</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>-5.13227077982447</value>
+						<value>-7.87231859065287</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>-4.21865315089781</value>
+						<value>-6.59254084830536</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>-2.10492027716464</value>
+						<value>-4.67106676237199</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.275595591187084</value>
+						<value>-2.45330922867834</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>1.82309064643232</value>
+						<value>-1.01861041082702</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>3.24790538641901</value>
+						<value>0.377195574023062</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>-10.6639225051767</value>
+						<value>-13.6947061589235</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>8.82021963113766</value>
+						<value>6.01503395632244</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>33.6949938781308</value>
+						<value>30.7308402034214</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>12.6176340491475</value>
+						<value>9.58683839129117</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>0.259874459112325</value>
+						<value>-2.63697701414821</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>12.5002152268262</value>
+						<value>9.20815051524914</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>15.358596148144</value>
+						<value>12.2108757316691</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>18.2903819524599</value>
+						<value>15.212715701804</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>6.38489520679468</value>
+						<value>3.46327358860071</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>26.5557186587375</value>
+						<value>23.1408976500825</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -1832,171 +1832,171 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.208738203706162</value>
+						<value>0.155914424080038</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>-18.2953205946851</value>
+						<value>-18.3939712972915</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>1.53996857882885</value>
+						<value>1.61951779993797</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>5.05573033981091</value>
+						<value>5.22854444740187</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>7.0088669934994</value>
+						<value>7.33696254734241</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>4.02017853126745</value>
+						<value>3.9945333427695</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>-0.579070108868109</value>
+						<value>-0.849915807215439</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>-0.0587422228254582</value>
+						<value>-0.00227814944628335</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>-4.82369649238171</value>
+						<value>-5.01921903567745</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>-1.28079993846404</value>
+						<value>-1.62860682704923</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>1.62410846974126</value>
+						<value>1.70140341987462</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>2.31515213864986</value>
+						<value>2.27630684291398</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>6.85659466619109</value>
+						<value>6.81432649161252</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>-1.20662122264366</value>
+						<value>-1.13176606232264</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>-2.37047163150237</value>
+						<value>-2.21798129079434</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>-2.86716928010537</value>
+						<value>-2.74731028184942</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>-1.18314327497683</value>
+						<value>-1.51273026528725</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>-9.0729834917347</value>
+						<value>-9.0105270448239</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.976033655088031</value>
+						<value>1.09157091703855</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>0.657846214522579</value>
+						<value>0.415940286622572</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.265968132634953</value>
+						<value>0.34216955372176</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>0.323706849538212</value>
+						<value>0.561296068108277</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>1.4606634654574</value>
+						<value>1.40701392383198</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>1.22297491008067</value>
+						<value>1.11326369471317</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>3.76960753942694</value>
+						<value>3.77896172720466</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>3.01920832409633</value>
+						<value>3.00768628127298</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>1.68281260457297</value>
+						<value>1.58118549861865</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>1.62792966919915</value>
+						<value>2.10189211767465</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>2.46357189379341</value>
+						<value>2.65350177979781</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>3.62946068569181</value>
+						<value>3.6567608410387</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>2.33390857629274</value>
+						<value>2.22157606213113</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>2.64107211816918</value>
+						<value>2.5464453726272</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>-37.7422233955895</value>
+						<value>-38.475335837953</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>4.81667410463342</value>
+						<value>5.00599305979631</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>32.5562078470502</value>
+						<value>32.6561079553085</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>9.18717077019028</value>
+						<value>9.24630112817613</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>-22.0693881267962</value>
+						<value>-21.8712504924588</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>9.32607786242443</value>
+						<value>9.1511266681573</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>7.46900334246675</value>
+						<value>7.50564679970921</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>7.65312229682422</value>
+						<value>7.79987380973398</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>-25.0847613885326</value>
+						<value>-24.86986236751</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>11.537461365082</value>
+						<value>11.3466476218618</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -2014,171 +2014,171 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.860215824895931</value>
+						<value>0.43669504481295</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>23.0273046148468</value>
+						<value>22.8368280092473</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>-2.98737045838425</value>
+						<value>-2.93251545254861</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>-4.56261631576854</value>
+						<value>-4.26724329547687</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>-4.85780103435354</value>
+						<value>-4.56576436018986</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>-4.3914140872439</value>
+						<value>-3.81142870720942</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>-3.22084660706423</value>
+						<value>-2.79191246683149</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>-0.00306913159147371</value>
+						<value>0.346024905191371</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>4.68363683123243</value>
+						<value>4.93691811417557</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>-0.845872152174707</value>
+						<value>-0.625012748865629</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>-2.74349175479801</value>
+						<value>-2.74552536376177</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>-2.25777943102185</value>
+						<value>-2.27325161512636</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>-4.30357534177529</value>
+						<value>-4.18766316457368</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>-1.75427671869875</value>
+						<value>-1.53920646978258</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>-1.39594723846676</value>
+						<value>-0.987028395686139</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>1.51665222322299</value>
+						<value>2.03697604647459</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>-2.5608931023562</value>
+						<value>-1.74502355604818</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>1.6371734131626</value>
+						<value>2.50568936734089</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>-0.26880687754965</value>
+						<value>0.738654894945284</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>-0.68121266559865</value>
+						<value>0.607273784249628</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.35560897454161</value>
+						<value>1.4171364745107</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>-0.724712673330941</value>
+						<value>0.233062419227281</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>-1.02113035086586</value>
+						<value>-0.254702506992544</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>1.09732366056596</value>
+						<value>1.63307253264611</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>1.22577989793353</value>
+						<value>1.40893276715178</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.0751382106282108</value>
+						<value>-0.196859996940475</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>-0.367640903141364</value>
+						<value>-1.09433319486016</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>1.36633076432554</value>
+						<value>-0.0328188384646637</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.254878318770352</value>
+						<value>-1.26003372425839</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>-0.209305215677887</value>
+						<value>-1.90791524481756</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.211599927950374</value>
+						<value>-1.38047775608175</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>1.87940119381528</value>
+						<value>0.371973901532328</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>-19.140913937752</value>
+						<value>-20.9865399294904</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>2.428541250938</value>
+						<value>1.24654624373034</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>-4.2414459867814</value>
+						<value>-4.75734753287179</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>5.70338257217372</value>
+						<value>5.43427843690552</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>-12.0071047731526</value>
+						<value>-12.0083132570635</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>6.50675207328823</value>
+						<value>7.1208105053156</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>7.69287111513768</value>
+						<value>8.46737748088708</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>6.3286048140053</value>
+						<value>7.30074305409471</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>-19.9566075327948</value>
+						<value>-18.9277421796014</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>7.66224881320886</value>
+						<value>9.05971839484482</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -2196,171 +2196,171 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>-0.00147850253233628</value>
+						<value>-0.000868932758748997</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>-0.00228364478243748</value>
+						<value>-0.00208847474095819</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>0.000847236715344479</value>
+						<value>0.000834909764307668</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>-0.0029102670323482</value>
+						<value>-0.00356241089139075</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>0.00105238961077703</value>
+						<value>0.00102939825046633</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>-0.00253566458559362</value>
+						<value>-0.00264940337001462</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>-0.00188126060129434</value>
+						<value>-0.00197154303896241</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>-0.00192812898421835</value>
+						<value>-0.00176622349681566</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>-0.00131573861290235</value>
+						<value>-0.00107292949178373</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.000579026373088709</value>
+						<value>0.000354526671799249</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>-0.00115669642036664</value>
+						<value>-0.00135030040837592</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>-0.00140754086714878</value>
+						<value>-0.000620265593170188</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>0.000704640893673059</value>
+						<value>0.000402931867938605</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>-0.000838630803627893</value>
+						<value>-0.00128259152734245</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.000300925708870636</value>
+						<value>-9.96186918200692e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>-0.000386087700462667</value>
+						<value>-0.000738344280762249</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>0.000229904793741298</value>
+						<value>-0.000602717009314802</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>-0.000906649740500143</value>
+						<value>-0.000944991645155824</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>0.000774088955949992</value>
+						<value>0.000736373192921747</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>-0.000896502939212951</value>
+						<value>-0.00105238380638184</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>0.000597922769884462</value>
+						<value>0.000899306798601174</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>-0.000340842367222649</value>
+						<value>-0.000811242123745615</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>0.000224957435420947</value>
+						<value>-0.000219569381442852</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>-7.85874817665899e-005</value>
+						<value>-0.000234791541515733</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>0.000640592394120176</value>
+						<value>-0.000140617248689523</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>0.000206289108973579</value>
+						<value>0.000835493359772954</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>5.18165397807024e-005</value>
+						<value>0.000622395933532971</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>6.3017430875334e-005</value>
+						<value>0.000871562368047307</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>0.000968311629549135</value>
+						<value>0.000763380941862124</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>0.000995214473732631</value>
+						<value>0.000637302651739446</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>0.00076736653863918</value>
+						<value>0.000823598213173682</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>0.000791833472248982</value>
+						<value>5.70191059523495e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>2.15673935599625e-007</value>
+						<value>0.00030053415139264</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>0.00241169859509682</value>
+						<value>0.0027130720900459</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>0.0033356822495989</value>
+						<value>0.00364555638407182</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>-0.00429004868055927</value>
+						<value>-0.0035151366100763</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>0.00425984660250833</value>
+						<value>0.00352220862805552</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>0.00368110260205867</value>
+						<value>0.00321347401586536</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>0.00331477515646839</value>
+						<value>0.00396409599488834</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>0.00403033224392857</value>
+						<value>0.00336503704966162</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>-0.00189730356760265</value>
+						<value>-0.00183278394251829</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>0.0151287659773516</value>
+						<value>0.0148515464188677</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -2378,171 +2378,171 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>0.00117202039291442</value>
+						<value>0.000639664982372778</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>0.0010587322540232</value>
+						<value>0.001484357566369</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>0.00105487798100512</value>
+						<value>0.00112029874071595</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>0.000905392291315366</value>
+						<value>0.00117445917749137</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>0.000956893036345718</value>
+						<value>0.000702254634234123</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>0.000601587697019568</value>
+						<value>0.000463400632725097</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>0.000676657276926562</value>
+						<value>0.000698938982168329</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>0.00114587040843617</value>
+						<value>0.00051066047308268</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>-8.40745615278138e-005</value>
+						<value>5.15453793923371e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.000477813331599464</value>
+						<value>0.000117599520308431</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>0.000676259751344332</value>
+						<value>0.000470883584057447</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.000464987349914736</value>
+						<value>0.000187834555617883</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>-0.000515380204888061</value>
+						<value>3.98139054595958e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>-0.000414774198361556</value>
+						<value>-7.7597234849236e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>0.000614596960076597</value>
+						<value>-9.94444180832943e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>-0.00175038267298078</value>
+						<value>-0.000379789060389157</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>-0.000393493442970794</value>
+						<value>-0.000141923655974097</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>-0.000831376022688346</value>
+						<value>-0.000596514302742435</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>-0.000461647923657438</value>
+						<value>-0.000750409260945162</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>-0.000920925489481306</value>
+						<value>0.000213585633900948</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>-0.00153596599921002</value>
+						<value>-0.000779546522608143</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>-0.000911123866899288</value>
+						<value>-0.00127751914260443</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>-0.00226096590995439</value>
+						<value>-0.00153597198550415</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>-0.00162901764815615</value>
+						<value>-0.00175875358581834</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>-0.00276714174287918</value>
+						<value>-0.00168015093368012</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>-0.00292741117300466</value>
+						<value>-0.00241232219013909</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>-0.00213734678072797</value>
+						<value>-0.00282572766809608</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>-0.00296262391384516</value>
+						<value>-0.00292559858098684</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>-0.00286738340582815</value>
+						<value>-0.00325374936619482</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>-0.00319587471312843</value>
+						<value>-0.00287348118217778</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>-0.00434797443995194</value>
+						<value>-0.00304320181749063</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>-0.00378904405079084</value>
+						<value>-0.00311602766669239</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>-0.00319816465525946</value>
+						<value>-0.0033176226697833</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>-0.000653816701742471</value>
+						<value>-0.000717593697117991</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>-0.00225065994345641</value>
+						<value>-0.00258241633127909</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>-0.00285262283250631</value>
+						<value>-0.00321304048884485</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>6.10609276918694e-007</value>
+						<value>-0.000180261980858631</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>-0.00527559138754441</value>
+						<value>-0.00558867274776276</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>0.00016340657202818</value>
+						<value>0.000289782719846698</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>-0.000123952973808628</value>
+						<value>-0.000321287065162323</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>-0.00375191010243725</value>
+						<value>-0.00321133868783363</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>-0.00564801235850609</value>
+						<value>-0.00557708686937985</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />
@@ -2560,171 +2560,171 @@
 				<x_nodes>
 					<ControlLinearNode>
 						<t>0.83</t>
-						<value>-5.31131117895711e-005</value>
+						<value>0.000281707558315247</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.84</t>
-						<value>-0.000315803603371023</value>
+						<value>-0.000604041659244103</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.85</t>
-						<value>-0.000249275972237228</value>
+						<value>-0.00029922861722298</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.86</t>
-						<value>-0.000141492042530444</value>
+						<value>-0.000163961309226579</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.87</t>
-						<value>-0.000897638203241513</value>
+						<value>-9.65776689554332e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.88</t>
-						<value>-0.000384798464438063</value>
+						<value>-0.000477009014502983</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.89</t>
-						<value>-0.000524540622791392</value>
+						<value>-0.000487882694869768</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.9</t>
-						<value>-0.00138485342358763</value>
+						<value>-0.000616260109381983</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.91</t>
-						<value>0.000376595537090907</value>
+						<value>0.000320925981213804</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.92</t>
-						<value>0.000260954240729916</value>
+						<value>-0.000538483121999889</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.93</t>
-						<value>-0.00117714401858393</value>
+						<value>-0.000639841849988443</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.94</t>
-						<value>0.000296557949695853</value>
+						<value>-0.00126955003906915</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.95</t>
-						<value>7.6009764597984e-005</value>
+						<value>-0.000522028170962585</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.96</t>
-						<value>0.000559439053176902</value>
+						<value>-0.000211510328881559</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.97</t>
-						<value>-0.000964357150223805</value>
+						<value>-0.000497191571412259</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.98</t>
-						<value>-0.000849884267154266</value>
+						<value>-0.00182835075975163</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>0.99</t>
-						<value>-0.000905503291505738</value>
+						<value>-6.43203293293482e-005</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1</t>
-						<value>-0.000434567946285824</value>
+						<value>-0.00103602154376858</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.01</t>
-						<value>-0.000468945747343241</value>
+						<value>-0.000686895651597297</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.02</t>
-						<value>-0.000793084695033031</value>
+						<value>-0.00103579182905378</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.03</t>
-						<value>-0.0011667287126329</value>
+						<value>-0.000654788305837428</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.04</t>
-						<value>-0.00112142145553662</value>
+						<value>-0.000894784287083894</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.05</t>
-						<value>-0.000819381686596898</value>
+						<value>-0.000820962293801131</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.06</t>
-						<value>-0.000968595657468541</value>
+						<value>-0.00113079008588102</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.07</t>
-						<value>-0.000433929086284479</value>
+						<value>-0.0008411225189775</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.08</t>
-						<value>-0.000401344635974965</value>
+						<value>-0.000664132132442319</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.09</t>
-						<value>-0.00124307511941879</value>
+						<value>-0.000600133074840414</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.1</t>
-						<value>-0.000624484471700271</value>
+						<value>-0.000654270450468175</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.11</t>
-						<value>-0.00105144373446819</value>
+						<value>-0.000562346451260964</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.12</t>
-						<value>-0.000554378082597395</value>
+						<value>-0.000859456087709987</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.13</t>
-						<value>-0.000588083188631572</value>
+						<value>-0.000302429540170124</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.14</t>
-						<value>-0.00129112918693863</value>
+						<value>-0.000936249143705936</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.15</t>
-						<value>-0.0010625744889694</value>
+						<value>-0.0015804049999133</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.16</t>
-						<value>-0.00115059046038368</value>
+						<value>-0.000968919232036569</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.17</t>
-						<value>-0.00117838228288747</value>
+						<value>-0.00102250927193381</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.18</t>
-						<value>-0.000893495254786103</value>
+						<value>-0.00200755733021651</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.19</t>
-						<value>-0.00114426085383457</value>
+						<value>-0.00193609720918175</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.2</t>
-						<value>-0.00109001338569215</value>
+						<value>-0.000402569268771913</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.21</t>
-						<value>-0.00126707817980787</value>
+						<value>-0.00114462574492791</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.22</t>
-						<value>-0.000903249812836293</value>
+						<value>-0.000367138254659949</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.23</t>
-						<value>-0.00176558250677772</value>
+						<value>-0.00144102141894109</value>
 					</ControlLinearNode>
 					<ControlLinearNode>
 						<t>1.24</t>
-						<value>-0.00147220009603188</value>
+						<value>-0.00131138716278656</value>
 					</ControlLinearNode>
 				</x_nodes>
 				<min_nodes />

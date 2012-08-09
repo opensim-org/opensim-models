@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSimDocument Version="20302">
-	<CMCTool name="leg6dof9musc_added_mass">
+	<CMCTool name="leg6dof9musc_RRA_adjusted">
 		<defaults/>
 		<!--Name of the .osim file used to construct a model.-->
-		<model_file>  </model_file>
+		<model_file> RRA/leg6dof9musc_RRA_adjusted.osim </model_file>
 		<!--Replace the model's force set with sets specified in
 		    <force_set_files>? If false, the force set is appended to.-->
 		<replace_force_set> false </replace_force_set>
@@ -48,12 +48,12 @@
 		<desired_points_file>  </desired_points_file>
 		<!--Motion (.mot) or storage (.sto) file containing the desired kinematic
 		    trajectories.-->
-		<desired_kinematics_file> RRA/leg6dof9musc_states.sto </desired_kinematics_file>
+		<desired_kinematics_file> RRA/leg6dof9musc_Kinematics_q.sto </desired_kinematics_file>
 		<!--File containing the tracking tasks. Which coordinates are tracked and
 		    with what weights are specified here.-->
 		<task_set_file> leg69_Tracking_Tasks.xml </task_set_file>
 		<!--File containing the constraints on the controls.-->
-		<constraints_file> leg69_muscles_residuals_motor_control_limits..xml </constraints_file>
+		<constraints_file> leg69_muscles_residuals_motor_control_limits.xml </constraints_file>
 		<!--File containing the controls output by RRA. These can be used to place
 		    constraints on the residuals during CMC.-->
 		<rra_controls_file>  </rra_controls_file>
