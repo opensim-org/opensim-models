@@ -23,12 +23,12 @@
 	<!--Maximum number of integrator steps.-->
 	<maximum_number_of_integrator_steps> 30000 </maximum_number_of_integrator_steps>
 	<!--Maximum integration step size.-->
-		<maximum_integrator_step_size>       0.00010000 </maximum_integrator_step_size>
+		<maximum_integrator_step_size>       1.0000 </maximum_integrator_step_size>
 		<!--Minimum integration step size.-->
-		<minimum_integrator_step_size>       0.00000001 </minimum_integrator_step_size>
+		<minimum_integrator_step_size>       1e-10 </minimum_integrator_step_size>
 	<!--Integrator error tolerance. When the error is greater, the integrator
 	    step size is decreased.-->
-		<integrator_error_tolerance>       0.00000100 </integrator_error_tolerance>
+		<integrator_error_tolerance>       1e-5 </integrator_error_tolerance>
 	<!--Set of analyses to be run during the investigation.-->
 	<AnalysisSet name="Analyses">
 		<objects>

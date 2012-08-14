@@ -42,17 +42,143 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="pelvis">
-					<mass>11.37517129</mass>
+					<mass>11.3751712907406</mass>
 					<mass_center> -0.0724376 0 0</mass_center>
-					<inertia_xx>0.10423309</inertia_xx>
-					<inertia_yy>0.08831422</inertia_yy>
-					<inertia_zz>0.05870716</inertia_zz>
+					<inertia_xx>0.0992924860905266</inertia_xx>
+					<inertia_yy>0.0841281667167789</inertia_yy>
+					<inertia_zz>0.0559244644420379</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="ground_pelvis">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>ground</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="pelvis_tilt">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_list">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_rotation">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_tx">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>translational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-5 5</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_ty">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>translational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1 2</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="pelvis_tz">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>translational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-3 3</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -100,14 +226,9 @@
 									<axis>1 0 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<MultiplierFunction>
-											<function>
-												<LinearFunction>
-													<coefficients> 1 0</coefficients>
-												</LinearFunction>
-											</function>
-											<scale>1</scale>
-										</MultiplierFunction>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
 									</function>
 								</TransformAxis>
 								<TransformAxis name="translation2">
@@ -117,14 +238,9 @@
 									<axis>0 1 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<MultiplierFunction>
-											<function>
-												<LinearFunction>
-													<coefficients> 1 0</coefficients>
-												</LinearFunction>
-											</function>
-											<scale>1</scale>
-										</MultiplierFunction>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
 									</function>
 								</TransformAxis>
 								<TransformAxis name="translation3">
@@ -134,125 +250,12 @@
 									<axis>0 0 1</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<MultiplierFunction>
-											<function>
-												<LinearFunction>
-													<coefficients> 1 0</coefficients>
-												</LinearFunction>
-											</function>
-											<scale>1</scale>
-										</MultiplierFunction>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>ground</parent_body>
-							<location_in_parent> 0 0 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="pelvis_tilt">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="pelvis_list">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="pelvis_rotation">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="pelvis_tx">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-5 5</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="pelvis_ty">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1 2</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="pelvis_tz">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-3 3</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -325,17 +328,89 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="femur_r">
-					<mass>8.98403823</mass>
+					<mass>8.98403823076288</mass>
 					<mass_center> 0 -0.195031 0</mass_center>
-					<inertia_xx>0.17022071</inertia_xx>
-					<inertia_yy>0.04462096</inertia_yy>
-					<inertia_zz>0.17950086</inertia_zz>
+					<inertia_xx>0.129331360773556</inertia_xx>
+					<inertia_yy>0.0339023955425825</inertia_yy>
+					<inertia_zz>0.136382286342241</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="hip_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>pelvis</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0724375965748068 -0.0677245422007741 0.0855521826590717</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="hip_flexion_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_adduction_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_rotation_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -389,7 +464,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -406,7 +481,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -423,71 +498,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>pelvis</parent_body>
-							<location_in_parent> -0.0724376 -0.0677245 0.0855522</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="hip_flexion_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 2.0943951</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="hip_adduction_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 2.0943951</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="hip_rotation_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 2.0943951</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -528,17 +543,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="tibia_r">
-					<mass>3.5810009</mass>
+					<mass>3.58100089669871</mass>
 					<mass_center> 0 -0.184557 0</mass_center>
-					<inertia_xx>0.04756937</inertia_xx>
-					<inertia_yy>0.00481357</inertia_yy>
-					<inertia_zz>0.04823005</inertia_zz>
+					<inertia_xx>0.0486803628303749</inertia_xx>
+					<inertia_yy>0.0049259890959308</inertia_yy>
+					<inertia_zz>0.0493564789807968</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="knee_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>femur_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="knee_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 0.17453293</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -633,34 +684,6 @@
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>femur_r</parent_body>
-							<location_in_parent> 0 0 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="knee_angle_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 0.17453293</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -717,17 +740,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="talus_r">
-					<mass>0.09658802</mass>
+					<mass>0.0965880214888392</mass>
 					<mass_center> 0 0 0</mass_center>
-					<inertia_xx>0.00119861</inertia_xx>
-					<inertia_yy>0.00119861</inertia_yy>
-					<inertia_zz>0.00119861</inertia_zz>
+					<inertia_xx>0.000965880214888391</inertia_xx>
+					<inertia_yy>0.000965880214888391</inertia_yy>
+					<inertia_zz>0.000965880214888391</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="ankle_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>tibia_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 -0.42506489 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="ankle_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -820,34 +879,6 @@
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>tibia_r</parent_body>
-							<location_in_parent> 0 -0.425065 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="ankle_angle_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -888,17 +919,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="calcn_r">
-					<mass>1.20735027</mass>
+					<mass>1.20735026861049</mass>
 					<mass_center> 0.102708 0.0308125 0</mass_center>
-					<inertia_xx>0.00142647</inertia_xx>
-					<inertia_yy>0.00397375</inertia_yy>
-					<inertia_zz>0.00417753</inertia_zz>
+					<inertia_xx>0.00135223230084375</inertia_xx>
+					<inertia_yy>0.00376693283806473</inertia_yy>
+					<inertia_zz>0.00396010888104241</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="subtalar_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>talus_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0543287106715701 -0.0467313802065279 0.00882270634650062</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="subtalar_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -952,7 +1019,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.11397808</scale>
+											<scale>1.11397807405311</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -969,7 +1036,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.11397808</scale>
+											<scale>1.11397807405311</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -986,39 +1053,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.11397808</scale>
+											<scale>1.11397807405311</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>talus_r</parent_body>
-							<location_in_parent> -0.0543287 -0.0467314 0.00882271</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="subtalar_angle_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -1059,17 +1098,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="toes_r">
-					<mass>0.20920965</mass>
+					<mass>0.209209654544826</mass>
 					<mass_center> 0.0355371 0.00616251 -0.017974</mass_center>
-					<inertia_xx>0.00010189</inertia_xx>
-					<inertia_yy>0.00020378</inertia_yy>
-					<inertia_zz>0.00101891</inertia_zz>
+					<inertia_xx>9.65880214888392e-005</inertia_xx>
+					<inertia_yy>0.000193176042977678</inertia_yy>
+					<inertia_zz>9.65880214888392e-005</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="mtp_r">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>calcn_r</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0.183642756568849 -0.00205416953656431 0.00110925154974473</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="mtp_angle_r">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -1123,7 +1198,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02708477</scale>
+											<scale>1.02708476828216</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -1140,7 +1215,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02708477</scale>
+											<scale>1.02708476828216</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -1157,39 +1232,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02708477</scale>
+											<scale>1.02708476828216</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>calcn_r</parent_body>
-							<location_in_parent> 0.183643 -0.00205417 0.00110925</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="mtp_angle_r">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -1230,17 +1277,89 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="femur_l">
-					<mass>8.98403823</mass>
+					<mass>8.98403823076288</mass>
 					<mass_center> 0 -0.195031 0</mass_center>
-					<inertia_xx>0.17022071</inertia_xx>
-					<inertia_yy>0.04462096</inertia_yy>
-					<inertia_zz>0.17950086</inertia_zz>
+					<inertia_xx>0.129331360773556</inertia_xx>
+					<inertia_yy>0.0339023955425825</inertia_yy>
+					<inertia_zz>0.136382286342241</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="hip_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>pelvis</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0724375965748068 -0.0677245422007741 -0.0855521826590717</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="hip_flexion_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_adduction_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="hip_rotation_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 2.0943951</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -1294,7 +1413,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -1311,7 +1430,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -1328,71 +1447,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>pelvis</parent_body>
-							<location_in_parent> -0.0724376 -0.0677245 -0.0855522</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="hip_flexion_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 2.0943951</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="hip_adduction_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 2.0943951</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="hip_rotation_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 2.0943951</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -1433,17 +1492,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="tibia_l">
-					<mass>3.5810009</mass>
+					<mass>3.58100089669871</mass>
 					<mass_center> 0 -0.184557 0</mass_center>
-					<inertia_xx>0.04756937</inertia_xx>
-					<inertia_yy>0.00481357</inertia_yy>
-					<inertia_zz>0.04823005</inertia_zz>
+					<inertia_xx>0.0486803628303749</inertia_xx>
+					<inertia_yy>0.0049259890959308</inertia_yy>
+					<inertia_zz>0.0493564789807968</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="knee_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>femur_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="knee_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-2.0943951 0.17453293</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -1538,34 +1633,6 @@
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>femur_l</parent_body>
-							<location_in_parent> 0 0 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="knee_angle_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-2.0943951 0.17453293</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -1622,17 +1689,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="talus_l">
-					<mass>0.09658802</mass>
+					<mass>0.0965880214888392</mass>
 					<mass_center> 0 0 0</mass_center>
-					<inertia_xx>0.00119861</inertia_xx>
-					<inertia_yy>0.00119861</inertia_yy>
-					<inertia_zz>0.00119861</inertia_zz>
+					<inertia_xx>0.000965880214888391</inertia_xx>
+					<inertia_yy>0.000965880214888391</inertia_yy>
+					<inertia_zz>0.000965880214888391</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="ankle_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>tibia_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 -0.42506489 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="ankle_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.04719755 1.04719755</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -1725,34 +1828,6 @@
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>tibia_l</parent_body>
-							<location_in_parent> 0 -0.425065 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="ankle_angle_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.04719755 1.04719755</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -1793,17 +1868,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="calcn_l">
-					<mass>1.20735027</mass>
+					<mass>1.20735026861049</mass>
 					<mass_center> 0.102708 0.0308125 0</mass_center>
-					<inertia_xx>0.00142647</inertia_xx>
-					<inertia_yy>0.00397375</inertia_yy>
-					<inertia_zz>0.00417753</inertia_zz>
+					<inertia_xx>0.00135223230084375</inertia_xx>
+					<inertia_yy>0.00376693283806473</inertia_yy>
+					<inertia_zz>0.00396010888104241</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="subtalar_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>talus_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.0543287106715701 -0.0467313802065279 -0.00882270634650062</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="subtalar_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -1857,7 +1968,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.11397808</scale>
+											<scale>1.11397807405311</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -1874,7 +1985,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.11397808</scale>
+											<scale>1.11397807405311</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -1891,39 +2002,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.11397808</scale>
+											<scale>1.11397807405311</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>talus_l</parent_body>
-							<location_in_parent> -0.0543287 -0.0467314 -0.00882271</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="subtalar_angle_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -1964,17 +2047,53 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="toes_l">
-					<mass>0.20920965</mass>
+					<mass>0.209209654544826</mass>
 					<mass_center> 0.0355371 0.00616251 0.017974</mass_center>
-					<inertia_xx>0.00010189</inertia_xx>
-					<inertia_yy>0.00020378</inertia_yy>
-					<inertia_zz>0.00101891</inertia_zz>
+					<inertia_xx>9.65880214888392e-005</inertia_xx>
+					<inertia_yy>0.000193176042977678</inertia_yy>
+					<inertia_zz>9.65880214888392e-005</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="mtp_l">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>calcn_l</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0.183642756568849 -0.00205416953656431 -0.00110925154974473</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="mtp_angle_l">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.04719755 1.04719755</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -2028,7 +2147,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02708477</scale>
+											<scale>1.02708476828216</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -2045,7 +2164,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02708477</scale>
+											<scale>1.02708476828216</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -2062,39 +2181,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02708477</scale>
+											<scale>1.02708476828216</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>calcn_l</parent_body>
-							<location_in_parent> 0.183643 -0.00205417 -0.00110925</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="mtp_angle_l">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.04719755 1.04719755</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -2135,17 +2226,89 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="torso">
-					<mass>33.06845457</mass>
-					<mass_center> -0.0947314 0.34551 -0.0115117</mass_center>
-					<inertia_xx>1.66031408</inertia_xx>
-					<inertia_yy>0.85070688</inertia_yy>
-					<inertia_zz>1.61178269</inertia_zz>
+					<mass>33.0684545650479</mass>
+					<mass_center> 0.0161184 0.34551 0.0166874</mass_center>
+					<inertia_xx>1.42419037685293</inertia_xx>
+					<inertia_yy>0.72972250234818</inertia_yy>
+					<inertia_zz>1.38256093959124</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
 						<CustomJoint name="back">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>pelvis</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>-0.103174907709803 0.0835030285834053 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects>
+									<Coordinate name="lumbar_extension">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="lumbar_bending">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+									<Coordinate name="lumbar_rotation">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1.57079633 1.57079633</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+									</Coordinate>
+								</objects>
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
@@ -2199,7 +2362,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -2216,7 +2379,7 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
@@ -2233,71 +2396,11 @@
 													<value>0</value>
 												</Constant>
 											</function>
-											<scale>1.02457704</scale>
+											<scale>1.02457703783319</scale>
 										</MultiplierFunction>
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>pelvis</parent_body>
-							<location_in_parent> -0.103175 0.083503 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
-							<CoordinateSet>
-								<objects>
-									<Coordinate name="lumbar_extension">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="lumbar_bending">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-									<Coordinate name="lumbar_rotation">
-										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>rotational</motion_type>
-										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
-										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
-										<default_speed_value>0</default_speed_value>
-										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>-1.57079633 1.57079633</range>
-										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
-										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
-										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
-										<prescribed_function />
-									</Coordinate>
-								</objects>
-								<groups />
-							</CoordinateSet>
-							<reverse>false</reverse>
 						</CustomJoint>
 					</Joint>
 					<VisibleObject>
@@ -2443,9 +2546,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1119</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.0535</optimal_fiber_length>
+					<optimal_fiber_length>0.0564063466206731</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.078</tendon_slack_length>
+					<tendon_slack_length>0.0822372904002337</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.13962634</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2483,7 +2586,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_med2_r-P2">
-									<location> -0.0295988 -0.00665399 0.0604596</location>
+									<location> -0.0295988 -0.00665399 0.0604595</location>
 									<body>femur_r</body>
 								</PathPoint>
 							</objects>
@@ -2514,9 +2617,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>873</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.0845</optimal_fiber_length>
+					<optimal_fiber_length>0.0891317692540649</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.053</tendon_slack_length>
+					<tendon_slack_length>0.0559051333782892</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2585,9 +2688,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.0646</optimal_fiber_length>
+					<optimal_fiber_length>0.0685306401304506</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.053</tendon_slack_length>
+					<tendon_slack_length>0.0562248285899982</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.33161256</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2660,9 +2763,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2700</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.109</optimal_fiber_length>
+					<optimal_fiber_length>0.12363108064316</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.326</tendon_slack_length>
+					<tendon_slack_length>0.369759011831837</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2735,9 +2838,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>804</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.173</optimal_fiber_length>
+					<optimal_fiber_length>0.191444885177129</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.089</tendon_slack_length>
+					<tendon_slack_length>0.0984889871720488</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.40142573</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2818,9 +2921,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>156</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.52</optimal_fiber_length>
+					<optimal_fiber_length>0.574215555849301</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.1</tendon_slack_length>
+					<tendon_slack_length>0.110426068432558</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2889,9 +2992,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2343</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.121</optimal_fiber_length>
+					<optimal_fiber_length>0.140989747681234</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.12</tendon_slack_length>
+					<tendon_slack_length>0.139824543154943</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -2925,7 +3028,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tfl_r-P1">
-									<location> -0.0318644 0.021926 0.12715</location>
+									<location> -0.0318643 0.0219259 0.12715</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="tfl_r-P2">
@@ -2968,9 +3071,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>233</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.095</optimal_fiber_length>
+					<optimal_fiber_length>0.10603790125655</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.425</tendon_slack_length>
+					<tendon_slack_length>0.474380084568775</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3039,9 +3142,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>266</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.111655934754335</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.033</tendon_slack_length>
+					<tendon_slack_length>0.0368464584689304</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3075,7 +3178,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="grac_r-P1">
-									<location> -0.075829 -0.121617 0.0286267</location>
+									<location> -0.0758289 -0.121617 0.0286267</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="grac_r-P2">
@@ -3120,9 +3223,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>162</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.352</optimal_fiber_length>
+					<optimal_fiber_length>0.396585869517023</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.126</tendon_slack_length>
+					<tendon_slack_length>0.141959714656662</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3164,11 +3267,11 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_max1_r-P3">
-									<location> -0.0524289 -0.0284515 0.0449718</location>
+									<location> -0.0524289 -0.0284516 0.0449718</location>
 									<body>femur_r</body>
 								</PathPoint>
 								<PathPoint name="glut_max1_r-P4">
-									<location> -0.0317786 -0.0649338 0.0539203</location>
+									<location> -0.0317785 -0.0649338 0.0539203</location>
 									<body>femur_r</body>
 								</PathPoint>
 							</objects>
@@ -3199,9 +3302,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>573</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.142</optimal_fiber_length>
+					<optimal_fiber_length>0.151587000363061</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.125</tendon_slack_length>
+					<tendon_slack_length>0.133439260882976</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3278,9 +3381,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>819</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.147</optimal_fiber_length>
+					<optimal_fiber_length>0.159394708751813</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.127</tendon_slack_length>
+					<tendon_slack_length>0.137708353819594</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3318,7 +3421,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_max3_r-P2">
-									<location> -0.156658 -0.107786 0.0412904</location>
+									<location> -0.156658 -0.107786 0.0412905</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_max3_r-P3">
@@ -3357,9 +3460,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>552</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.144</optimal_fiber_length>
+					<optimal_fiber_length>0.156288391708115</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.145</tendon_slack_length>
+					<tendon_slack_length>0.157373727761643</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3401,7 +3504,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="iliacus_r-P3">
-									<location> -0.0295078 -0.0824784 0.0836055</location>
+									<location> -0.0295078 -0.0824785 0.0836055</location>
 									<body>pelvis</body>
 									<range> -1.5708 0.785398</range>
 									<coordinate>hip_flexion_r</coordinate>
@@ -3442,9 +3545,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1073</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.106164117507277</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.1</tendon_slack_length>
+					<tendon_slack_length>0.106164117507277</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.12217305</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3486,7 +3589,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="psoas_r-P3">
-									<location> -0.0295078 -0.0824784 0.0836055</location>
+									<location> -0.0295078 -0.0824785 0.0836055</location>
 									<body>pelvis</body>
 									<range> -1.5708 0.785398</range>
 									<coordinate>hip_flexion_r</coordinate>
@@ -3527,9 +3630,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1113</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.105172289885285</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.16</tendon_slack_length>
+					<tendon_slack_length>0.168275663816457</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.13962634</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3598,9 +3701,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>381</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.054</optimal_fiber_length>
+					<optimal_fiber_length>0.0580741808995291</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.024</tendon_slack_length>
+					<tendon_slack_length>0.0258107470664574</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3669,9 +3772,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>164</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.024</optimal_fiber_length>
+					<optimal_fiber_length>0.0260943873061546</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.039</tendon_slack_length>
+					<tendon_slack_length>0.0424033793725013</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3705,7 +3808,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="peri_r-P1">
-									<location> -0.143031 0.00030737 0.0240776</location>
+									<location> -0.143031 0.000307373 0.0240776</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="peri_r-P2">
@@ -3713,7 +3816,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="peri_r-P3">
-									<location> -0.0169791 -0.00413006 0.0501344</location>
+									<location> -0.0169792 -0.00413006 0.0501344</location>
 									<body>femur_r</body>
 								</PathPoint>
 							</objects>
@@ -3744,9 +3847,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>444</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.026</optimal_fiber_length>
+					<optimal_fiber_length>0.0273292567818386</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.115</tendon_slack_length>
+					<tendon_slack_length>0.120879404996594</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.17453293</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3780,7 +3883,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="rect_fem_r-P1">
-									<location> -0.030225 -0.0318644 0.0991791</location>
+									<location> -0.030225 -0.0318643 0.0991791</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="rect_fem_r-P2">
@@ -3790,7 +3893,7 @@
 									<coordinate>knee_angle_r</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="rect_fem_r-P3">
-									<location> 0.0619902 0.0204697 0.00138393</location>
+									<location> 0.0610488 0.0207432 0.00138393</location>
 									<body>tibia_r</body>
 									<x_location>
 										<MultiplierFunction>
@@ -3857,9 +3960,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1169</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.114</optimal_fiber_length>
+					<optimal_fiber_length>0.130462347889869</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.31</tendon_slack_length>
+					<tendon_slack_length>0.354766033735608</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -3907,7 +4010,7 @@
 									<coordinate>knee_angle_r</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="vas_int_r-P4">
-									<location> 0.0558627 0.0248634 0.00177934</location>
+									<location> 0.0548266 0.025002 0.00177934</location>
 									<body>tibia_r</body>
 									<x_location>
 										<MultiplierFunction>
@@ -3974,9 +4077,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>5000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.107</optimal_fiber_length>
+					<optimal_fiber_length>0.124678696688354</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.116</tendon_slack_length>
+					<tendon_slack_length>0.135165689867749</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4051,9 +4154,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2500</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.09</optimal_fiber_length>
+					<optimal_fiber_length>0.090128703356219</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.36</tendon_slack_length>
+					<tendon_slack_length>0.360514813424876</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.29670597</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4122,9 +4225,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>4000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.05</optimal_fiber_length>
+					<optimal_fiber_length>0.05028880287293</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.25</tendon_slack_length>
+					<tendon_slack_length>0.25144401436465</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.43633231</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4201,9 +4304,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>3600</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.031</optimal_fiber_length>
+					<optimal_fiber_length>0.0310754871674718</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.31</tendon_slack_length>
+					<tendon_slack_length>0.310754871674718</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.20943951</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4276,9 +4379,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>3000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.098</optimal_fiber_length>
+					<optimal_fiber_length>0.0979126279713794</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.223</tendon_slack_length>
+					<tendon_slack_length>0.222801184057323</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4347,9 +4450,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1119</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.0535</optimal_fiber_length>
+					<optimal_fiber_length>0.0564063466206731</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.078</tendon_slack_length>
+					<tendon_slack_length>0.0822372904002337</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.13962634</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4387,7 +4490,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_med2_l-P2">
-									<location> -0.0295988 -0.00665399 -0.0604596</location>
+									<location> -0.0295988 -0.00665399 -0.0604595</location>
 									<body>femur_l</body>
 								</PathPoint>
 							</objects>
@@ -4418,9 +4521,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>873</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.0845</optimal_fiber_length>
+					<optimal_fiber_length>0.0891317692540649</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.053</tendon_slack_length>
+					<tendon_slack_length>0.0559051333782892</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4489,9 +4592,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.0646</optimal_fiber_length>
+					<optimal_fiber_length>0.0685306401304506</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.053</tendon_slack_length>
+					<tendon_slack_length>0.0562248285899982</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.33161256</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4564,9 +4667,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2700</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.109</optimal_fiber_length>
+					<optimal_fiber_length>0.12363108064316</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.326</tendon_slack_length>
+					<tendon_slack_length>0.369759011831837</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4639,9 +4742,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>804</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.173</optimal_fiber_length>
+					<optimal_fiber_length>0.191444885177129</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.089</tendon_slack_length>
+					<tendon_slack_length>0.0984889871720488</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.40142573</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4722,9 +4825,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>156</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.52</optimal_fiber_length>
+					<optimal_fiber_length>0.574215555849301</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.1</tendon_slack_length>
+					<tendon_slack_length>0.110426068432558</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4793,9 +4896,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2343</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.121</optimal_fiber_length>
+					<optimal_fiber_length>0.140989747681234</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.12</tendon_slack_length>
+					<tendon_slack_length>0.139824543154943</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4829,7 +4932,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tfl_l-P1">
-									<location> -0.0318644 0.021926 -0.12715</location>
+									<location> -0.0318643 0.0219259 -0.12715</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="tfl_l-P2">
@@ -4872,9 +4975,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>233</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.095</optimal_fiber_length>
+					<optimal_fiber_length>0.10603790125655</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.425</tendon_slack_length>
+					<tendon_slack_length>0.474380084568775</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4943,9 +5046,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>266</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.111655934754335</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.033</tendon_slack_length>
+					<tendon_slack_length>0.0368464584689304</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -4979,7 +5082,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="grac_l-P1">
-									<location> -0.075829 -0.121617 -0.0286267</location>
+									<location> -0.0758289 -0.121617 -0.0286267</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="grac_l-P2">
@@ -5024,9 +5127,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>162</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.352</optimal_fiber_length>
+					<optimal_fiber_length>0.396585869517023</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.126</tendon_slack_length>
+					<tendon_slack_length>0.141959714656662</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5068,11 +5171,11 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_max1_l-P3">
-									<location> -0.0524289 -0.0284515 -0.0449718</location>
+									<location> -0.0524289 -0.0284516 -0.0449718</location>
 									<body>femur_l</body>
 								</PathPoint>
 								<PathPoint name="glut_max1_l-P4">
-									<location> -0.0317786 -0.0649338 -0.0539203</location>
+									<location> -0.0317785 -0.0649338 -0.0539203</location>
 									<body>femur_l</body>
 								</PathPoint>
 							</objects>
@@ -5103,9 +5206,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>573</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.142</optimal_fiber_length>
+					<optimal_fiber_length>0.151587000363061</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.125</tendon_slack_length>
+					<tendon_slack_length>0.133439260882976</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5182,9 +5285,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>819</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.147</optimal_fiber_length>
+					<optimal_fiber_length>0.159394708751813</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.127</tendon_slack_length>
+					<tendon_slack_length>0.137708353819594</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5222,7 +5325,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_max3_l-P2">
-									<location> -0.156658 -0.107786 -0.0412904</location>
+									<location> -0.156658 -0.107786 -0.0412905</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="glut_max3_l-P3">
@@ -5261,9 +5364,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>552</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.144</optimal_fiber_length>
+					<optimal_fiber_length>0.156288391708115</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.145</tendon_slack_length>
+					<tendon_slack_length>0.157373727761643</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5305,7 +5408,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="iliacus_l-P3">
-									<location> -0.0295078 -0.0824784 -0.0836055</location>
+									<location> -0.0295078 -0.0824785 -0.0836055</location>
 									<body>pelvis</body>
 									<range> -1.5708 0.785398</range>
 									<coordinate>hip_flexion_l</coordinate>
@@ -5346,9 +5449,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1073</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.106164117507277</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.1</tendon_slack_length>
+					<tendon_slack_length>0.106164117507277</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.12217305</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5390,7 +5493,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="psoas_l-P3">
-									<location> -0.0295078 -0.0824784 -0.0836055</location>
+									<location> -0.0295078 -0.0824785 -0.0836055</location>
 									<body>pelvis</body>
 									<range> -1.5708 0.785398</range>
 									<coordinate>hip_flexion_l</coordinate>
@@ -5431,9 +5534,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1113</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.105172289885285</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.16</tendon_slack_length>
+					<tendon_slack_length>0.168275663816457</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.13962634</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5502,9 +5605,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>381</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.054</optimal_fiber_length>
+					<optimal_fiber_length>0.0580741808995291</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.024</tendon_slack_length>
+					<tendon_slack_length>0.0258107470664574</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5573,9 +5676,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>164</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.024</optimal_fiber_length>
+					<optimal_fiber_length>0.0260943873061546</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.039</tendon_slack_length>
+					<tendon_slack_length>0.0424033793725013</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5609,7 +5712,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="peri_l-P1">
-									<location> -0.143031 0.00030737 -0.0240776</location>
+									<location> -0.143031 0.000307373 -0.0240776</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="peri_l-P2">
@@ -5617,7 +5720,7 @@
 									<body>pelvis</body>
 								</PathPoint>
 								<PathPoint name="peri_l-P3">
-									<location> -0.0169791 -0.00413006 -0.0501344</location>
+									<location> -0.0169792 -0.00413006 -0.0501344</location>
 									<body>femur_l</body>
 								</PathPoint>
 							</objects>
@@ -5648,9 +5751,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>444</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.026</optimal_fiber_length>
+					<optimal_fiber_length>0.0273292567818386</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.115</tendon_slack_length>
+					<tendon_slack_length>0.120879404996594</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.17453293</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5684,7 +5787,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="rect_fem_l-P1">
-									<location> -0.030225 -0.0318644 -0.0991791</location>
+									<location> -0.030225 -0.0318643 -0.0991791</location>
 									<body>pelvis</body>
 								</PathPoint>
 								<ConditionalPathPoint name="rect_fem_l-P2">
@@ -5694,7 +5797,7 @@
 									<coordinate>knee_angle_l</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="rect_fem_l-P3">
-									<location> 0.058955 0.0212861 -0.00138393</location>
+									<location> 0.0610488 0.0207432 -0.00138393</location>
 									<body>tibia_l</body>
 									<x_location>
 										<MultiplierFunction>
@@ -5761,9 +5864,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>1169</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.114</optimal_fiber_length>
+					<optimal_fiber_length>0.130462347889869</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.31</tendon_slack_length>
+					<tendon_slack_length>0.354766033735608</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5811,7 +5914,7 @@
 									<coordinate>knee_angle_l</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="vas_int_l-P4">
-									<location> 0.0525428 0.0252547 -0.00177934</location>
+									<location> 0.0548266 0.025002 -0.00177934</location>
 									<body>tibia_l</body>
 									<x_location>
 										<MultiplierFunction>
@@ -5878,9 +5981,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>5000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.107</optimal_fiber_length>
+					<optimal_fiber_length>0.124678696688354</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.116</tendon_slack_length>
+					<tendon_slack_length>0.135165689867749</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.05235988</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -5955,9 +6058,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2500</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.09</optimal_fiber_length>
+					<optimal_fiber_length>0.090128703356219</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.36</tendon_slack_length>
+					<tendon_slack_length>0.360514813424876</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.29670597</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6026,9 +6129,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>4000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.05</optimal_fiber_length>
+					<optimal_fiber_length>0.05028880287293</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.25</tendon_slack_length>
+					<tendon_slack_length>0.25144401436465</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.43633231</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6105,9 +6208,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>3600</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.031</optimal_fiber_length>
+					<optimal_fiber_length>0.0310754871674718</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.31</tendon_slack_length>
+					<tendon_slack_length>0.310754871674718</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.20943951</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6180,9 +6283,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>3000</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.098</optimal_fiber_length>
+					<optimal_fiber_length>0.0979126279713794</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.223</tendon_slack_length>
+					<tendon_slack_length>0.222801184057323</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0.08726646</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6251,9 +6354,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2500</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.12</optimal_fiber_length>
+					<optimal_fiber_length>0.127884730872769</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.03</tendon_slack_length>
+					<tendon_slack_length>0.0319711827181923</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6322,9 +6425,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>2500</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.12</optimal_fiber_length>
+					<optimal_fiber_length>0.127884730872769</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.03</tendon_slack_length>
+					<tendon_slack_length>0.0319711827181923</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6393,9 +6496,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>900</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.106201968619601</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.1</tendon_slack_length>
+					<tendon_slack_length>0.106201968619601</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6464,9 +6567,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>900</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.1</optimal_fiber_length>
+					<optimal_fiber_length>0.106201968619601</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.1</tendon_slack_length>
+					<tendon_slack_length>0.106201968619601</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6535,9 +6638,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>900</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.12</optimal_fiber_length>
+					<optimal_fiber_length>0.126377514542442</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.14</tendon_slack_length>
+					<tendon_slack_length>0.147440433632849</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6606,9 +6709,9 @@
 					<!--Maximum isometric force that the fibers can generate-->
 					<max_isometric_force>900</max_isometric_force>
 					<!--Optimal length of the muscle fibers-->
-					<optimal_fiber_length>0.12</optimal_fiber_length>
+					<optimal_fiber_length>0.126377514542442</optimal_fiber_length>
 					<!--Resting length of the tendon-->
-					<tendon_slack_length>0.14</tendon_slack_length>
+					<tendon_slack_length>0.147440433632849</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
 					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
@@ -6725,7 +6828,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>torso</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.120488 0.307161 -0.00325415</location>
+					<location> 0.103606 0.312439 1.04318e-006</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6733,7 +6836,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>torso</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00065165 0.429108 0.16588</location>
+					<location> -0.0248718 0.426445 0.168585</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6741,7 +6844,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>torso</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00100762 0.440314 -0.175148</location>
+					<location> -0.0220089 0.440789 -0.171971</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6749,7 +6852,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>torso</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0961857 0.695511 0.00377828</location>
+					<location> 0.0595133 0.699598 0.0105017</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6757,7 +6860,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>pelvis</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0234215 0.036283 0.13084</location>
+					<location> 0.0228989 0.0358624 0.130116</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6765,7 +6868,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>pelvis</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.028313 0.0272876 -0.131252</location>
+					<location> 0.0291329 0.0276591 -0.131894</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6773,7 +6876,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>pelvis</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.172559 0.040282 0.00705459</location>
+					<location> -0.172091 0.0400029 0.00619843</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6781,7 +6884,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.046341 -0.219871 0.0918888</location>
+					<location> 0.0507116 -0.220081 0.0883855</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6789,7 +6892,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.108482 -0.28142 -0.0006863</location>
+					<location> 0.107902 -0.281747 -0.00690114</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6797,7 +6900,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0356166 -0.340516 0.0819236</location>
+					<location> 0.0395109 -0.340915 0.0789543</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6805,7 +6908,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00324464 -0.425955 0.0614333</location>
+					<location> -0.000586415 -0.426232 0.0605411</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6813,7 +6916,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.00053937 -0.44283 -0.0596573</location>
+					<location> -0.00243031 -0.442908 -0.0607482</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6821,7 +6924,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.0273505 -0.0597306 0.0702258</location>
+					<location> -0.0233139 -0.0603613 0.070733</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6829,7 +6932,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0510049 -0.0952292 0.0197576</location>
+					<location> 0.0516752 -0.0954298 0.0163046</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6837,7 +6940,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.0113593 -0.145191 0.080316</location>
+					<location> -0.00738164 -0.145526 0.0800029</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6845,7 +6948,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00755805 -0.430494 0.0554878</location>
+					<location> -0.00490543 -0.430843 0.0549207</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6853,7 +6956,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.00455313 -0.416059 -0.0333568</location>
+					<location> 0.00286259 -0.416327 -0.034325</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6861,7 +6964,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.0203426 0.0172509 -0.00558137</location>
+					<location> -0.0204819 0.0172884 -0.00503735</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6869,7 +6972,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.122665 0.0335697 -0.0404242</location>
+					<location> 0.122708 0.0309658 -0.0403332</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6877,7 +6980,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.118187 0.00665462 0.0653941</location>
+					<location> 0.117766 0.011129 0.0669726</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6885,7 +6988,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.208847 -0.0162202 0.0728513</location>
+					<location> 0.207693 -0.0114107 0.0760669</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6893,7 +6996,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.209744 0.00356087 -0.034531</location>
+					<location> 0.209814 0.00169807 -0.0323684</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6901,7 +7004,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_r</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.270904 0.00360341 -0.0031364</location>
+					<location> 0.270734 0.00315005 -0.000612297</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6909,7 +7012,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0224478 -0.206741 -0.0972326</location>
+					<location> 0.0358442 -0.20749 -0.0932573</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6917,7 +7020,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.110612 -0.248835 -0.0340686</location>
+					<location> 0.114084 -0.249177 -0.0175704</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6925,7 +7028,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0151158 -0.315441 -0.0823868</location>
+					<location> 0.025891 -0.316213 -0.0778532</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6933,7 +7036,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00864517 -0.445767 -0.0641705</location>
+					<location> -0.000753513 -0.446142 -0.062296</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6941,7 +7044,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>femur_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.00883426 -0.445956 0.050804</location>
+					<location> 0.000472512 -0.445432 0.0539506</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6949,7 +7052,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00634332 -0.0715332 -0.0794173</location>
+					<location> 0.00398588 -0.071611 -0.0777086</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6957,7 +7060,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0452044 -0.121605 -0.0308569</location>
+					<location> 0.0481427 -0.121536 -0.0223037</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6965,7 +7068,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.0246321 -0.11452 -0.0879379</location>
+					<location> -0.0132436 -0.114739 -0.0885072</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6973,7 +7076,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.00374142 -0.428422 -0.0571525</location>
+					<location> 0.00383431 -0.428451 -0.0544338</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6981,7 +7084,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>tibia_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.0130233 -0.40543 0.0327741</location>
+					<location> 0.0078901 -0.405161 0.0369253</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6989,7 +7092,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.0225034 0.0264189 0.00634089</location>
+					<location> -0.0226192 0.0268643 0.00786188</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -6997,7 +7100,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.149392 0.0363668 0.0345944</location>
+					<location> 0.149706 0.0307045 0.0342606</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -7005,7 +7108,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.133392 0.0177622 -0.0621973</location>
+					<location> 0.131321 0.0305726 -0.064363</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -7013,7 +7116,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.196296 -0.00665497 -0.0674138</location>
+					<location> 0.194745 0.00778416 -0.0748386</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -7021,7 +7124,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.211587 0.0130108 0.032975</location>
+					<location> 0.211787 0.00788619 0.0273165</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -7029,7 +7132,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>calcn_l</body>
 					<!--Location of a marker on the body segment.-->
-					<location> 0.26142 0.00990054 0.00899624</location>
+					<location> 0.260978 0.00906907 0.00201318</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
@@ -7046,15 +7149,15 @@
 			<objects />
 			<groups />
 		</ControllerSet>
-		<!--Probes in the model.-->
-		<ProbeSet>
-			<objects />
-			<groups />
-		</ProbeSet>
 		<!--Additional components in the model.-->
 		<ComponentSet name="MiscComponents">
 			<objects />
 			<groups />
 		</ComponentSet>
+		<!--Probes in the model.-->
+		<ProbeSet>
+			<objects />
+			<groups />
+		</ProbeSet>
 	</Model>
 </OpenSimDocument>
