@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="20303">
-	<Model name="Both Legs with Muscles">
+	<Model name="Separate Legs with Muscles">
 		<credits>Delp, S.L., Loan, J.P., Hoy, M.G., Zajac, F.E., Topp E.L., Rosen, J.M.</credits>
 		<publications>An interactive graphics-based model of the lower extremity to study orthopaedic surgical procedures. IEEE Transactions on Biomedical Engineering, vol. 37, pp. 757-767, 1990.</publications>
 		<length_units>meters</length_units>
