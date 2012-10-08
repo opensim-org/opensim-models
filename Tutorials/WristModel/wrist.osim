@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="20303">
 	<Model name="Wrist Model">
-		<credits>Model authors names..</credits>
-		<publications>List of publications related to model...</publications>
+  <!--See the credits section below for information about this model's authors, data sources, intended uses, and more. See the publications 
+	section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model. 
+	If you are this model's author(s), add or update the credits and publications sections before distributing your model.-->
+    <credits>Gonzalez, R.V., Buchanan, T.S., Delp, S.L.</credits>
+    <publications>How muscle architecture and moment arms affect wrist flexion-extension moments. Journal of Biomechanics, vol. 30, pp. 705-712, 1997.</publications>
 		<length_units>meters</length_units>
 		<force_units>N</force_units>
 		<!--Acceleration due to gravity.-->
