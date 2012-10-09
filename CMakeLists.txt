@@ -1,4 +1,4 @@
-SUBDIRS(Gait2354_Simbody Gait2392_Simbody Tutorials Arm26 Leg6Dof9Musc Leg39 Tug_of_War BouncingBlock)
+SUBDIRS(Gait2354_Simbody Gait2392_Simbody Tutorials Arm26 Leg6Dof9Musc Tug_of_War BouncingBlock)
 
 FILE(GLOB VTP_FILES "Geometry/*.vtp")
 FILE(GLOB STL_FILES "Geometry/*.stl")
