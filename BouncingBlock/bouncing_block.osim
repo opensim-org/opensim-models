@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="20303">
 	<Model name="toy_with_forces">
-		<credits>Author: Matt DeMers</credits>
+		<credits>
+      Author: Matt DeMers
+      License:
+      Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially,
+      as long as you credit us for the original creation.
+      http://creativecommons.org/licenses/by/3.0/
+    </credits>
 		<publications>Unassigned</publications>
 		<length_units>m</length_units>
 		<force_units>N</force_units>
