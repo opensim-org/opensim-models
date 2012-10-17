@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<OpenSimDocument Version="20303">
+<OpenSimDocument Version="30000">
 	<Model name="Tug_of_War">
-		<credits>Model authors names..</credits>
-		<publications>List of publications related to model...</publications>
+		<!--See the credits section below for information about this model's authors, data sources, intended uses, and more.
+		See the publications section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model.
+		If you are this model's author(s), add or update the credits and publications sections before distributing your model.-->
+		<credits>Author: The OpenSim Teams License: Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially, as long as you credit us for the original creation. http://creativecommons.org/licenses/by/3.0/</credits>
+		<publications />
 		<length_units>meters</length_units>
 		<force_units>N</force_units>
 		<!--Acceleration due to gravity.-->
@@ -27,7 +30,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>floor_short.vtp</geometry_file>
+									<geometry_file>checkered_floor.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -43,15 +46,15 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>large_block_1.vtp</geometry_file>
+									<geometry_file>block.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> -0 0 -0 0 0 0</transform>
+									<transform> -0 0 -0 0 0.05 0.35</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-									<scale_factors> 1 1 1</scale_factors>
+									<scale_factors> 5 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
@@ -59,15 +62,15 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>large_block_2.vtp</geometry_file>
+									<geometry_file>block.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> -0 0 -0 0 0 0</transform>
+									<transform> -0 0 -0 0 0.05 -0.35</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-									<scale_factors> 1 1 1</scale_factors>
+									<scale_factors> 5 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
@@ -93,98 +96,26 @@
 				<Body name="block">
 					<mass>20</mass>
 					<mass_center> 0 0 0</mass_center>
-					<inertia_xx>0.001</inertia_xx>
-					<inertia_yy>0.001</inertia_yy>
-					<inertia_zz>0.001</inertia_zz>
+					<inertia_xx>0.133333333333333</inertia_xx>
+					<inertia_yy>0.133333333333333</inertia_yy>
+					<inertia_zz>0.133333333333333</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
-						<CustomJoint name="ground_block">
-							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
-							<SpatialTransform>
-								<!--3 Axes for rotations are listed first.-->
-								<TransformAxis name="rotation1">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>1 0 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="rotation2">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 1 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="rotation3">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 0 1</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<!--3 Axes for translations are listed next.-->
-								<TransformAxis name="translation1">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>block_tz</coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 0 1</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<LinearFunction>
-											<coefficients> 1 0</coefficients>
-										</LinearFunction>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="translation2">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 1 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="translation3">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>1 0 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-							</SpatialTransform>
+						<SliderJoint name="ground_block">
+							<!--Name of the parent body to which this joint connects its owner body.-->
 							<parent_body>ground</parent_body>
-							<location_in_parent> 0 0 0</location_in_parent>
-							<orientation_in_parent> 0 0 0</orientation_in_parent>
-							<location> 0 0 0</location>
-							<orientation> 0 0 0</orientation>
-							<!--Generalized coordinates parameterizing this joint.-->
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 -1.5707963267949 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 -0.05 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 -1.5707963267949 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
 							<CoordinateSet>
 								<objects>
 									<Coordinate name="block_tz">
@@ -202,12 +133,15 @@
 										<locked>false</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
 									</Coordinate>
 								</objects>
 								<groups />
 							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
 							<reverse>false</reverse>
-						</CustomJoint>
+						</SliderJoint>
 					</Joint>
 					<VisibleObject>
 						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
@@ -215,7 +149,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>small_block.vtp</geometry_file>
+									<geometry_file>block.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -225,7 +159,7 @@
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-									<display_preference>4</display_preference>
+									<display_preference>1</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
 									<opacity>1</opacity>
 								</DisplayGeometry>
@@ -239,7 +173,7 @@
 						<!--Whether to show a coordinate frame-->
 						<show_axes>false</show_axes>
 						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
-						<display_preference>4</display_preference>
+						<display_preference>1</display_preference>
 					</VisibleObject>
 					<WrapObjectSet>
 						<objects />
@@ -257,7 +191,7 @@
 		<!--Forces in the model.-->
 		<ForceSet>
 			<objects>
-				<Schutte1993Muscle_Deprecated name="muscle_1">
+				<Thelen2003Muscle name="muscle1">
 					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
 					<isDisabled>false</isDisabled>
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -268,12 +202,12 @@
 					<GeometryPath>
 						<PathPointSet>
 							<objects>
-								<PathPoint name="muscle_1-P1">
+								<PathPoint name="muscle1-point1">
 									<location> 0 0.05 -0.35</location>
 									<body>ground</body>
 								</PathPoint>
-								<PathPoint name="muscle_1-P2">
-									<location> 0 0.05 0.05</location>
+								<PathPoint name="muscle1-point2">
+									<location> 0 0 -0.05</location>
 									<body>block</body>
 								</PathPoint>
 							</objects>
@@ -309,33 +243,16 @@
 					<tendon_slack_length>0.2</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
-					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>10</max_contraction_velocity>
-					<!--Scale factor for normalizing time-->
-					<time_scale>0.1</time_scale>
-					<!--Parameter used in time constant of ramping up of muscle force-->
-					<activation1>0.01</activation1>
-					<!--Parameter used in time constant of ramping up and ramping down of muscle force-->
-					<activation2>0.04</activation2>
-					<!--Damping factor related to maximum contraction velocity-->
-					<damping>0.05</damping>
-					<!--Function representing force-length behavior of tendon-->
-					<SimmSpline name="tendon_force_length_curve">
-						<x> -10 -0.002 -0.001 0 0.00131 0.00281 0.00431 0.00581 0.00731 0.00881 0.0103 0.0118 0.0123 9.2 9.201 9.202 20</x>
-						<y> 0 0 0 0 0.0108 0.0257 0.0435 0.0652 0.0915 0.123 0.161 0.208 0.227 345 345 345 345</y>
-					</SimmSpline>
-					<!--Function representing active force-length behavior of muscle fibers-->
-					<SimmSpline name="active_force_length_curve">
-						<x> -5.30769 -4.30769 -1.92308 -0.884615 -0.269231 0.230769 0.461538 0.52725 0.62875 0.71875 0.86125 1.045 1.2175 1.43875 1.5 1.61539 2 2.96154 3.69231 5.46154 9.9019</x>
-						<y> 0.012188 0.021899 0.036466 0.052493 0.075312 0.114158 0.157859 0.226667 0.636667 0.856667 0.95 0.993333 0.77 0.246667 0.193821 0.133252 0.072683 0.044417 0.036341 0.021899 0.007332</y>
-					</SimmSpline>
-					<!--Function representing passive force-length behavior of muscle fibers-->
-					<SimmSpline name="passive_force_length_curve">
-						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
-						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
-					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
-				<Schutte1993Muscle_Deprecated name="muscle_2">
+					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
+					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
+					<ignore_activation_dynamics>false</ignore_activation_dynamics>
+					<!--Assumed activation level if none is assigned.-->
+					<default_activation>1</default_activation>
+					<!--Assumed fiber length, unless otherwise assigned.-->
+					<default_fiber_length>0.25</default_fiber_length>
+				</Thelen2003Muscle>
+				<Thelen2003Muscle name="muscle2">
 					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
 					<isDisabled>false</isDisabled>
 					<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
@@ -346,12 +263,12 @@
 					<GeometryPath>
 						<PathPointSet>
 							<objects>
-								<PathPoint name="muscle_2-P1">
+								<PathPoint name="muscle2-point1">
 									<location> 0 0.05 0.35</location>
 									<body>ground</body>
 								</PathPoint>
-								<PathPoint name="muscle_2-P2">
-									<location> 0 0.05 0.05</location>
+								<PathPoint name="muscle2-point2">
+									<location> 0 0 0.05</location>
 									<body>block</body>
 								</PathPoint>
 							</objects>
@@ -387,32 +304,15 @@
 					<tendon_slack_length>0.2</tendon_slack_length>
 					<!--Angle between tendon and fibers at optimal fiber length expressed in radians-->
 					<pennation_angle_at_optimal>0</pennation_angle_at_optimal>
-					<!--Maximum contraction velocity of the fibers, in optimal fiberlengths/second-->
-					<max_contraction_velocity>10</max_contraction_velocity>
-					<!--Scale factor for normalizing time-->
-					<time_scale>0.1</time_scale>
-					<!--Parameter used in time constant of ramping up of muscle force-->
-					<activation1>0.01</activation1>
-					<!--Parameter used in time constant of ramping up and ramping down of muscle force-->
-					<activation2>0.04</activation2>
-					<!--Damping factor related to maximum contraction velocity-->
-					<damping>0.05</damping>
-					<!--Function representing force-length behavior of tendon-->
-					<SimmSpline name="tendon_force_length_curve">
-						<x> -10 -0.002 -0.001 0 0.00131 0.00281 0.00431 0.00581 0.00731 0.00881 0.0103 0.0118 0.0123 9.2 9.201 9.202 20</x>
-						<y> 0 0 0 0 0.0108 0.0257 0.0435 0.0652 0.0915 0.123 0.161 0.208 0.227 345 345 345 345</y>
-					</SimmSpline>
-					<!--Function representing active force-length behavior of muscle fibers-->
-					<SimmSpline name="active_force_length_curve">
-						<x> -5.30769 -4.30769 -1.92308 -0.884615 -0.269231 0.230769 0.461538 0.52725 0.62875 0.71875 0.86125 1.045 1.2175 1.43875 1.5 1.61539 2 2.96154 3.69231 5.46154 9.9019</x>
-						<y> 0.012188 0.021899 0.036466 0.052493 0.075312 0.114158 0.157859 0.226667 0.636667 0.856667 0.95 0.993333 0.77 0.246667 0.193821 0.133252 0.072683 0.044417 0.036341 0.021899 0.007332</y>
-					</SimmSpline>
-					<!--Function representing passive force-length behavior of muscle fibers-->
-					<SimmSpline name="passive_force_length_curve">
-						<x> -5 0.998 0.999 1 1.1 1.2 1.3 1.4 1.5 1.6 1.601 1.602 5</x>
-						<y> 0 0 0 0 0.035 0.12 0.26 0.55 1.17 2 2 2 2</y>
-					</SimmSpline>
-				</Schutte1993Muscle_Deprecated>
+					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
+					<ignore_tendon_compliance>false</ignore_tendon_compliance>
+					<!--Compute muscle dynamics ignoring activation dynamics. Activation is equivalent to excitation.-->
+					<ignore_activation_dynamics>false</ignore_activation_dynamics>
+					<!--Assumed activation level if none is assigned.-->
+					<default_activation>0.05</default_activation>
+					<!--Assumed fiber length, unless otherwise assigned.-->
+					<default_fiber_length>0.25</default_fiber_length>
+				</Thelen2003Muscle>
 			</objects>
 			<groups />
 		</ForceSet>
@@ -431,15 +331,15 @@
 			<objects />
 			<groups />
 		</ControllerSet>
-		<!--Probes in the model.-->
-		<ProbeSet>
-			<objects />
-			<groups />
-		</ProbeSet>
 		<!--Additional components in the model.-->
 		<ComponentSet name="MiscComponents">
 			<objects />
 			<groups />
 		</ComponentSet>
+		<!--Probes in the model.-->
+		<ProbeSet>
+			<objects />
+			<groups />
+		</ProbeSet>
 	</Model>
 </OpenSimDocument>
