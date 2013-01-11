@@ -9713,7 +9713,7 @@
 										</LinearFunction>
 									</function>
 									<coordinates> ankle_angle_l </coordinates>
-									<axis>       0.10501355      -0.17402245       0.97912632 </axis>
+									<axis>       0.10501355      0.17402245       0.97912632 </axis>
 								</TransformAxis>
 								<TransformAxis name="rotation2">
 									<function>
