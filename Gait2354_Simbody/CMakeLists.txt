@@ -1,4 +1,4 @@
-SET(GAIT2354_FILES subject01_static.trc subject01_walk1.trc subject01_walk1.mot subject01_walk1_grf.mot gait2354_simbody.osim
+SET(GAIT2354_FILES subject01_static.trc subject01_walk1.trc subject01_walk1_grf.mot gait2354_simbody.osim
 gait2354_CMC_Actuators.xml
 gait2354_CMC_ControlConstraints.xml
 gait2354_CMC_Tasks.xml
