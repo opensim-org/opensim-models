@@ -45,11 +45,11 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="platform">
-					<mass>10000</mass>
+					<mass>0.1</mass>
 					<mass_center> 0 0 0</mass_center>
-					<inertia_xx>1</inertia_xx>
-					<inertia_yy>1</inertia_yy>
-					<inertia_zz>1</inertia_zz>
+					<inertia_xx>0.001</inertia_xx>
+					<inertia_yy>0.001</inertia_yy>
+					<inertia_zz>0.001</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
@@ -480,7 +480,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -496,7 +496,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -512,7 +512,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -712,7 +712,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -878,7 +878,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -894,7 +894,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1058,7 +1058,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1222,7 +1222,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1386,7 +1386,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1434,7 +1434,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.34906585</default_value>
+										<default_value>-0.34906585</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1442,7 +1442,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1452,7 +1452,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.01745329</default_value>
+										<default_value>0.17453293</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1460,7 +1460,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1586,7 +1586,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1634,7 +1634,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.34906585</default_value>
+										<default_value>-2.0943951</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1642,7 +1642,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1752,7 +1752,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -1768,7 +1768,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1824,7 +1824,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1932,7 +1932,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2096,7 +2096,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2260,7 +2260,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2460,7 +2460,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -2476,7 +2476,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -2492,7 +2492,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -2508,7 +2508,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -6560,7 +6560,7 @@
 									<coordinate>knee_angle_l</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="rect_fem_l-P3">
-									<location> 0.0275082 0.0251141 -0.0014</location>
+									<location> 0.0155806 0.0234116 -0.0014</location>
 									<body>tibia_l</body>
 									<x_location>
 										<SimmSpline>
@@ -6662,7 +6662,7 @@
 									<coordinate>knee_angle_l</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="vas_int_l-P4">
-									<location> 0.0202043 0.0273124 -0.0018</location>
+									<location> 0.00827343 0.025599 -0.0018</location>
 									<body>tibia_l</body>
 									<x_location>
 										<SimmSpline>
@@ -8584,7 +8584,7 @@
 		<!--Controllers in the model.-->
 		<ControllerSet>
 			<objects>
-				<ToyReflexController>
+				<ToyReflexController name="Reflexes">
 					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
 					<isDisabled>false</isDisabled>
 					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
@@ -8592,6 +8592,57 @@
 					<!--Factor by which the stretch reflex is scaled.-->
 					<gain>0.85</gain>
 				</ToyReflexController>
+				<PrescribedController name="R-inverter controls">
+					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
+					<isDisabled>true</isDisabled>
+					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
+					<actuator_list>ext_hal_r flex_dig_r flex_hal_r tib_ant_r tib_post_r</actuator_list>
+					<!--Functions (one per control) describing the controls for actuatorsspecified for this controller.-->
+					<FunctionSet name="ControlFunctions">
+						<objects>
+							<Constant name="ext_hal_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="flex_dig_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="flex_hal_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="tib_ant_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="tib_post_r">
+								<value>0.1</value>
+							</Constant>
+						</objects>
+						<groups />
+					</FunctionSet>
+				</PrescribedController>
+				<PrescribedController name="R-everter controls">
+					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
+					<isDisabled>true</isDisabled>
+					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
+					<actuator_list>ext_dig_r per_brev_r per_long_r per_tert_r</actuator_list>
+					<!--Functions (one per control) describing the controls for actuatorsspecified for this controller.-->
+					<FunctionSet name="ControlFunctions">
+						<objects>
+							<Constant name="ext_dig_r">
+								<value>0.3</value>
+							</Constant>
+							<Constant name="per_brev_r">
+								<value>0.3</value>
+							</Constant>
+							<Constant name="per_long_r">
+								<value>0.3</value>
+							</Constant>
+							<Constant name="per_tert_r">
+								<value>0.3</value>
+							</Constant>
+						</objects>
+						<groups />
+					</FunctionSet>
+				</PrescribedController>
 			</objects>
 			<groups />
 		</ControllerSet>

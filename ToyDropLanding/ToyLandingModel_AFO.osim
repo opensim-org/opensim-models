@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="30000">
-	<Model name="ToyLandingModel_AFO">
+	<Model name="ToyLandingModel">
 		<!--See the credits section below for information about this model's authors, data sources, intended uses, and more.
 		See the publications section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model.
 		If you are this model's author(s), add or update the credits and publications sections before distributing your model.-->
-		<credits>Developed by Ajay Seth (addition of AFO and reflex controller to posture model with passive forces, foot contact and moveable platform), Matt DeMers (initial drop height and platform orientation; initial drop height and platform orientation, inverter and everter muscles, linear ankle bushings; AFO stiffnesses) and John Rogers (CAD geometry for AFO model). As a courtesy to the model developers, we request that you notify us (via email at opensim@stanford.edu) and acknowledge the authors (Ajay Seth and Matt DeMers) when distributing or publishing any results based on this model. Please also acknowledge the authors when distributing or publishing any models that derive from this work. The model and controller used in this example are for educational and demonstration purposes and require further testing before being used as a research tool. This is work currently being conducted by the authors.</credits>
+		<credits>Developed by Ajay Seth (addition of reflex controller to posture model with passive forces, foot contact and moveable platform) and Matt DeMers (initial drop height and platform orientation, inverter and everter muscles, linear ankle bushings). As a courtesy to the model developers, we request that you notify us (via email at opensim@stanford.edu) and acknowledge the authors (Ajay Seth and Matt DeMers) when distributing or publishing any results based on this model. Please also acknowledge the authors when distributing or publishing any models that derive from this work. The model and controller used in this example are for educational and demonstration purposes and require further testing before being used as a research tool. This is work currently being conducted by the authors.</credits>
 		<publications>Notes: 3D, 23 DOF gait model created by D.G. Thelen, Univ. of Wisconsin-Madison, and Ajay Seth, Frank C. Anderson, and Scott L. Delp, Stanford University. Lower extremity joint defintions based on Delp et al. (1990). Low back joint and anthropometry based on Anderson and Pandy (1999, 2001). Planar knee model of Yamaguchi and Zajac (1989). Seth removed the patella to avoid kinematic constraints; insertions of the quadrucepts are handled with moving points in the tibia frame. Number of muscles was reduced by Anderson to improve simulation speed for demonstrations and is not intended to be used in research. Delp, S.L., Loan, J.P., Hoy, M.G., Zajac, F.E., Topp E.L., Rosen, J.M.: An interactive graphics-based model of the lower extremity to study orthopaedic surgical procedures, IEEE Transactions on Biomedical Engineering, vol. 37, pp. 757-767, 1990. Yamaguchi G.T., Zajac F.E.: A planar model of the knee joint to characterize the knee extensor mechanism." J . Biomech. 22(1):1-10. 1989. Anderson F.C., Pandy M.G.: A dynamic optimization solution for vertical jumping in three dimensions. Computer Methods in Biomechanics and Biomedical Engineering 2:201-231, 1999. Anderson F.C., Pandy M.G.: Dynamic optimization of human walking. Journal of Biomechanical Engineering 123:381-390, 2001.</publications>
 		<length_units>meters</length_units>
 		<force_units>N</force_units>
@@ -45,11 +45,11 @@
 					</WrapObjectSet>
 				</Body>
 				<Body name="platform">
-					<mass>10000</mass>
+					<mass>0.1</mass>
 					<mass_center> 0 0 0</mass_center>
-					<inertia_xx>1</inertia_xx>
-					<inertia_yy>1</inertia_yy>
-					<inertia_zz>1</inertia_zz>
+					<inertia_xx>0.001</inertia_xx>
+					<inertia_yy>0.001</inertia_yy>
+					<inertia_zz>0.001</inertia_zz>
 					<inertia_xy>0</inertia_xy>
 					<inertia_xz>0</inertia_xz>
 					<inertia_yz>0</inertia_yz>
@@ -73,13 +73,13 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.34906585</default_value>
+										<default_value>0.349065850398866</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-3.1416 3.1416</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
+										<clamped>true</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -133,7 +133,7 @@
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
 										<range>-5 1</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
-										<clamped>false</clamped>
+										<clamped>true</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
 										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
@@ -480,7 +480,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -496,7 +496,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -512,7 +512,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -712,7 +712,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -878,7 +878,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -894,7 +894,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1058,7 +1058,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1222,7 +1222,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1386,7 +1386,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1434,7 +1434,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.34906585</default_value>
+										<default_value>-0.34906585</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1442,7 +1442,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1452,7 +1452,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.01745329</default_value>
+										<default_value>0.17453293</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1460,7 +1460,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1586,7 +1586,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1634,7 +1634,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.34906585</default_value>
+										<default_value>-2.0943951</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -1642,7 +1642,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1752,7 +1752,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -1768,7 +1768,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -1824,7 +1824,7 @@
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
-										<locked>false</locked>
+										<locked>true</locked>
 										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
@@ -1932,7 +1932,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2096,7 +2096,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2260,7 +2260,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2460,7 +2460,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -2476,7 +2476,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -2492,7 +2492,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
@@ -2508,7 +2508,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
+									<opacity>0.2</opacity>
 								</DisplayGeometry>
 							</objects>
 							<groups />
@@ -2527,142 +2527,142 @@
 						<groups />
 					</WrapObjectSet>
 				</Body>
-				<Body name="r_AFO_footplate">
-					<mass>1.5</mass>
-					<mass_center> 0.08 -0.05 0</mass_center>
-					<inertia_xx>0.005</inertia_xx>
-					<inertia_yy>0.0125</inertia_yy>
-					<inertia_zz>0.014</inertia_zz>
-					<inertia_xy>0</inertia_xy>
-					<inertia_xz>0</inertia_xz>
-					<inertia_yz>0</inertia_yz>
-					<!--Joint that connects this body with the parent body.-->
-					<Joint>
-						<WeldJoint name="AFO_footplate_calcn_r">
-							<!--Name of the parent body to which this joint connects its owner body.-->
-							<parent_body>calcn_r</parent_body>
-							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
-							<location_in_parent>0 0 0</location_in_parent>
-							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
-							<orientation_in_parent>0 0 0</orientation_in_parent>
-							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
-							<location>-0.04877 -0.04195 0.00792</location>
-							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
-							<orientation>0 0 0</orientation>
-							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
-							<CoordinateSet>
-								<objects />
-								<groups />
-							</CoordinateSet>
-							<!--Whether the joint transform defines parent->child or child->parent.-->
-							<reverse>false</reverse>
-						</WeldJoint>
-					</Joint>
-					<VisibleObject>
-						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
-						<GeometrySet>
-							<objects>
-								<DisplayGeometry>
-									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>afoPlate.STL</geometry_file>
-									<!--Color used to display the geometry when visible-->
-									<color> 1 1 0.6</color>
-									<!--Name of texture file .jpg, .bmp-->
-									<texture_file />
-									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0 -0.15 0 0 0 0</transform>
-									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-									<scale_factors> 0.9 0.5 0.8</scale_factors>
-									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-									<display_preference>4</display_preference>
-									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
-								</DisplayGeometry>
-							</objects>
-							<groups />
-						</GeometrySet>
-						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-						<scale_factors> 1 1 1</scale_factors>
-						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-						<transform> 0 0 0 0 0 0</transform>
-						<!--Whether to show a coordinate frame-->
-						<show_axes>false</show_axes>
-						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
-						<display_preference>4</display_preference>
-					</VisibleObject>
-					<WrapObjectSet>
-						<objects />
-						<groups />
-					</WrapObjectSet>
-				</Body>
-				<Body name="r_AFO_cuff">
-					<mass>1.25</mass>
-					<mass_center> 0 0.25 0</mass_center>
-					<inertia_xx>0.02</inertia_xx>
-					<inertia_yy>0.005</inertia_yy>
-					<inertia_zz>0.02</inertia_zz>
-					<inertia_xy>0</inertia_xy>
-					<inertia_xz>0</inertia_xz>
-					<inertia_yz>0</inertia_yz>
-					<!--Joint that connects this body with the parent body.-->
-					<Joint>
-						<WeldJoint name="AFO_cuff_tibia_r">
-							<!--Name of the parent body to which this joint connects its owner body.-->
-							<parent_body>tibia_r</parent_body>
-							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
-							<location_in_parent>0 -0.43 0</location_in_parent>
-							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
-							<orientation_in_parent>0 0 0</orientation_in_parent>
-							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
-							<location>0 0 0</location>
-							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
-							<orientation>0 0 0</orientation>
-							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
-							<CoordinateSet>
-								<objects />
-								<groups />
-							</CoordinateSet>
-							<!--Whether the joint transform defines parent->child or child->parent.-->
-							<reverse>false</reverse>
-						</WeldJoint>
-					</Joint>
-					<VisibleObject>
-						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
-						<GeometrySet>
-							<objects>
-								<DisplayGeometry>
-									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>afoCuff.STL</geometry_file>
-									<!--Color used to display the geometry when visible-->
-									<color> 1 1 0.6</color>
-									<!--Name of texture file .jpg, .bmp-->
-									<texture_file />
-									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0 0 0 0 0 0</transform>
-									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-									<scale_factors> 0.8 1 0.8</scale_factors>
-									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-									<display_preference>4</display_preference>
-									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
-								</DisplayGeometry>
-							</objects>
-							<groups />
-						</GeometrySet>
-						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-						<scale_factors> 1 1 1</scale_factors>
-						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-						<transform> 0 0 0 0 0 0</transform>
-						<!--Whether to show a coordinate frame-->
-						<show_axes>false</show_axes>
-						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
-						<display_preference>4</display_preference>
-					</VisibleObject>
-					<WrapObjectSet>
-						<objects />
-						<groups />
-					</WrapObjectSet>
-				</Body>
+        <Body name="r_AFO_footplate">
+          <mass>1.5</mass>
+          <mass_center> 0.08 -0.05 0</mass_center>
+          <inertia_xx>0.005</inertia_xx>
+          <inertia_yy>0.0125</inertia_yy>
+          <inertia_zz>0.014</inertia_zz>
+          <inertia_xy>0</inertia_xy>
+          <inertia_xz>0</inertia_xz>
+          <inertia_yz>0</inertia_yz>
+          <!--Joint that connects this body with the parent body.-->
+          <Joint>
+            <WeldJoint name="AFO_footplate_calcn_r">
+              <!--Name of the parent body to which this joint connects its owner body.-->
+              <parent_body>calcn_r</parent_body>
+              <!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+              <location_in_parent>0 0 0</location_in_parent>
+              <!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+              <orientation_in_parent>0 0 0</orientation_in_parent>
+              <!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+              <location>-0.04877 -0.04195 0.00792</location>
+              <!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+              <orientation>0 0 0</orientation>
+              <!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+              <CoordinateSet>
+                <objects />
+                <groups />
+              </CoordinateSet>
+              <!--Whether the joint transform defines parent->child or child->parent.-->
+              <reverse>false</reverse>
+            </WeldJoint>
+          </Joint>
+          <VisibleObject>
+            <!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+            <GeometrySet>
+              <objects>
+                <DisplayGeometry>
+                  <!--Name of geometry file .vtp, .stl, .obj-->
+                  <geometry_file>afoPlate.STL</geometry_file>
+                  <!--Color used to display the geometry when visible-->
+                  <color> 1 1 0.6</color>
+                  <!--Name of texture file .jpg, .bmp-->
+                  <texture_file />
+                  <!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+                  <transform> 0 -0.15 0 0 0 0</transform>
+                  <!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+                  <scale_factors> 0.9 0.5 0.8</scale_factors>
+                  <!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+                  <display_preference>4</display_preference>
+                  <!--Display opacity between 0.0 and 1.0-->
+                  <opacity>1</opacity>
+                </DisplayGeometry>
+              </objects>
+              <groups />
+            </GeometrySet>
+            <!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+            <scale_factors> 1 1 1</scale_factors>
+            <!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+            <transform> 0 0 0 0 0 0</transform>
+            <!--Whether to show a coordinate frame-->
+            <show_axes>false</show_axes>
+            <!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+            <display_preference>4</display_preference>
+          </VisibleObject>
+          <WrapObjectSet>
+            <objects />
+            <groups />
+          </WrapObjectSet>
+        </Body>
+        <Body name="r_AFO_cuff">
+          <mass>1.25</mass>
+          <mass_center> 0 0.25 0</mass_center>
+          <inertia_xx>0.02</inertia_xx>
+          <inertia_yy>0.005</inertia_yy>
+          <inertia_zz>0.02</inertia_zz>
+          <inertia_xy>0</inertia_xy>
+          <inertia_xz>0</inertia_xz>
+          <inertia_yz>0</inertia_yz>
+          <!--Joint that connects this body with the parent body.-->
+          <Joint>
+            <WeldJoint name="AFO_cuff_tibia_r">
+              <!--Name of the parent body to which this joint connects its owner body.-->
+              <parent_body>tibia_r</parent_body>
+              <!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+              <location_in_parent>0 -0.43 0</location_in_parent>
+              <!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+              <orientation_in_parent>0 0 0</orientation_in_parent>
+              <!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+              <location>0 0 0</location>
+              <!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+              <orientation>0 0 0</orientation>
+              <!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+              <CoordinateSet>
+                <objects />
+                <groups />
+              </CoordinateSet>
+              <!--Whether the joint transform defines parent->child or child->parent.-->
+              <reverse>false</reverse>
+            </WeldJoint>
+          </Joint>
+          <VisibleObject>
+            <!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+            <GeometrySet>
+              <objects>
+                <DisplayGeometry>
+                  <!--Name of geometry file .vtp, .stl, .obj-->
+                  <geometry_file>afoCuff.STL</geometry_file>
+                  <!--Color used to display the geometry when visible-->
+                  <color> 1 1 0.6</color>
+                  <!--Name of texture file .jpg, .bmp-->
+                  <texture_file />
+                  <!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+                  <transform> 0 0 0 0 0 0</transform>
+                  <!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+                  <scale_factors> 0.8 1 0.8</scale_factors>
+                  <!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
+                  <display_preference>4</display_preference>
+                  <!--Display opacity between 0.0 and 1.0-->
+                  <opacity>1</opacity>
+                </DisplayGeometry>
+              </objects>
+              <groups />
+            </GeometrySet>
+            <!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+            <scale_factors> 1 1 1</scale_factors>
+            <!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+            <transform> 0 0 0 0 0 0</transform>
+            <!--Whether to show a coordinate frame-->
+            <show_axes>false</show_axes>
+            <!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+            <display_preference>4</display_preference>
+          </VisibleObject>
+          <WrapObjectSet>
+            <objects />
+            <groups />
+          </WrapObjectSet>
+        </Body>
 			</objects>
 			<groups />
 		</BodySet>
@@ -2674,54 +2674,54 @@
 		<!--Forces in the model.-->
 		<ForceSet>
 			<objects>
-				<BushingForce name="AFO_med_bushing">
-					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
-					<isDisabled>false</isDisabled>
-					<!--One of the two bodies connected by the bushing.-->
-					<body_1>r_AFO_footplate</body_1>
-					<!--The other of the two bodies connected by the bushing.-->
-					<body_2>r_AFO_cuff</body_2>
-					<!--Location of bushing frame on body 1.-->
-					<location_body_1>0.0043755875 0.0072509125 -0.0407969167</location_body_1>
-					<!--Orientation of bushing frame in body 1 as x-y-z, body fixed Euler rotations.-->
-					<orientation_body_1>0 0 0</orientation_body_1>
-					<!--Location of bushing frame on body 2.-->
-					<location_body_2>0.0043755875 0.0072509125 -0.0407969167</location_body_2>
-					<!--Orientation of bushing frame in body 2 as x-y-z, body fixed Euler rotations.-->
-					<orientation_body_2>0 0 0</orientation_body_2>
-					<!--Stiffness parameters resisting relative rotation (Nm/rad).-->
-					<rotational_stiffness>0 0 0</rotational_stiffness>
-					<!--Stiffness parameters resisting relative translation (N/m).-->
-					<translational_stiffness>10000 10000 10000</translational_stiffness>
-					<!--Damping parameters resisting relative angular velocity. (Nm/(rad/s))-->
-					<rotational_damping>0 0 0</rotational_damping>
-					<!--Damping parameters resisting relative translational velocity. (N/(m/s)-->
-					<translational_damping>0.001 0.001 0.001</translational_damping>
-				</BushingForce>
-				<BushingForce name="AFO_lat_bushing">
-					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
-					<isDisabled>false</isDisabled>
-					<!--One of the two bodies connected by the bushing.-->
-					<body_1>r_AFO_footplate</body_1>
-					<!--The other of the two bodies connected by the bushing.-->
-					<body_2>r_AFO_cuff</body_2>
-					<!--Location of bushing frame on body 1.-->
-					<location_body_1>-0.0043755875 -0.0072509125 0.0407969167</location_body_1>
-					<!--Orientation of bushing frame in body 1 as x-y-z, body fixed Euler rotations.-->
-					<orientation_body_1>0 0 0</orientation_body_1>
-					<!--Location of bushing frame on body 2.-->
-					<location_body_2>-0.0043755875 -0.0072509125 0.0407969167</location_body_2>
-					<!--Orientation of bushing frame in body 2 as x-y-z, body fixed Euler rotations.-->
-					<orientation_body_2>0 0 0</orientation_body_2>
-					<!--Stiffness parameters resisting relative rotation (Nm/rad).-->
-					<rotational_stiffness>0 0 0</rotational_stiffness>
-					<!--Stiffness parameters resisting relative translation (N/m).-->
-					<translational_stiffness>10000 10000 10000</translational_stiffness>
-					<!--Damping parameters resisting relative angular velocity. (Nm/(rad/s))-->
-					<rotational_damping>0 0 0</rotational_damping>
-					<!--Damping parameters resisting relative translational velocity. (N/(m/s)-->
-					<translational_damping>0.001 0.001 0.001</translational_damping>
-				</BushingForce>
+        <BushingForce name="AFO_med_bushing">
+          <!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
+          <isDisabled>false</isDisabled>
+          <!--One of the two bodies connected by the bushing.-->
+          <body_1>r_AFO_footplate</body_1>
+          <!--The other of the two bodies connected by the bushing.-->
+          <body_2>r_AFO_cuff</body_2>
+          <!--Location of bushing frame on body 1.-->
+          <location_body_1>0.0043755875 0.0072509125 -0.0407969167</location_body_1>
+          <!--Orientation of bushing frame in body 1 as x-y-z, body fixed Euler rotations.-->
+          <orientation_body_1>0 0 0</orientation_body_1>
+          <!--Location of bushing frame on body 2.-->
+          <location_body_2>0.0043755875 0.0072509125 -0.0407969167</location_body_2>
+          <!--Orientation of bushing frame in body 2 as x-y-z, body fixed Euler rotations.-->
+          <orientation_body_2>0 0 0</orientation_body_2>
+          <!--Stiffness parameters resisting relative rotation (Nm/rad).-->
+          <rotational_stiffness>0 0 0</rotational_stiffness>
+          <!--Stiffness parameters resisting relative translation (N/m).-->
+          <translational_stiffness>10000 10000 10000</translational_stiffness>
+          <!--Damping parameters resisting relative angular velocity. (Nm/(rad/s))-->
+          <rotational_damping>0 0 0</rotational_damping>
+          <!--Damping parameters resisting relative translational velocity. (N/(m/s)-->
+          <translational_damping>0.001 0.001 0.001</translational_damping>
+        </BushingForce>
+        <BushingForce name="AFO_lat_bushing">
+          <!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
+          <isDisabled>false</isDisabled>
+          <!--One of the two bodies connected by the bushing.-->
+          <body_1>r_AFO_footplate</body_1>
+          <!--The other of the two bodies connected by the bushing.-->
+          <body_2>r_AFO_cuff</body_2>
+          <!--Location of bushing frame on body 1.-->
+          <location_body_1>-0.0043755875 -0.0072509125 0.0407969167</location_body_1>
+          <!--Orientation of bushing frame in body 1 as x-y-z, body fixed Euler rotations.-->
+          <orientation_body_1>0 0 0</orientation_body_1>
+          <!--Location of bushing frame on body 2.-->
+          <location_body_2>-0.0043755875 -0.0072509125 0.0407969167</location_body_2>
+          <!--Orientation of bushing frame in body 2 as x-y-z, body fixed Euler rotations.-->
+          <orientation_body_2>0 0 0</orientation_body_2>
+          <!--Stiffness parameters resisting relative rotation (Nm/rad).-->
+          <rotational_stiffness>0 0 0</rotational_stiffness>
+          <!--Stiffness parameters resisting relative translation (N/m).-->
+          <translational_stiffness>10000 10000 10000</translational_stiffness>
+          <!--Damping parameters resisting relative angular velocity. (Nm/(rad/s))-->
+          <rotational_damping>0 0 0</rotational_damping>
+          <!--Damping parameters resisting relative translational velocity. (N/(m/s)-->
+          <translational_damping>0.001 0.001 0.001</translational_damping>
+        </BushingForce>           
 				<Thelen2003Muscle name="glut_med1_r">
 					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
 					<isDisabled>false</isDisabled>
@@ -6744,7 +6744,7 @@
 									<coordinate>knee_angle_l</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="rect_fem_l-P3">
-									<location> 0.0275082 0.0251141 -0.0014</location>
+									<location> 0.0155806 0.0234116 -0.0014</location>
 									<body>tibia_l</body>
 									<x_location>
 										<SimmSpline>
@@ -6846,7 +6846,7 @@
 									<coordinate>knee_angle_l</coordinate>
 								</ConditionalPathPoint>
 								<MovingPathPoint name="vas_int_l-P4">
-									<location> 0.0202043 0.0273124 -0.0018</location>
+									<location> 0.00827343 0.025599 -0.0018</location>
 									<body>tibia_l</body>
 									<x_location>
 										<SimmSpline>
@@ -8404,7 +8404,7 @@
 					<!--maximum normalized lengthening force-->
 					<Flen>1.8</Flen>
 				</Thelen2003Muscle>
-				<HuntCrossleyForce name="AFO_r">
+				<HuntCrossleyForce name="foot_r">
 					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
 					<isDisabled>false</isDisabled>
 					<!--Material properties.-->
@@ -8412,7 +8412,7 @@
 						<objects>
 							<HuntCrossleyForce::ContactParameters>
 								<!--Names of geometry objects affected by these parameters.-->
-								<geometry>platform AFO_heel1_r AFO_heel2_r AFO_heel3_r AFO_midfoot1_r AFO_midfoot2_r AFO_toe_r</geometry>
+								<geometry>platform heel_r ball_big_toe_r small_toe_r</geometry>
 								<stiffness>100000000</stiffness>
 								<dissipation>0.5</dissipation>
 								<static_friction>0.9</static_friction>
@@ -8680,24 +8680,7 @@
 		</ForceSet>
 		<!--Markers in the model.-->
 		<MarkerSet>
-			<objects>
-				<Marker name="lateral_connect">
-					<!--Body segment in the model on which the marker resides.-->
-					<body>r_AFO_footplate</body>
-					<!--Location of a marker on the body segment.-->
-					<location> -0.00437559 -0.00725091 0.0407969</location>
-					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
-					<fixed>false</fixed>
-				</Marker>
-				<Marker name="medial_connect">
-					<!--Body segment in the model on which the marker resides.-->
-					<body>r_AFO_footplate</body>
-					<!--Location of a marker on the body segment.-->
-					<location> 0.00437559 0.00725091 -0.0407969</location>
-					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
-					<fixed>false</fixed>
-				</Marker>
-			</objects>
+			<objects />
 			<groups />
 		</MarkerSet>
 		<!--ContactGeometries  in the model.-->
@@ -8713,66 +8696,33 @@
 					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 					<display_preference>4</display_preference>
 				</ContactHalfSpace>
-				<ContactSphere name="AFO_heel1_r">
+				<ContactSphere name="heel_r">
 					<!--Body name to connect the contact geometry to-->
-					<body_name>r_AFO_footplate</body_name>
+					<body_name>calcn_r</body_name>
 					<!--Location of geometry center in the body frame-->
-					<location>-0.065 -0.045 -0.01</location>
+					<location>0.01 0.01 -0.005</location>
 					<!--Orientation of geometry in the body frame-->
 					<orientation>0 0 0</orientation>
 					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 					<display_preference>4</display_preference>
-					<radius>0.015</radius>
+					<radius>0.03</radius>
 				</ContactSphere>
-				<ContactSphere name="AFO_heel2_r">
+				<ContactSphere name="ball_big_toe_r">
 					<!--Body name to connect the contact geometry to-->
-					<body_name>r_AFO_footplate</body_name>
+					<body_name>toes_r</body_name>
 					<!--Location of geometry center in the body frame-->
-					<location>-0.03 -0.05 -0.04</location>
+					<location>-0.005 0.005 -0.03</location>
 					<!--Orientation of geometry in the body frame-->
 					<orientation>0 0 0</orientation>
 					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 					<display_preference>4</display_preference>
-					<radius>0.015</radius>
+					<radius>0.02</radius>
 				</ContactSphere>
-				<ContactSphere name="AFO_heel3_r">
+				<ContactSphere name="small_toe_r">
 					<!--Body name to connect the contact geometry to-->
-					<body_name>r_AFO_footplate</body_name>
+					<body_name>toes_r</body_name>
 					<!--Location of geometry center in the body frame-->
-					<location>-0.04 -0.05 0.03</location>
-					<!--Orientation of geometry in the body frame-->
-					<orientation>0 0 0</orientation>
-					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-					<display_preference>4</display_preference>
-					<radius>0.015</radius>
-				</ContactSphere>
-				<ContactSphere name="AFO_midfoot1_r">
-					<!--Body name to connect the contact geometry to-->
-					<body_name>r_AFO_footplate</body_name>
-					<!--Location of geometry center in the body frame-->
-					<location>0.15 -0.05 0.07</location>
-					<!--Orientation of geometry in the body frame-->
-					<orientation>0 0 0</orientation>
-					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-					<display_preference>4</display_preference>
-					<radius>0.015</radius>
-				</ContactSphere>
-				<ContactSphere name="AFO_midfoot2_r">
-					<!--Body name to connect the contact geometry to-->
-					<body_name>r_AFO_footplate</body_name>
-					<!--Location of geometry center in the body frame-->
-					<location>0.15 -0.05 -0.03</location>
-					<!--Orientation of geometry in the body frame-->
-					<orientation>0 0 0</orientation>
-					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-					<display_preference>4</display_preference>
-					<radius>0.015</radius>
-				</ContactSphere>
-				<ContactSphere name="AFO_toe_r">
-					<!--Body name to connect the contact geometry to-->
-					<body_name>r_AFO_footplate</body_name>
-					<!--Location of geometry center in the body frame-->
-					<location>0.2 -0.045 0.03</location>
+					<location>-0.04 0.005 0.04</location>
 					<!--Orientation of geometry in the body frame-->
 					<orientation>0 0 0</orientation>
 					<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -8818,7 +8768,7 @@
 		<!--Controllers in the model.-->
 		<ControllerSet>
 			<objects>
-				<ToyReflexController>
+				<ToyReflexController name="Reflexes">
 					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
 					<isDisabled>false</isDisabled>
 					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
@@ -8826,6 +8776,57 @@
 					<!--Factor by which the stretch reflex is scaled.-->
 					<gain>0.85</gain>
 				</ToyReflexController>
+				<PrescribedController name="R-inverter controls">
+					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
+					<isDisabled>true</isDisabled>
+					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
+					<actuator_list>ext_hal_r flex_dig_r flex_hal_r tib_ant_r tib_post_r</actuator_list>
+					<!--Functions (one per control) describing the controls for actuatorsspecified for this controller.-->
+					<FunctionSet name="ControlFunctions">
+						<objects>
+							<Constant name="ext_hal_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="flex_dig_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="flex_hal_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="tib_ant_r">
+								<value>0.1</value>
+							</Constant>
+							<Constant name="tib_post_r">
+								<value>0.1</value>
+							</Constant>
+						</objects>
+						<groups />
+					</FunctionSet>
+				</PrescribedController>
+				<PrescribedController name="R-everter controls">
+					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
+					<isDisabled>true</isDisabled>
+					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
+					<actuator_list>ext_dig_r per_brev_r per_long_r per_tert_r</actuator_list>
+					<!--Functions (one per control) describing the controls for actuatorsspecified for this controller.-->
+					<FunctionSet name="ControlFunctions">
+						<objects>
+							<Constant name="ext_dig_r">
+								<value>0.3</value>
+							</Constant>
+							<Constant name="per_brev_r">
+								<value>0.3</value>
+							</Constant>
+							<Constant name="per_long_r">
+								<value>0.3</value>
+							</Constant>
+							<Constant name="per_tert_r">
+								<value>0.3</value>
+							</Constant>
+						</objects>
+						<groups />
+					</FunctionSet>
+				</PrescribedController>
 			</objects>
 			<groups />
 		</ControllerSet>
