@@ -7,9 +7,6 @@ gait2392_RRA_Actuators.xml
 gait2392_RRA_ControlConstraints.xml
 gait2392_RRA_Tasks.xml
 gait2392_Scale_MarkerSet.xml
-gait2392_Scale_MeasurementSet.xml
-gait2392_Scale_Tasks.xml
-subject01_Scale_ScaleSet.xml
 subject01_Setup_Analyze.xml
 subject01_Setup_CMC.xml
 subject01_Setup_Forward.xml

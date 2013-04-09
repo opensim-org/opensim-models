@@ -7,9 +7,6 @@ gait2354_RRA_Actuators.xml
 gait2354_RRA_ControlConstraints.xml
 gait2354_RRA_Tasks.xml
 gait2354_Scale_MarkerSet.xml
-gait2354_Scale_MeasurementSet.xml
-gait2354_Scale_Tasks.xml
-subject01_Scale_ScaleSet.xml
 subject01_Setup_Analyze.xml
 subject01_Setup_CMC.xml
 subject01_Setup_Forward.xml
