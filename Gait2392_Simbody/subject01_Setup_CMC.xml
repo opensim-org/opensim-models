@@ -23,7 +23,7 @@
 	<!--Maximum number of integrator steps.-->
 	<maximum_number_of_integrator_steps> 30000 </maximum_number_of_integrator_steps>
 	<!--Maximum integration step size.-->
-		<maximum_integrator_step_size>       0.00010000 </maximum_integrator_step_size>
+		<maximum_integrator_step_size>  1.0 </maximum_integrator_step_size>
 		<!--Minimum integration step size.-->
 		<minimum_integrator_step_size>       0.00000001 </minimum_integrator_step_size>
 	<!--Integrator error tolerance. When the error is greater, the integrator
