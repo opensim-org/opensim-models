@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSimDocument Version="20302">
-  <InverseKinemtaticsTool name="arm26">
+  <InverseKinematicsTool name="arm26">
     <!--Directory used for writing results.-->
     <results_directory> ./ </results_directory>
     <!--Directory for input files-->
@@ -58,7 +58,7 @@
     <!--Flag indicating whether or not to report model marker locations in
 		      ground.-->
     <report_marker_locations> false </report_marker_locations>
-  </InverseKinemtaticsTool>
+  </InverseKinematicsTool>
 </OpenSimDocument>
 
 
