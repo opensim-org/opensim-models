@@ -1,0 +1,8 @@
+Tug_of_War_Competition						
+version=1						
+nRows=1						
+nColumns=7						
+inDegrees=no						
+endheader						
+time	block_tz	block_tz_u	RightMuscle.activation	RightMuscle.fiber_length	LeftMuscle.activation	LeftMuscle.fiber_length
+0	0	0.5	0.1	0	0.1	0
