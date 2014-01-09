@@ -58,7 +58,7 @@
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-									<display_preference>4</display_preference>
+									<display_preference>0</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
 									<opacity>1</opacity>
 								</DisplayGeometry>
