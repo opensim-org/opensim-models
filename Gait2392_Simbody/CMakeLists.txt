@@ -16,4 +16,4 @@ subject01_Setup_Scale.xml
 subject01_walk1_grf.xml)
 
 INSTALL_FILES(/Models/Gait2392_Simbody/ FILES ${GAIT2392_FILES})
-##INSTALL(DIRECTORY OutputReference DESTINATION Models/Gait2392_Simbody/ PATTERN ".svn" EXCLUDE)
+INSTALL(DIRECTORY Tutorial1 DESTINATION Models/Gait2392_Simbody/Tutorial1 PATTERN ".svn" EXCLUDE)
