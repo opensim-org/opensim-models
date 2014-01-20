@@ -2,7 +2,6 @@ SET(GAIT2354_FILES subject01_static.trc subject01_walk1.trc subject01_walk1_grf.
 gait2354_CMC_Actuators.xml
 gait2354_CMC_ControlConstraints.xml
 gait2354_CMC_Tasks.xml
-gait2354_IK_Tasks.xml
 gait2354_RRA_Actuators.xml
 gait2354_RRA_ControlConstraints.xml
 gait2354_RRA_Tasks.xml

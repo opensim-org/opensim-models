@@ -2,7 +2,6 @@ SET(GAIT2392_FILES subject01_static.trc subject01_walk1.trc subject01_walk1.mot 
 gait2392_CMC_Actuators.xml
 gait2392_CMC_ControlConstraints.xml
 gait2392_CMC_Tasks.xml
-gait2392_IK_Tasks.xml
 gait2392_RRA_Actuators.xml
 gait2392_RRA_ControlConstraints.xml
 gait2392_RRA_Tasks.xml
