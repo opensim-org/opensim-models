@@ -1,7 +1,7 @@
-SET(GAIT2392_FILES
-    subject01_static.trc
-    subject01_walk1.trc
-    subject01_walk1_grf.mot
+SET(GAIT2392_FILES 
+    subject01_static.trc 
+    subject01_walk1.trc 
+    subject01_walk1_grf.mot 
     gait2392_simbody.osim
     gait2392_CMC_Actuators.xml
     gait2392_CMC_ControlConstraints.xml

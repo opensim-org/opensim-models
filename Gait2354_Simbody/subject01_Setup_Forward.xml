@@ -2,7 +2,7 @@
 <OpenSimDocument Version="20302">
 	<ForwardTool name="subject01_walk1">
 	<!--Name of the .osim file used to construct a model.-->
-		<model_file> subject01_simbody_adjusted.osim </model_file>
+		<model_file> .osubject01_simbody_adjusted.osim </model_file>
 	<!--Replace the model's force set with sets specified in
 	    <force_set_files>? If false, the force set is appended to.-->
 	<replace_force_set> false </replace_force_set>
@@ -15,7 +15,7 @@
 	<!--Initial time for the simulation.-->
 		<initial_time>       0.83000000000000007000 </initial_time>
 	<!--Final time for the simulation.-->
-		<final_time>       1.18 </final_time>
+		<final_time>       1.08 </final_time>
 		<!--Flag indicating whether or not to compute equilibrium values for
 		    states other than the coordinates or speeds.  For example, equilibrium
 		    muscle fiber lengths or muscle forces.-->
@@ -138,7 +138,7 @@
 					<actuator_list> </actuator_list>
 					<!--Flag (true or false) indicating whether or not the controller is
 					    disabled.-->
-					<isDisabled> false </isDisabled>
+					<isDisabled> true </isDisabled>
 					<!--Gain for position errors-->
 					<kp>      16.00000000000000000000 </kp>
 					<!--Gain for velocity errors-->

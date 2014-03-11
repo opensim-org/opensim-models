@@ -246,7 +246,7 @@
 		<!--TRC file (.trc) containing the time history of observations of marker positions.-->
 		<marker_file>subject01_walk1.trc</marker_file>
 		<!--The name of the storage (.sto or .mot) file containing coordinate observations.Coordinate values from this file are included if there is a corresponding coordinate task. -->
-		<coordinate_file>subject01_walk1.mot</coordinate_file>
+		<coordinate_file></coordinate_file>
 		<!--Time range over which the inverse kinematics problem is solved.-->
 		<time_range> 0.5 2.5</time_range>
 		<!--Flag (true or false) indicating whether or not to report marker errors from the inverse kinematics solution.-->
