@@ -1,3 +1,7 @@
+PROJECT(OpenSimModels)
+
+cmake_minimum_required(VERSION 2.6)
+
 SUBDIRS(Gait2354_Simbody Gait2392_Simbody WristModel Arm26 Leg6Dof9Musc Tug_of_War BouncingBlock ToyDropLanding Gait10dof18musc)
 
 FILE(GLOB VTP_FILES "Geometry/*.vtp")
