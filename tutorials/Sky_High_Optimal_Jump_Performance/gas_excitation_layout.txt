@@ -1,0 +1,5 @@
+1
+Column 0
+2
+med_gas_l.excitation
+med_gas_r.excitation

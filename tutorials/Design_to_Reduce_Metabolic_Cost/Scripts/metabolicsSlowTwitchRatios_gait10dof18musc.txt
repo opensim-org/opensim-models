@@ -1,0 +1,9 @@
+hamstrings 0.49
+bifemsh 0.53
+glut_max 0.55
+iliopsoas 0.50
+rect_fem 0.39
+vasti 0.50
+gastroc 0.54
+soleus 0.80
+tib_ant 0.70
