@@ -1,0 +1,5 @@
+1
+Column 0
+2
+add_mag2_l.excitation
+add_mag2_r.excitation

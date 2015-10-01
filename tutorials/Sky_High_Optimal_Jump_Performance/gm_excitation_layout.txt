@@ -1,0 +1,9 @@
+2
+Column 0
+2
+glut_max1_l.excitation
+glut_max1_r.excitation
+Column 1
+2
+glut_max2_l.excitation
+glut_max2_r.excitation
