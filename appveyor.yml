@@ -1,0 +1,48 @@
+# Windows testing python
+
+# Syntax for this file:
+# http://www.appveyor.com/docs/appveyor-yml
+shallow_clone: true
+
+# os: Visual Studio 2015
+
+platform: x64
+
+init:
+  # Note: python 2.7 32bit is already on the path. We want v2.7 64bit,
+  # so we must add v2.7 64bit earlier on the PATH.
+  # http://www.appveyor.com/docs/installed-software
+  - SET PATH=C:\Python27-x64\;%PATH%
+  - SET OPENSIM_HOME=C:/OpenSim
+  - SET PATH=%OPENSIM_HOME%/bin;%PATH%
+
+  # The following line, if uncommented, should allow you to remote-desktop into
+  # the Appveyor build machine.
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+nuget:
+  account_feed: true
+
+install:
+
+  ## The GUI is built with the Netbeans platform.
+  - ps: choco install swig --version 3.0.5 -y
+
+  ## install python-nose for python testing
+  - C:\Python27-x64\Scripts\pip install nose
+
+  ## Apache Ant for building Java projects.
+  - choco install ant --yes --limit-output
+
+  ## OpenSim (and Simbody).
+  # OpenSim's installation is pushed to our Appveyor NuGet account feed.
+  - nuget install opensim-core -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
+
+build_script:
+
+test_script:
+  ## Our tests work with each verison
+  - cd %OPENSIM_HOME%\sdk\python
+  # Run the python tests-
+  - C:\Python27-x64\Scripts\nosetests -v
+
+after_test:

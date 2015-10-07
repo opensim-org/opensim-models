@@ -1,0 +1,4 @@
+[submodule "OpenSimAPI"]
+	path = OpenSimAPI
+	url = https://github.com/opensim-org/opensim-core.git
+	branch = master
