@@ -6,6 +6,8 @@ import os
 import shutil as sh
 import ntpath as nt
 
+import filecmp
+
 import unittest
 import opensim as osm
 
@@ -56,13 +58,30 @@ def run_cmc(path2CMCSetup):
 	# run the cmd command
 	os.system(cmd)
 
+
 # run scaling
 scaledModelName = run_scaling(path2Model,path2ScaleSetup)
 # set the full path to the model.
 subjectModel = os.path.dirname(path2ScaleSetup) + '/' + scaledModelName
 # run IK
-run_ik(subjectModel, path2IKSetup)
+#run_ik(subjectModel, path2IKSetup)
 # run rra
-run_rra(path2RRASetup)
+#run_rra(path2RRASetup)
 # run cmc
-run_cmc(path2CMCSetup)
+#run_cmc(path2CMCSetup)
+
+ref_Model  = os.path.join(os.getcwd(), 'pipelines', 'Gait2392_Simbody','OutputReference', 'subject01_simbody.osim')
+ref_motion = os.path.join(os.getcwd(), 'pipelines', 'Gait2392_Simbody','OutputReference', 'subject01_walk1_ik.mot')
+
+
+def test_scaling(ref_Model, subjectModel):
+
+	filecmp.cmp(ref_Model, subjectModel)
+
+	if false
+
+#def test_ik():
+
+#def test_rra():
+
+#def test_cmc():
