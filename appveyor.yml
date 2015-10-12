@@ -36,10 +36,6 @@ install:
   - python setup.py install
   - cd %APPVEYOR_BUILD_FOLDER%
 
-build_script:
-
 test_script:
   # Run the python tests-
   - C:\Python27-x64\Scripts\nosetests -v
-
-after_test:
