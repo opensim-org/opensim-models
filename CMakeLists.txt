@@ -87,6 +87,3 @@ install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
 
 # TODO 3.3 has a WristModel folder, but there's no wrist.osim in this
 # repository.
-
-
-# TODO tree on Geometry
