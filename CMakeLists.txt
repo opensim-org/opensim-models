@@ -85,8 +85,5 @@ install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
         PATTERN "addPrescribedMotion.py" EXCLUDE # TODO leave in or not?
         )
 
-# TODO 3.3 has a WristModel folder, but there's no wrist.osim in this
-# repository.
-
-
-# TODO tree on Geometry
+install(FILES Models/WristModel/wrist.osim
+        DESTINATION Models/WristModel)
