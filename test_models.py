@@ -17,7 +17,7 @@ for path, subdirs, files in os.walk(root):
             osimpaths.append(os.path.join(path, name))
             modelNames.append(name)
 
-for i in range(0 , len(osimpaths) - 1):
+for i in range(len(osimpaths)):
     try:
         model = om.Model(osimpaths[i])
         s = model.initSystem()

@@ -28,7 +28,7 @@ install:
 
   ## OpenSim (and Simbody).
   # OpenSim's installation is pushed to our Appveyor NuGet account feed.
-  - nuget install opensim-core -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
+  - nuget install opensim-core-x64 -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
 
   ## Our tests work with each verison
   - cd %OPENSIM_HOME%\sdk\python
@@ -36,5 +36,9 @@ install:
   #- cd %APPVEYOR_BUILD_FOLDER%
 
 test_script:
+  # Move to the correct folder
+  - cd %APPVEYOR_BUILD_FOLDER%
   # Run the python tests-
   - C:\Python27-x64\Scripts\nosetests -v
+
+build_script:
