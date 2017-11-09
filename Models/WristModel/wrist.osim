@@ -36,7 +36,7 @@
 									<!--Name of texture file .jpg, .bmp-->
 									<texture_file />
 									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> -0 0 -0 0 0 0</transform>
+									<transform> -0 0 -0 0 1.274 0</transform>
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
@@ -151,7 +151,7 @@
 								</TransformAxis>
 							</SpatialTransform>
 							<parent_body>ground</parent_body>
-							<location_in_parent> 0.0127 -0.274 0.0389</location_in_parent>
+							<location_in_parent>0.0127 1 0.0389</location_in_parent>
 							<orientation_in_parent> -0 0 -0</orientation_in_parent>
 							<location> 0 0 0</location>
 							<orientation> -0 0 -0</orientation>
@@ -2934,7 +2934,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="FCR-P1">
-									<location> 0.00639 -0.27761 0.01313</location>
+									<location> 0.00639 0.99639 0.01313</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="FCR-P2">
@@ -3020,7 +3020,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="FCU-P1">
-									<location> 0.00463 -0.27768 0.01318</location>
+									<location> 0.00463 0.99632 0.01318</location>
 									<body>ground</body>
 								</PathPoint>
 								<ConditionalPathPoint name="FCU-P2">
@@ -3122,7 +3122,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="ECU_pre-surgery-P1">
-									<location> 0.02268 -0.26804 0.06679</location>
+									<location> 0.02268 1.00596 0.06679</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="ECU_pre-surgery-P2">
@@ -3220,7 +3220,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="ECU_post-surgery-P1">
-									<location> 0.02268 -0.26804 0.06679</location>
+									<location> 0.02268 1.00596 0.06679</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="ECU_post-surgery-P2">
@@ -3330,7 +3330,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="EDM-P1">
-									<location> 0.02257 -0.26792 0.06683</location>
+									<location> 0.02257 1.00608 0.06683</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="EDM-P2">
@@ -3438,7 +3438,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="ECRB-P1">
-									<location> 0.02254 -0.26813 0.06679</location>
+									<location> 0.02254 1.00587 0.06679</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="ECRB-P2">
@@ -3528,11 +3528,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="ECRL-P1">
-									<location> 0.01337 -0.26111 0.07069</location>
+									<location> 0.01337 1.01289 0.07069</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="ECRL-P2">
-									<location> 0.02239 -0.26834 0.06679</location>
+									<location> 0.02239 1.00566 0.06679</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="ECRL-P3">
@@ -3624,7 +3624,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="FDSI-P1">
-									<location> 0.0035 -0.29455 0.03226</location>
+									<location> 0.0035 0.97945 0.03226</location>
 									<body>ground</body>
 								</PathPoint>
 								<ConditionalPathPoint name="FDSI-P2">
@@ -3742,7 +3742,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="FDSM-P1">
-									<location> 0.0035 -0.29455 0.03226</location>
+									<location> 0.0035 0.97945 0.03226</location>
 									<body>ground</body>
 								</PathPoint>
 								<ConditionalPathPoint name="FDSM-P2">
@@ -3860,7 +3860,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="FDSR-P1">
-									<location> 0.0035 -0.29455 0.03226</location>
+									<location> 0.0035 0.97945 0.03226</location>
 									<body>ground</body>
 								</PathPoint>
 								<ConditionalPathPoint name="FDSR-P2">
@@ -3978,7 +3978,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="FDSL-P1">
-									<location> 0.0035 -0.29455 0.03226</location>
+									<location> 0.0035 0.97945 0.03226</location>
 									<body>ground</body>
 								</PathPoint>
 								<ConditionalPathPoint name="FDSL-P2">
@@ -4552,7 +4552,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="EDCL-P1">
-									<location> 0.01056 -0.26789 0.07127</location>
+									<location> 0.01056 1.00611 0.07127</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="EDCL-P2">
@@ -4668,7 +4668,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="EDCR-P1">
-									<location> 0.01011 -0.26789 0.07127</location>
+									<location> 0.01011 1.00611 0.07127</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="EDCR-P2">
@@ -4778,7 +4778,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="EDCM-P1">
-									<location> 0.01011 -0.26789 0.07127</location>
+									<location> 0.01011 1.00611 0.07127</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="EDCM-P2">
@@ -4888,7 +4888,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="EDCI-P1">
-									<location> 0.01011 -0.26789 0.07127</location>
+									<location> 0.01011 1.00611 0.07127</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="EDCI-P2">
@@ -5544,7 +5544,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="PL-P1">
-									<location> 0.00468 -0.27698 0.01316</location>
+									<location> 0.00468 0.99702 0.01316</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="PL-P2">
