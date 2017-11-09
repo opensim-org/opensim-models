@@ -1,9 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<OpenSimDocument Version="30000">
+<OpenSimDocument Version="20303">
 	<Model name="3DGaitModel2354">
-		<credits>Delp S.L., Loan J.P., Hoy M.G., Zajac F.E., Topp E.L., Rosen J.M., Thelen D.G., Anderson F.C., Seth A. Notes: 3D, 23 DOF gait model created by D.G. Thelen, Univ. of Wisconsin-Madison, and Ajay Seth, Frank C. Anderson, and Scott L. Delp, Stanford University. Lower extremity joint defintions based on Delp et al. (1990). Low back joint and anthropometry based on Anderson and Pandy (1999, 2001). Planar knee model of Yamaguchi and Zajac (1989). Seth replaced tibia translation constraints with a CustomJoint for the knee and removed the patella to eliminate all kinematic constraints; insertions of the quadrucepts are handled with moving points in the tibia frame as defined by Delp 1990. Number of muscles was reduced by Anderson to improve simulation speed for demonstrations and is not intended to be used in research. License: Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially, as long as you credit us for the original creation. http://creativecommons.org/licenses/by/3.0/ More Information: http://simtk-confluence.stanford.edu:8080/display/OpenSim/Gait+2392+and+2354+Models</credits>
-		<publications>Delp, S.L., Loan, J.P., Hoy, M.G., Zajac, F.E., Topp E.L., Rosen, J.M.: An interactive graphics-based model of the lower extremity to study orthopaedic surgical procedures, IEEE Transactions on Biomedical Engineering, vol. 37, pp. 757-767, 1990. Yamaguchi G.T., Zajac F.E.: A planar model of the knee joint to characterize the knee extensor mechanism." J . Biomech. vol. 22. pp. 1-10. 1989. Anderson F.C., Pandy M.G.: A dynamic optimization solution for vertical jumping in three dimensions. Computer Methods in Biomechanics and Biomedical Engineering 2:201-231, 1999. Anderson F.C., Pandy M.G.: Dynamic optimization of human walking. Journal of Biomechanical Engineering 123:381-390, 2001.</publications>
-		<length_units>meters</length_units>
+  <!--See the credits section below for information about this model's authors, data sources, intended uses, and more. See the publications 
+	section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model. 
+	If you are this model's author(s), add or update the credits and publications sections before distributing your model.-->
+    <credits> Delp S.L., Loan J.P., Hoy M.G., Zajac F.E., Topp E.L., Rosen J.M., Thelen D.G., Anderson F.C., Seth A.
+      Notes: 3D, 23 DOF gait model created by D.G. Thelen, Univ. of Wisconsin-Madison, and Ajay Seth,
+      Frank C. Anderson, and Scott L. Delp, Stanford University. Lower extremity joint defintions based on Delp et al. (1990).
+      Low back joint and anthropometry based on Anderson and Pandy (1999, 2001). Planar knee model of Yamaguchi and Zajac (1989).
+      Seth replaced tibia translation constraints with a CustomJoint for the knee and removed the patella to eliminate all kinematic constraints; insertions of the quadrucepts are handled with moving points in the tibia frame as defined by Delp 1990.
+      Number of muscles was reduced by Anderson to improve simulation speed for demonstrations and is not intended to be used in research.
+
+      License:
+      Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially,
+      as long as you credit us for the original creation.
+      http://creativecommons.org/licenses/by/3.0/
+
+      More Information:
+      http://simtk-confluence.stanford.edu:8080/display/OpenSim/Gait+2392+and+2354+Models
+    </credits>
+    <publications>
+      Delp, S.L., Loan, J.P., Hoy, M.G., Zajac, F.E., Topp E.L., Rosen, J.M.: An interactive graphics-based model of the lower extremity to study orthopaedic surgical procedures,  IEEE Transactions on Biomedical Engineering, vol. 37, pp. 757-767, 1990.
+      Yamaguchi G.T., Zajac F.E.: A planar model of the knee joint to characterize the knee extensor mechanism." J . Biomech. vol. 22. pp. 1-10. 1989.
+      Anderson F.C., Pandy M.G.: A dynamic optimization solution for vertical jumping in three dimensions. Computer Methods in Biomechanics and Biomedical Engineering 2:201-231, 1999.
+      Anderson F.C., Pandy M.G.: Dynamic optimization of human walking. Journal of Biomechanical Engineering 123:381-390, 2001.
+    </publications>
+    <length_units>meters</length_units>
 		<force_units>N</force_units>
 		<!--Acceleration due to gravity.-->
 		<gravity> 0 -9.80665 0</gravity>
@@ -142,7 +164,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>translational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.974</default_value>
+										<default_value>1</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -2343,7 +2365,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_med1_r-P1">
@@ -2357,13 +2378,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2378,6 +2393,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2417,7 +2436,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_med2_r-P1">
@@ -2431,13 +2449,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2452,6 +2464,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2491,7 +2507,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_med3_r-P1">
@@ -2505,13 +2520,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2526,6 +2535,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2565,7 +2578,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="bifemlh_r-P1">
@@ -2583,13 +2595,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2604,6 +2610,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2643,7 +2653,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="bifemsh_r-P1">
@@ -2661,13 +2670,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2682,6 +2685,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2721,7 +2728,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="sar_r-P1">
@@ -2747,13 +2753,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2768,6 +2768,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2807,7 +2811,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="add_mag2_r-P1">
@@ -2821,13 +2824,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2842,6 +2839,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2881,7 +2882,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tfl_r-P1">
@@ -2903,13 +2903,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2924,6 +2918,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -2963,7 +2961,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="pect_r-P1">
@@ -2977,13 +2974,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -2998,6 +2989,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3037,7 +3032,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="grac_r-P1">
@@ -3061,13 +3055,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3082,6 +3070,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3121,7 +3113,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_max1_r-P1">
@@ -3143,13 +3134,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3164,6 +3149,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3203,7 +3192,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_max2_r-P1">
@@ -3225,13 +3213,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3246,6 +3228,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3285,7 +3271,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_max3_r-P1">
@@ -3307,13 +3292,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3328,6 +3307,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3367,7 +3350,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="iliacus_r-P1">
@@ -3395,13 +3377,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3416,6 +3392,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3455,7 +3435,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="psoas_r-P1">
@@ -3483,13 +3462,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3504,6 +3477,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3543,7 +3520,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="quad_fem_r-P1">
@@ -3557,13 +3533,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3578,6 +3548,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3617,7 +3591,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="gem_r-P1">
@@ -3631,13 +3604,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3652,6 +3619,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3691,7 +3662,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="peri_r-P1">
@@ -3709,13 +3679,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3730,6 +3694,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3769,7 +3737,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="rect_fem_r-P1">
@@ -3810,13 +3777,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3831,6 +3792,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3870,7 +3835,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="vas_int_r-P1">
@@ -3915,13 +3879,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -3936,6 +3894,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -3975,7 +3937,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="med_gas_r-P1">
@@ -3995,13 +3956,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4016,6 +3971,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4055,7 +4014,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="soleus_r-P1">
@@ -4069,13 +4027,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4090,6 +4042,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4129,7 +4085,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tib_post_r-P1">
@@ -4151,13 +4106,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4172,6 +4121,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4211,7 +4164,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tib_ant_r-P1">
@@ -4229,13 +4181,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4250,6 +4196,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4289,7 +4239,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_med1_l-P1">
@@ -4303,13 +4252,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4324,6 +4267,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4363,7 +4310,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_med2_l-P1">
@@ -4377,13 +4323,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4398,6 +4338,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4437,7 +4381,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_med3_l-P1">
@@ -4451,13 +4394,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4472,6 +4409,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4511,7 +4452,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="bifemlh_l-P1">
@@ -4529,13 +4469,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4550,6 +4484,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4589,7 +4527,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="bifemsh_l-P1">
@@ -4607,13 +4544,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4628,6 +4559,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4667,7 +4602,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="sar_l-P1">
@@ -4693,13 +4627,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4714,6 +4642,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4753,7 +4685,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="add_mag2_l-P1">
@@ -4767,13 +4698,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4788,6 +4713,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4827,7 +4756,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tfl_l-P1">
@@ -4849,13 +4777,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4870,6 +4792,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4909,7 +4835,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="pect_l-P1">
@@ -4923,13 +4848,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -4944,6 +4863,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -4983,7 +4906,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="grac_l-P1">
@@ -5007,13 +4929,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5028,6 +4944,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5067,7 +4987,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_max1_l-P1">
@@ -5089,13 +5008,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5110,6 +5023,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5149,7 +5066,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_max2_l-P1">
@@ -5171,13 +5087,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5192,6 +5102,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5231,7 +5145,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="glut_max3_l-P1">
@@ -5253,13 +5166,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5274,6 +5181,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5313,7 +5224,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="iliacus_l-P1">
@@ -5341,13 +5251,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5362,6 +5266,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5401,7 +5309,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="psoas_l-P1">
@@ -5429,13 +5336,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5450,6 +5351,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5489,7 +5394,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="quad_fem_l-P1">
@@ -5503,13 +5407,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5524,6 +5422,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5563,7 +5465,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="gem_l-P1">
@@ -5577,13 +5478,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5598,6 +5493,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5637,7 +5536,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="peri_l-P1">
@@ -5655,13 +5553,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5676,6 +5568,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5715,7 +5611,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="rect_fem_l-P1">
@@ -5756,13 +5651,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5777,6 +5666,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5816,7 +5709,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="vas_int_l-P1">
@@ -5861,13 +5753,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5882,6 +5768,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -5921,7 +5811,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="med_gas_l-P1">
@@ -5941,13 +5830,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -5962,6 +5845,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6001,7 +5888,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="soleus_l-P1">
@@ -6015,13 +5901,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6036,6 +5916,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6075,7 +5959,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tib_post_l-P1">
@@ -6097,13 +5980,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6118,6 +5995,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6157,7 +6038,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="tib_ant_l-P1">
@@ -6175,13 +6055,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6196,6 +6070,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6235,7 +6113,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="ercspn_r-P1">
@@ -6249,13 +6126,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6270,6 +6141,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6309,7 +6184,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="ercspn_l-P1">
@@ -6323,13 +6197,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6344,6 +6212,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6383,7 +6255,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="intobl_r-P1">
@@ -6397,13 +6268,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6418,6 +6283,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6457,7 +6326,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="intobl_l-P1">
@@ -6471,13 +6339,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6492,6 +6354,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6531,7 +6397,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="extobl_r-P1">
@@ -6545,13 +6410,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6566,6 +6425,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
@@ -6605,7 +6468,6 @@
 					<max_control>1</max_control>
 					<!--The set of points defining the path of the muscle.-->
 					<GeometryPath>
-						<!--The set of points defining the path-->
 						<PathPointSet>
 							<objects>
 								<PathPoint name="extobl_l-P1">
@@ -6619,13 +6481,7 @@
 							</objects>
 							<groups />
 						</PathPointSet>
-						<!--The wrap objecs that are associated with this path-->
-						<PathWrapSet>
-							<objects />
-							<groups />
-						</PathWrapSet>
-						<!--Used to display the path in the 3D window-->
-						<VisibleObject name="display">
+						<VisibleObject>
 							<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 							<GeometrySet>
 								<objects />
@@ -6640,6 +6496,10 @@
 							<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
 							<display_preference>4</display_preference>
 						</VisibleObject>
+						<PathWrapSet>
+							<objects />
+							<groups />
+						</PathWrapSet>
 					</GeometryPath>
 					<!--The maximum force this actuator can produce.-->
 					<optimal_force>1</optimal_force>
