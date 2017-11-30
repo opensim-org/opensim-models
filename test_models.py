@@ -30,6 +30,6 @@ for i in range(len(osimpaths)):
         print("Oops, Model '%s' failed:\n%s" % (modelNames[i], e.message))
         sys.exit(1)
         
-
+print("All models loaded successfully.")
 
 
