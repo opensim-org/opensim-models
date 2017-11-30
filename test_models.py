@@ -18,11 +18,12 @@ for path, subdirs, files in os.walk(root):
             modelNames.append(name)
 
 for i in range(len(osimpaths)):
+    print("Loading model '%s'" % osimpaths[i])
     try:
         model = om.Model(osimpaths[i])
         s = model.initSystem()
-    except:
-        print("Oops, Model Failed: " + modelNames[i])
+    except Exception as e:
+        print("Oops, Model '%s' failed: %s" % (modelNames[i], e.message))
         
 
 
