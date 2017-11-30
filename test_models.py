@@ -24,7 +24,7 @@ for i in range(len(osimpaths)):
         model = om.Model(osimpaths[i])
         s = model.initSystem()
     except Exception as e:
-        print("Oops, Model '%s' failed: %s" % (modelNames[i], e.message))
+        print("Oops, Model '%s' failed:\n%s" % (modelNames[i], e.message))
         sys.exit(1)
         
 
