@@ -19,9 +19,7 @@ for path, subdirs, files in os.walk(root):
             modelNames.append(name)
 
 for i in range(len(osimpaths)):
-    print("\n\n\n" + 77 * "=")
-    print("Loading model '%s'" % osimpaths[i])
-    print(80 * "-")
+    print("\n\n\n" + 80 * "=" + "Loading model '%s'" % osimpaths[i] + "\n" + 80 * "-")
     try:
         model = om.Model(osimpaths[i])
         s = model.initSystem()
