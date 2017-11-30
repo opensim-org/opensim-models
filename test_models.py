@@ -2,6 +2,7 @@
 
 """
 import os
+import sys
 import unittest
 from fnmatch import fnmatch
 import opensim as om
@@ -26,6 +27,7 @@ for i in range(len(osimpaths)):
         s = model.initSystem()
     except Exception as e:
         print("Oops, Model '%s' failed: %s" % (modelNames[i], e.message))
+        sys.exit(1)
         
 
 
