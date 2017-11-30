@@ -19,7 +19,10 @@ for path, subdirs, files in os.walk(root):
             modelNames.append(name)
 
 for i in range(len(osimpaths)):
-    print("\n\n\n" + 80 * "=" + "Loading model '%s'" % osimpaths[i] + "\n" + 80 * "-")
+    print("\n\n\n" + 80 * "=" + "\nLoading model '%s'" % osimpaths[i] + "\n" + 80 * "-")
+    # Without this next line, the print above does not necessarily
+    # precede OpenSim's output.
+    sys.stdout.flush()
     try:
         model = om.Model(osimpaths[i])
         s = model.initSystem()
