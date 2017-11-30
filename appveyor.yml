@@ -8,6 +8,12 @@ shallow_clone: true
 
 platform: x64
 
+# No need to run CI on the branch if we're also running CI for a PR.
+skip_branch_with_pr: true
+
+nuget:
+  disable_publish_on_pr: true
+
 init:
   # Note: python 2.7 32bit is already on the path. We want v2.7 64bit,
   # so we must add v2.7 64bit earlier on the PATH.
@@ -27,13 +33,18 @@ install:
   - C:\Python27-x64\Scripts\pip install nose
 
   ## OpenSim (and Simbody).
-  # OpenSim's installation is pushed to our Appveyor NuGet account feed.
+  # OpenSim's installation is pushed to one of our Appveyor NuGet feeds.
+  - nuget sources add -name opensim-core -source https://ci.appveyor.com/nuget/opensim-core-kd63opes1em0
   - nuget install opensim-core-x64 -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
+  - dir C:\
 
   ## Our tests work with each verison
   - cd %OPENSIM_HOME%\sdk\python
   - python setup.py install
   #- cd %APPVEYOR_BUILD_FOLDER%
+  
+build_script:
+  - echo "Nothing to build."
 
 test_script:
   # Move to the correct folder
@@ -41,4 +52,3 @@ test_script:
   # Run the python tests-
   - C:\Python27-x64\Scripts\nosetests -v
 
-build_script:
