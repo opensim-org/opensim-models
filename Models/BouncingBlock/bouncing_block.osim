@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<OpenSimDocument Version="30000">
+<OpenSimDocument Version="20303">
 	<Model name="toy_with_forces">
-		<credits>Author: Matt DeMers License: Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially, as long as you credit us for the original creation. http://creativecommons.org/licenses/by/3.0/</credits>
+		<credits>
+      Author: Matt DeMers
+      License:
+      Creative Commons (CCBY 3.0). You are free to distribute, remix, tweak, and build upon this work, even commercially,
+      as long as you credit us for the original creation.
+      http://creativecommons.org/licenses/by/3.0/
+    </credits>
 		<publications>Unassigned</publications>
 		<length_units>m</length_units>
 		<force_units>N</force_units>
@@ -432,32 +438,20 @@
 		<ConstraintSet>
 			<objects>
 				<PointOnLineConstraint name="lock_block_to_y_axis">
-					<!--Flag indicating whether the constraint is disabled or not. Disabled means that the constraint is not active in subsequent dynamics realization-->
 					<isDisabled>false</isDisabled>
-					<!--Specify the body on which the line is defined-->
 					<line_body>ground</line_body>
-					<!--Direction of the line in line body specified in the line body frame.-->
-					<line_direction_vec>0 1 0</line_direction_vec>
-					<!--Specify the default point on the line in the line body frame.-->
-					<point_on_line>0 0 0</point_on_line>
-					<!--Specify the follower body constrained to the line.-->
+					<line_direction_vec> 0 1 0</line_direction_vec>
+					<point_on_line> 0 0 0</point_on_line>
 					<follower_body>block</follower_body>
-					<!--Specify the  point on the follower bocy constrained to the line in the follower body reference frame.-->
-					<point_on_follower>0 0 0</point_on_follower>
+					<point_on_follower> 0 0 0</point_on_follower>
 				</PointOnLineConstraint>
 				<PointOnLineConstraint name="lock_foot_to_y_axis">
-					<!--Flag indicating whether the constraint is disabled or not. Disabled means that the constraint is not active in subsequent dynamics realization-->
 					<isDisabled>false</isDisabled>
-					<!--Specify the body on which the line is defined-->
 					<line_body>ground</line_body>
-					<!--Direction of the line in line body specified in the line body frame.-->
-					<line_direction_vec>0 1 0</line_direction_vec>
-					<!--Specify the default point on the line in the line body frame.-->
-					<point_on_line>0 0 0</point_on_line>
-					<!--Specify the follower body constrained to the line.-->
+					<line_direction_vec> 0 1 0</line_direction_vec>
+					<point_on_line> 0 0 0</point_on_line>
 					<follower_body>link2</follower_body>
-					<!--Specify the  point on the follower bocy constrained to the line in the follower body reference frame.-->
-					<point_on_follower>0 0 0</point_on_follower>
+					<point_on_follower> 0 0 0</point_on_follower>
 				</PointOnLineConstraint>
 			</objects>
 			<groups />
@@ -497,7 +491,7 @@
 					<point1>0 0 0</point1>
 					<!--Force application point on body2.-->
 					<point2>0 0 0</point2>
-					<!--Spring stiffness (N/m).-->
+					<!--Spring stiffness.-->
 					<stiffness>2000</stiffness>
 					<!--Spring resting length.-->
 					<rest_length>0.8</rest_length>
@@ -535,13 +529,13 @@
 					<location_body_2>0 0.5 0</location_body_2>
 					<!--Orientation of bushing frame in body 2 as x-y-z, body fixed Euler rotations.-->
 					<orientation_body_2>0 0 0</orientation_body_2>
-					<!--Stiffness parameters resisting relative rotation (Nm/rad).-->
+					<!--Stiffness parameters resisting relative rotation.-->
 					<rotational_stiffness>10 10 10</rotational_stiffness>
-					<!--Stiffness parameters resisting relative translation (N/m).-->
+					<!--Stiffness parameters resisting relative translation.-->
 					<translational_stiffness>0 0 0</translational_stiffness>
-					<!--Damping parameters resisting relative angular velocity. (Nm/(rad/s))-->
+					<!--Damping parameters resisting relative angular velocity.-->
 					<rotational_damping>0.1 0.1 0.1</rotational_damping>
-					<!--Damping parameters resisting relative translational velocity. (N/(m/s)-->
+					<!--Damping parameters resisting relative translational velocity.-->
 					<translational_damping>0 0 0</translational_damping>
 				</BushingForce>
 			</objects>
