@@ -8228,7 +8228,7 @@
 						<objects>
 							<HuntCrossleyForce::ContactParameters>
 								<!--Names of geometry objects affected by these parameters.-->
-								<geometry>platform heel_r ball_big_toe_r small_toe_r</geometry>
+								<geometry>platformSurface heel_r ball_big_toe_r small_toe_r</geometry>
 								<stiffness>100000000</stiffness>
 								<dissipation>0.5</dissipation>
 								<static_friction>0.9</static_friction>
@@ -8249,7 +8249,7 @@
 						<objects>
 							<HuntCrossleyForce::ContactParameters>
 								<!--Names of geometry objects affected by these parameters.-->
-								<geometry>platform heel_l ball_big_toe_l small_toe_l</geometry>
+								<geometry>platformSurface heel_l ball_big_toe_l small_toe_l</geometry>
 								<stiffness>100000000</stiffness>
 								<dissipation>0.5</dissipation>
 								<static_friction>0.9</static_friction>
@@ -8502,7 +8502,7 @@
 		<!--ContactGeometries  in the model.-->
 		<ContactGeometrySet>
 			<objects>
-				<ContactHalfSpace name="platform">
+				<ContactHalfSpace name="platformSurface">
 					<!--Body name to connect the contact geometry to-->
 					<body_name>platform</body_name>
 					<!--Location of geometry center in the body frame-->
