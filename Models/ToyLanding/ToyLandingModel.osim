@@ -8592,7 +8592,7 @@
 					<!--Factor by which the stretch reflex is scaled.-->
 					<gain>0.85</gain>
 				</ToyReflexController>
-				<PrescribedController name="R-inverter controls">
+				<PrescribedController name="R-inverter-controls">
 					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
 					<isDisabled>true</isDisabled>
 					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
@@ -8619,7 +8619,7 @@
 						<groups />
 					</FunctionSet>
 				</PrescribedController>
-				<PrescribedController name="R-everter controls">
+				<PrescribedController name="R-everter-controls">
 					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
 					<isDisabled>true</isDisabled>
 					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
