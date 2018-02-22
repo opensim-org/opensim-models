@@ -1052,17 +1052,17 @@
 						</VisibleObject>
 						<PathWrapSet>
 							<objects>
-								<PathWrap>
+								<PathWrap name="TRIlong-wrap-cylinder1">
 									<wrap_object>TRI</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
 								</PathWrap>
-								<PathWrap>
+								<PathWrap name="TRIlong-wrap-ellipsoid">
 									<wrap_object>TRIlonghh</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
 								</PathWrap>
-								<PathWrap>
+								<PathWrap name="TRIlong-wrap-cylinder2">
 									<wrap_object>TRIlongglen</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
