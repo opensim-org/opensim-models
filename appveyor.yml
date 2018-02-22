@@ -4,7 +4,7 @@
 # http://www.appveyor.com/docs/appveyor-yml
 shallow_clone: true
 
-#os: Visual Studio 2015
+os: Visual Studio 2017
 
 platform: x64
 
@@ -19,7 +19,7 @@ init:
   # so we must add v2.7 64bit earlier on the PATH.
   # http://www.appveyor.com/docs/installed-software
   - SET PATH=C:\Python27-x64\;%PATH%
-  - SET OPENSIM_HOME=C:/opensim-core-x64
+  - SET OPENSIM_HOME=C:/opensim-core-VC141
   - SET PATH=%OPENSIM_HOME%/bin;%PATH%
 
   # The following line, if uncommented, should allow you to remote-desktop into
@@ -33,7 +33,7 @@ install:
   ## OpenSim (and Simbody).
   # OpenSim's installation is pushed to one of our Appveyor NuGet feeds.
   - nuget sources add -name opensim-core -source https://ci.appveyor.com/nuget/opensim-core-kd63opes1em0
-  - nuget install opensim-core-x64 -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
+  - nuget install opensim-core-VC141 -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
   # - dir C:\
 
   ## Our tests work with each verison
