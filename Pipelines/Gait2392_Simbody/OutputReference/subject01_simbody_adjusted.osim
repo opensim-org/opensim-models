@@ -14485,9 +14485,9 @@
 										<!--Cooridnate can describe rotational, translational, or coupled values.
 										    Defaults to rotational.-->
 										<motion_type> translational </motion_type>
-										<default_value>       0.00000000 </default_value>
+										<default_value>       1.015 </default_value>
 										<default_speed_value>       0.00000000 </default_speed_value>
-										<initial_value>       0.00000000 </initial_value>
+										<initial_value>       1.015 </initial_value>
 										<range>      -1.00000000       2.00000000 </range>
 										<clamped> false </clamped>
 										<locked> false </locked>
