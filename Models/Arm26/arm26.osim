@@ -138,7 +138,7 @@
 						<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 						<scale_factors> 1 1 1</scale_factors>
 						<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-						<transform> -0 0 -0 0 0 0</transform>
+						<transform> -0 0 -0 0 1 0</transform>
 						<!--Whether to show a coordinate frame-->
 						<show_axes>false</show_axes>
 						<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
@@ -148,7 +148,7 @@
 						<objects>
 							<WrapCylinder name="TRIlongglen">
 								<xyz_body_rotation> 1.37532 -0.294612 2.43596</xyz_body_rotation>
-								<translation> -0.043905 -0.0039 0.1478</translation>
+								<translation> -0.043905 0.9961 0.1478</translation>
 								<active>true</active>
 								<quadrant>x</quadrant>
 								<VisibleObject>
@@ -160,7 +160,7 @@
 									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
 									<scale_factors> 1 1 1</scale_factors>
 									<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 1.37532 -0.294612 2.43596 -0.043905 -0.0039 0.1478</transform>
+									<transform> 1.37532 -0.294612 2.43596 -0.043905 0.9961 0.1478</transform>
 									<!--Whether to show a coordinate frame-->
 									<show_axes>false</show_axes>
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
@@ -263,7 +263,7 @@
 								</TransformAxis>
 							</SpatialTransform>
 							<parent_body>ground</parent_body>
-							<location_in_parent> -0.017545 -0.007 0.17</location_in_parent>
+							<location_in_parent> -0.017545 0.993 0.17</location_in_parent>
 							<orientation_in_parent> 0 0 0</orientation_in_parent>
 							<location> 0 0 0</location>
 							<orientation> 0 0 0</orientation>
@@ -1024,7 +1024,7 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="TRIlong-P1">
-									<location> -0.05365 -0.01373 0.14723</location>
+									<location> -0.05365 0.98627 0.14723</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="TRIlong-P2">
@@ -1301,11 +1301,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="BIClong-P1">
-									<location> -0.039235 0.00347 0.14795</location>
+									<location> -0.039235 1.00347 0.14795</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="BIClong-P2">
-									<location> -0.028945 0.01391 0.15639</location>
+									<location> -0.028945 1.01391 0.15639</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="BIClong-P3">
@@ -1406,11 +1406,11 @@
 						<PathPointSet>
 							<objects>
 								<PathPoint name="BICshort-P1">
-									<location> 0.004675 -0.01231 0.13475</location>
+									<location> 0.004675 0.98769 0.13475</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="BICshort-P2">
-									<location> -0.007075 -0.04004 0.14507</location>
+									<location> -0.007075 0.95996 0.14507</location>
 									<body>ground</body>
 								</PathPoint>
 								<PathPoint name="BICshort-P3">
@@ -1568,7 +1568,7 @@
 					<!--Body segment in the model on which the marker resides.-->
 					<body>ground</body>
 					<!--Location of a marker on the body segment.-->
-					<location> -0.01256 0.04 0.17</location>
+					<location> -0.01256 1.04 0.17</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
 					<fixed>false</fixed>
 				</Marker>
