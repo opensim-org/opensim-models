@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="30000">
-	<Model name="Soccer Ball Kicking Model">
+	<Model name="SoccerBallKickingModel">
 		<credits>Seth A., Reinbolt J.A, Delp D., Hamner S., Habib A., Delp S.L., Loan J.P.</credits>
 		<publications>Notes: 2D, 6 DOF leg model created by Jeff Reinbolt, Ajay Seth, and Scott L. Delp, Stanford University. Lower extremity joint defintions based on Delp et al. (1990). Number of muscles was reduced by Reinbolt to improve simulation speed for demonstrations and is not intended to be used in research. Number of constraints reduced by A. Seth. Foot-ball-ground contact added by A. Seth. Soccer ball and goal added by Seth using OpenSim geometry created by Denny Delp. Graphics for ball and customized GUI by Ayman Habib Backstop of net and full body model contributed by Samuel Hamner and added by A. Seth Goalie is the "Freebie Man 3d model" from http://thefree3dmodels.com/stuff/characters/freebie_man/14-1-0-1166 and added by A. Seth</publications>
 		<length_units>meters</length_units>
