@@ -34,6 +34,38 @@
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint />
+				</Body>
+				<Body name="base">
+					<mass>0</mass>
+					<mass_center> 0 0 0</mass_center>
+					<inertia_xx>0</inertia_xx>
+					<inertia_yy>0</inertia_yy>
+					<inertia_zz>0</inertia_zz>
+					<inertia_xy>0</inertia_xy>
+					<inertia_xz>0</inertia_xz>
+					<inertia_yz>0</inertia_yz>
+					<!--Joint that connects this body with the parent body.-->
+					<Joint>
+						<WeldJoint name="offset">
+							<!--Name of the parent body to which this joint connects its owner body.-->
+							<parent_body>ground</parent_body>
+							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
+							<location_in_parent>0 0.8 0</location_in_parent>
+							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
+							<orientation_in_parent>0 0 0</orientation_in_parent>
+							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
+							<location>0 0 0</location>
+							<!--Orientation of the joint in the owing body specified in the owning body reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. -->
+							<orientation>0 0 0</orientation>
+							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
+							<CoordinateSet>
+								<objects />
+								<groups />
+							</CoordinateSet>
+							<!--Whether the joint transform defines parent->child or child->parent.-->
+							<reverse>false</reverse>
+						</WeldJoint>
+					</Joint>
 					<VisibleObject>
 						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
 						<GeometrySet>
@@ -264,7 +296,7 @@
 									</function>
 								</TransformAxis>
 							</SpatialTransform>
-							<parent_body>ground</parent_body>
+							<parent_body>base</parent_body>
 							<location_in_parent> -0.017545 -0.007 0.17</location_in_parent>
 							<orientation_in_parent> 0 0 0</orientation_in_parent>
 							<location> 0 0 0</location>
@@ -1027,7 +1059,7 @@
 							<objects>
 								<PathPoint name="TRIlong-P1">
 									<location> -0.05365 -0.01373 0.14723</location>
-									<body>ground</body>
+									<body>base</body>
 								</PathPoint>
 								<PathPoint name="TRIlong-P2">
 									<location> -0.02714 -0.11441 -0.00664</location>
@@ -1304,11 +1336,11 @@
 							<objects>
 								<PathPoint name="BIClong-P1">
 									<location> -0.039235 0.00347 0.14795</location>
-									<body>ground</body>
+									<body>base</body>
 								</PathPoint>
 								<PathPoint name="BIClong-P2">
 									<location> -0.028945 0.01391 0.15639</location>
-									<body>ground</body>
+									<body>base</body>
 								</PathPoint>
 								<PathPoint name="BIClong-P3">
 									<location> 0.02131 0.01793 0.01028</location>
@@ -1409,11 +1441,11 @@
 							<objects>
 								<PathPoint name="BICshort-P1">
 									<location> 0.004675 -0.01231 0.13475</location>
-									<body>ground</body>
+									<body>base</body>
 								</PathPoint>
 								<PathPoint name="BICshort-P2">
 									<location> -0.007075 -0.04004 0.14507</location>
-									<body>ground</body>
+									<body>base</body>
 								</PathPoint>
 								<PathPoint name="BICshort-P3">
 									<location> 0.01117 -0.07576 -0.01101</location>
@@ -1568,7 +1600,7 @@
 			<objects>
 				<Marker name="r_acromion">
 					<!--Body segment in the model on which the marker resides.-->
-					<body>ground</body>
+					<body>base</body>
 					<!--Location of a marker on the body segment.-->
 					<location> -0.01256 0.04 0.17</location>
 					<!--Flag (true or false) specifying whether or not a marker should be kept fixed in the marker placement step.  i.e. If false, the marker is allowed to move.-->
