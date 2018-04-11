@@ -40,7 +40,7 @@ install(DIRECTORY Pipelines/Gait2354_Simbody/
         PATTERN "forces_grf.xml" EXCLUDE
         PATTERN "subject01_Setup_Analyze_Reactions.xml" EXCLUDE
         PATTERN "subject01_Setup_AnalyzeTest.xml" EXCLUDE
-        PATTERN "subject01_walk1_ik.mot" EXCLUDE)
+        PATTERN "Pipelines/Gait2354_Simbody/subject01_walk1_ik.mot" EXCLUDE)
 
 install(FILES Models/Gait2392_Simbody/gait2392_thelen2003muscle.osim
         DESTINATION Models/Gait2392_Simbody
