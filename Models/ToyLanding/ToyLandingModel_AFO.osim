@@ -127,7 +127,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>translational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>-0.5</default_value>
+										<default_value>0.25</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -346,7 +346,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>translational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0.92</default_value>
+										<default_value>1.67</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -8412,7 +8412,7 @@
 						<objects>
 							<HuntCrossleyForce::ContactParameters>
 								<!--Names of geometry objects affected by these parameters.-->
-								<geometry>platform heel_r ball_big_toe_r small_toe_r</geometry>
+								<geometry>platform_surface heel_r ball_big_toe_r small_toe_r</geometry>
 								<stiffness>100000000</stiffness>
 								<dissipation>0.5</dissipation>
 								<static_friction>0.9</static_friction>
@@ -8433,7 +8433,7 @@
 						<objects>
 							<HuntCrossleyForce::ContactParameters>
 								<!--Names of geometry objects affected by these parameters.-->
-								<geometry>platform heel_l ball_big_toe_l small_toe_l</geometry>
+								<geometry>platform_surface heel_l ball_big_toe_l small_toe_l</geometry>
 								<stiffness>100000000</stiffness>
 								<dissipation>0.5</dissipation>
 								<static_friction>0.9</static_friction>
@@ -8686,7 +8686,7 @@
 		<!--ContactGeometries  in the model.-->
 		<ContactGeometrySet>
 			<objects>
-				<ContactHalfSpace name="platform">
+				<ContactHalfSpace name="platform_surface">
 					<!--Body name to connect the contact geometry to-->
 					<body_name>platform</body_name>
 					<!--Location of geometry center in the body frame-->
@@ -8776,7 +8776,7 @@
 					<!--Factor by which the stretch reflex is scaled.-->
 					<gain>0.85</gain>
 				</ToyReflexController>
-				<PrescribedController name="R-inverter controls">
+				<PrescribedController name="R-inverter-controls">
 					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
 					<isDisabled>true</isDisabled>
 					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
@@ -8803,7 +8803,7 @@
 						<groups />
 					</FunctionSet>
 				</PrescribedController>
-				<PrescribedController name="R-everter controls">
+				<PrescribedController name="R-everter-controls">
 					<!--Flag (true or false) indicating whether or not the controller is disabled.-->
 					<isDisabled>true</isDisabled>
 					<!--The list of model actuators that this controller will control.The keyword ALL indicates the controller will controll all the acuators in the model-->
