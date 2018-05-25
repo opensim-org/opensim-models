@@ -866,7 +866,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>tibia.vtp</geometry_file>
+									<geometry_file>tibia_r.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1740,7 +1740,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_tibia.vtp</geometry_file>
+									<geometry_file>tibia_l.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -2721,7 +2721,7 @@
           <rotational_damping>0 0 0</rotational_damping>
           <!--Damping parameters resisting relative translational velocity. (N/(m/s)-->
           <translational_damping>0.001 0.001 0.001</translational_damping>
-        </BushingForce>           
+        </BushingForce>
 				<Thelen2003Muscle name="glut_med1_r">
 					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
 					<isDisabled>false</isDisabled>
