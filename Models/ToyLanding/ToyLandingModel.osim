@@ -480,7 +480,7 @@
 									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
 									<display_preference>4</display_preference>
 									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>0.1</opacity>
+									<opacity>1</opacity>
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
