@@ -120,13 +120,13 @@
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
-						<CustomJoint name="ground_pelvis">
+						<PlanarJoint name="PelvisToPlatform">
 							<!--Name of the parent body to which this joint connects its owner body.-->
 							<parent_body>ground</parent_body>
 							<!--Location of the joint in the parent body specified in the parent reference frame. Default is (0,0,0).-->
-							<location_in_parent>0 0.025 0</location_in_parent>
+							<location_in_parent>0 1 0</location_in_parent>
 							<!--Orientation of the joint in the parent body specified in the parent reference frame. Euler XYZ body-fixed rotation angles are used to express the orientation. Default is (0,0,0).-->
-							<orientation_in_parent>0 0 -0.174532925199433</orientation_in_parent>
+							<orientation_in_parent>0 0 0</orientation_in_parent>
 							<!--Location of the joint in the child body specified in the child reference frame. For SIMM models, this vector is always the zero vector (i.e., the body reference frame coincides with the joint). -->
 							<location>0 0 0</location>
 							<!--Orientation of the joint in the owing body specified in the owning body reference frame.  Euler XYZ body-fixed rotation angles are used to express the orientation. -->
@@ -134,7 +134,7 @@
 							<!--Set holding the generalized coordinates (q's) that parmeterize this joint.-->
 							<CoordinateSet>
 								<objects>
-									<Coordinate name="pelvis_tx">
+									<Coordinate name="Pelvis_rx">
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>translational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
@@ -142,7 +142,7 @@
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>0 100</range>
+										<range>-3.14 3.14</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -151,16 +151,18 @@
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
 										<prescribed>false</prescribed>
+										<!--Flag identifies whether or not this coordinate can change freely when posing the model to satisfy kinematic constraints.  When true, the coordinate's initial or specified value is ignored when considering constraints. This allows values for important coordinates, which have this flag set to false, to dictate the value of unimportant coordinates if they are linked via constraints.-->
+										<is_free_to_satisfy_constraints>false</is_free_to_satisfy_constraints>
 									</Coordinate>
-									<Coordinate name="pelvis_ty">
+									<Coordinate name="Pelvis_tx">
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
-										<motion_type>translational</motion_type>
+										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>1</default_value>
+										<default_value>0</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
-										<range>0 5</range>
+										<range>-10 10</range>
 										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
 										<clamped>false</clamped>
 										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
@@ -169,90 +171,35 @@
 										<prescribed_function />
 										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
 										<prescribed>false</prescribed>
+										<!--Flag identifies whether or not this coordinate can change freely when posing the model to satisfy kinematic constraints.  When true, the coordinate's initial or specified value is ignored when considering constraints. This allows values for important coordinates, which have this flag set to false, to dictate the value of unimportant coordinates if they are linked via constraints.-->
+										<is_free_to_satisfy_constraints>false</is_free_to_satisfy_constraints>
+									</Coordinate>
+									<Coordinate name="Pelvis_ty">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-1 2</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+										<!--Flag indicating whether or not the values of the coordinates should be prescribed according to the function above. It is ignored if the no prescribed function is specified.-->
+										<prescribed>false</prescribed>
+										<!--Flag identifies whether or not this coordinate can change freely when posing the model to satisfy kinematic constraints.  When true, the coordinate's initial or specified value is ignored when considering constraints. This allows values for important coordinates, which have this flag set to false, to dictate the value of unimportant coordinates if they are linked via constraints.-->
+										<is_free_to_satisfy_constraints>false</is_free_to_satisfy_constraints>
 									</Coordinate>
 								</objects>
 								<groups />
 							</CoordinateSet>
 							<!--Whether the joint transform defines parent->child or child->parent.-->
 							<reverse>false</reverse>
-							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
-							<SpatialTransform>
-								<!--3 Axes for rotations are listed first.-->
-								<TransformAxis name="rotation1">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 0 1</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="rotation2">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>1 0 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="rotation3">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 1 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-								<!--3 Axes for translations are listed next.-->
-								<TransformAxis name="translation1">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>pelvis_tx</coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>1 0 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<LinearFunction>
-											<coefficients> 1 0</coefficients>
-										</LinearFunction>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="translation2">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>pelvis_ty</coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 1 0</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<LinearFunction>
-											<coefficients> 1 0</coefficients>
-										</LinearFunction>
-									</function>
-								</TransformAxis>
-								<TransformAxis name="translation3">
-									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
-									<!--Rotation or translation axis for the transform.-->
-									<axis>0 0 1</axis>
-									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
-									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
-									</function>
-								</TransformAxis>
-							</SpatialTransform>
-						</CustomJoint>
+						</PlanarJoint>
 					</Joint>
 					<VisibleObject>
 						<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
