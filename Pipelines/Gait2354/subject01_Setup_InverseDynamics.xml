@@ -6,7 +6,7 @@
 		<!--Directory for input files-->
 		<input_directory>  </input_directory>
 		<!--Name of the .osim file used to construct a model.-->
-		<model_file> subject01_simbody.osim </model_file>
+		<model_file> subject01.osim </model_file>
 		<!--Time range over which the inverse dynamics problem is solved.-->
 		<time_range>       0.40000000       1.60000000 </time_range>
 		<!--List of forces by individual or grouping name (e.g. All, actuators,
@@ -28,4 +28,3 @@
 		<output_gen_force_file> inverse_dynamics.sto </output_gen_force_file>
 	</InverseDynamicsTool>
 </OpenSimDocument>
-

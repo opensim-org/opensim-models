@@ -15,7 +15,7 @@
 	<!--Specifies the name of the unscaled model (.osim) and the marker set.-->
 	<GenericModelMaker name="">
 		<!--Model file (.osim) for the unscaled model.-->
-		<model_file> gait2392_simbody.osim </model_file>
+		<model_file> gait2392.osim </model_file>
 		<!--Set of model markers used to scale the model. Scaling is done based on
 		    distances between model markers compared to the same distances between
 		    the corresponding experimental markers.-->
@@ -664,7 +664,7 @@
 		    (optional).-->
 			<output_motion_file> subject01_static_output.mot </output_motion_file>
 		<!--Output OpenSim model file (.osim) after scaling and maker placement.-->
-		<output_model_file> subject01_simbody.osim </output_model_file>
+		<output_model_file> subject01.osim </output_model_file>
 			<!--Output marker set containing the new marker locations after markers
 			    have been placed.-->
 			<output_marker_file> Unassigned </output_marker_file>
@@ -674,4 +674,3 @@
 	</MarkerPlacer>
 	</ScaleTool>
 </OpenSimDocument>
-

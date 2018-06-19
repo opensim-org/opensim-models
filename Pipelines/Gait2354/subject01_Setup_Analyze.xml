@@ -2,7 +2,7 @@
 <OpenSimDocument Version="20302">
 	<AnalyzeTool name="subject01_walk1">
 	<!--Name of the .osim file used to construct a model.-->
-	<model_file> subject01_simbody_adjusted.osim </model_file>
+	<model_file> subject01_adjusted.osim </model_file>
 	<!--Replace the model's force set with sets specified in
 	    <force_set_files>? If false, the force set is appended to.-->
 	<replace_force_set> false </replace_force_set>
@@ -166,4 +166,3 @@
 		<lowpass_cutoff_frequency_for_coordinates>      -1.00000000 </lowpass_cutoff_frequency_for_coordinates>
 	</AnalyzeTool>
 </OpenSimDocument>
-

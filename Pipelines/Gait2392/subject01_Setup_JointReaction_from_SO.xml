@@ -303,7 +303,7 @@
 					    from the actuation_file instead of from the states.  This option
 					    should be used to calculated joint loads from static optimization
 					    results.-->
-					<forces_file> C:\Users\matt\Desktop\Gait2392_Simbody\ResultsSO\subject01_StaticOptimization_force.sto </forces_file>
+					<forces_file> C:\Users\matt\Desktop\Gait2392\ResultsSO\subject01_StaticOptimization_force.sto </forces_file>
 					<!--Names of the joints on which to perform the analysis.The key word
 					    'All' indicates that the analysis should be performed for all bodies.-->
 					<joint_names> hip_r knee_r knee_r </joint_names>
@@ -355,4 +355,3 @@
 		<lowpass_cutoff_frequency_for_coordinates>      -1.00000000 </lowpass_cutoff_frequency_for_coordinates>
 	</AnalyzeTool>
 </OpenSimDocument>
-
