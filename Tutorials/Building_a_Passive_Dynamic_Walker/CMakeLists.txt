@@ -29,7 +29,7 @@ SET(OPENSIM_DLLS_DIR ${OPENSIM_INSTALL_DIR}/bin)
 LINK_DIRECTORIES(${OPENSIM_LIBS_DIR} ${OPENSIM_DLLS_DIR})
 #-----------------------------------------------------------------------------
 # Namespace
-ADD_EXECUTABLE(${TARGET} ${SOURCE})  
+ADD_EXECUTABLE(${TARGET} ${SOURCE})
 #-----------------------------------------------------------------------------
 
 #-----------------------------------------------------------------------------
@@ -64,5 +64,3 @@ ELSE(WIN32)
 ENDIF (WIN32)
 #-----------------------------------------------------------------------------
 MARK_AS_ADVANCED(CMAKE_INSTALL_PREFIX)
-
-

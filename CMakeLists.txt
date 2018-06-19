@@ -33,40 +33,40 @@ install(DIRECTORY Pipelines/Gait10dof18musc/
         PATTERN "CMC/controls_43p_r.xml" EXCLUDE
         PATTERN "CMC/*.osim" EXCLUDE)
 
-install(FILES Models/Gait2354_Simbody/gait2354_simbody.osim
-        DESTINATION Models/Gait2354_Simbody)
-install(DIRECTORY Pipelines/Gait2354_Simbody/
-        DESTINATION Models/Gait2354_Simbody
+install(FILES Models/Gait2354/gait2354.osim
+        DESTINATION Models/Gait2354)
+install(DIRECTORY Pipelines/Gait2354/
+        DESTINATION Models/Gait2354
         PATTERN "forces_grf.xml" EXCLUDE
         PATTERN "subject01_Setup_Analyze_Reactions.xml" EXCLUDE
         PATTERN "subject01_Setup_AnalyzeTest.xml" EXCLUDE
-        PATTERN "Pipelines/Gait2354_Simbody/subject01_walk1_ik.mot" EXCLUDE)
+        PATTERN "Pipelines/Gait2354/subject01_walk1_ik.mot" EXCLUDE)
 
-install(FILES Models/Gait2392_Simbody/gait2392_thelen2003muscle.osim
-        DESTINATION Models/Gait2392_Simbody
-        RENAME gait2392_simbody.osim)
+install(FILES Models/Gait2392/gait2392_thelen2003muscle.osim
+        DESTINATION Models/Gait2392
+        RENAME gait2392.osim)
 install(FILES
-        Pipelines/Gait2392_Simbody/gait2392_CMC_Actuators.xml
-        Pipelines/Gait2392_Simbody/gait2392_CMC_ControlConstraints.xml
-        Pipelines/Gait2392_Simbody/gait2392_CMC_Tasks.xml
-        Pipelines/Gait2392_Simbody/gait2392_RRA_Actuators.xml
-        Pipelines/Gait2392_Simbody/gait2392_RRA_ControlConstraints.xml
-        Pipelines/Gait2392_Simbody/gait2392_RRA_Tasks.xml
-        Pipelines/Gait2392_Simbody/gait2392_Scale_MarkerSet.xml
-        Pipelines/Gait2392_Simbody/subject01_Setup_Analyze.xml
-        Pipelines/Gait2392_Simbody/subject01_Setup_CMC.xml
-        Pipelines/Gait2392_Simbody/subject01_Setup_Forward.xml
-        Pipelines/Gait2392_Simbody/subject01_Setup_IK.xml
-        Pipelines/Gait2392_Simbody/subject01_Setup_RRA.xml
-        Pipelines/Gait2392_Simbody/subject01_Setup_Scale.xml
-        Pipelines/Gait2392_Simbody/subject01_static.trc
-        Pipelines/Gait2392_Simbody/subject01_walk1.trc
-        Pipelines/Gait2392_Simbody/subject01_walk1_grf.mot
-        Pipelines/Gait2392_Simbody/subject01_walk1_grf.xml
-        DESTINATION Models/Gait2392_Simbody)
+        Pipelines/Gait2392/gait2392_CMC_Actuators.xml
+        Pipelines/Gait2392/gait2392_CMC_ControlConstraints.xml
+        Pipelines/Gait2392/gait2392_CMC_Tasks.xml
+        Pipelines/Gait2392/gait2392_RRA_Actuators.xml
+        Pipelines/Gait2392/gait2392_RRA_ControlConstraints.xml
+        Pipelines/Gait2392/gait2392_RRA_Tasks.xml
+        Pipelines/Gait2392/gait2392_Scale_MarkerSet.xml
+        Pipelines/Gait2392/subject01_Setup_Analyze.xml
+        Pipelines/Gait2392/subject01_Setup_CMC.xml
+        Pipelines/Gait2392/subject01_Setup_Forward.xml
+        Pipelines/Gait2392/subject01_Setup_IK.xml
+        Pipelines/Gait2392/subject01_Setup_RRA.xml
+        Pipelines/Gait2392/subject01_Setup_Scale.xml
+        Pipelines/Gait2392/subject01_static.trc
+        Pipelines/Gait2392/subject01_walk1.trc
+        Pipelines/Gait2392/subject01_walk1_grf.mot
+        Pipelines/Gait2392/subject01_walk1_grf.xml
+        DESTINATION Models/Gait2392)
     # TODO should we copy over the OutputReference folder?
 install(DIRECTORY Tutorials/Intro_to_Musculoskeletal_Modeling/
-        DESTINATION Models/Gait2392_Simbody/Tutorial1)
+        DESTINATION Models/Gait2392/Tutorial1)
 
 install(FILES Models/Leg6Dof9Musc/leg6dof9musc.osim
         DESTINATION Models/Leg6Dof9Musc)

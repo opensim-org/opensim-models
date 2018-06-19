@@ -30,7 +30,7 @@ install:
   ## install python-nose for python testing
   # - C:\Python27-x64\Scripts\pip install nose
 
-  ## OpenSim (and Simbody).
+  ## OpenSim.
   # OpenSim's installation is pushed to one of our Appveyor NuGet feeds.
   - nuget sources add -name opensim-core -source https://ci.appveyor.com/nuget/opensim-core-kd63opes1em0
   - nuget install opensim-core-VC141 -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
@@ -40,7 +40,7 @@ install:
   - cd %OPENSIM_HOME%\sdk\python
   - python setup.py install
   #- cd %APPVEYOR_BUILD_FOLDER%
-  
+
 build_script:
   - echo "Nothing to build."
 
@@ -50,4 +50,3 @@ test_script:
   # Run the python tests-
   #- C:\Python27-x64\Scripts\nosetests -v
   - C:\Python27-x64\python.exe test_models.py
-
