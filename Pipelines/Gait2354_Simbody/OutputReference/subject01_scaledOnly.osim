@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="20303">
 	<Model name="subject01">
-  <!--See the credits section below for information about this model's authors, data sources, intended uses, and more. See the publications 
-	section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model. 
+  <!--See the credits section below for information about this model's authors, data sources, intended uses, and more. See the publications
+	section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model.
 	If you are this model's author(s), add or update the credits and publications sections before distributing your model.-->
     <credits>
       Delp S.L., Loan J.P., Hoy M.G., Zajac F.E., Topp E.L., Rosen J.M., Thelen D.G., Anderson F.C., Seth A.
@@ -165,7 +165,7 @@
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>translational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
-										<default_value>0</default_value>
+										<default_value>1.015</default_value>
 										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
 										<default_speed_value>0</default_speed_value>
 										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
@@ -715,7 +715,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>tibia.vtp</geometry_file>
+									<geometry_file>tibia_r.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1664,7 +1664,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_tibia.vtp</geometry_file>
+									<geometry_file>tibia_l.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->

@@ -1,0 +1,53 @@
+# Windows testing python
+
+# Syntax for this file:
+# http://www.appveyor.com/docs/appveyor-yml
+shallow_clone: true
+
+os: Visual Studio 2017
+
+platform: x64
+
+# No need to run CI on the branch if we're also running CI for a PR.
+skip_branch_with_pr: true
+
+nuget:
+  disable_publish_on_pr: true
+
+init:
+  # Note: python 2.7 32bit is already on the path. We want v2.7 64bit,
+  # so we must add v2.7 64bit earlier on the PATH.
+  # http://www.appveyor.com/docs/installed-software
+  - SET PATH=C:\Python27-x64\;%PATH%
+  - SET OPENSIM_HOME=C:/opensim-core-VC141
+  - SET PATH=%OPENSIM_HOME%/bin;%PATH%
+
+  # The following line, if uncommented, should allow you to remote-desktop into
+  # the Appveyor build machine.
+  #- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+install:
+  ## install python-nose for python testing
+  # - C:\Python27-x64\Scripts\pip install nose
+
+  ## OpenSim (and Simbody).
+  # OpenSim's installation is pushed to one of our Appveyor NuGet feeds.
+  - nuget sources add -name opensim-core -source https://ci.appveyor.com/nuget/opensim-core-kd63opes1em0
+  - nuget install opensim-core-VC141 -Version 0.0.0 -ExcludeVersion -OutputDirectory C:\
+  # - dir C:\
+
+  ## Our tests work with each verison
+  - cd %OPENSIM_HOME%\sdk\python
+  - python setup.py install
+  #- cd %APPVEYOR_BUILD_FOLDER%
+  
+build_script:
+  - echo "Nothing to build."
+
+test_script:
+  # Move to the correct folder
+  - cd %APPVEYOR_BUILD_FOLDER%
+  # Run the python tests-
+  #- C:\Python27-x64\Scripts\nosetests -v
+  - C:\Python27-x64\python.exe test_models.py
+

@@ -8875,7 +8875,7 @@ ffor control values-->
 							<objects>
 								<DisplayGeometry name="">
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file> tibia.vtp </geometry_file>
+									<geometry_file> tibia_r.vtp </geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color>       1.00000000       1.00000000       1.00000000 </color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -9764,7 +9764,7 @@ ffor control values-->
 							<objects>
 								<DisplayGeometry name="">
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file> l_tibia.vtp </geometry_file>
+									<geometry_file> tibia_l.vtp </geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color>       1.00000000       1.00000000       1.00000000 </color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -10787,4 +10787,3 @@ ffor control values-->
 		</ControllerSet>
 	</Model>
 </OpenSimDocument>
-

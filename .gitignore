@@ -25,3 +25,4 @@ dependencies/*
 
 # MAC File System files
 .DS_Store
+._.DS_Store
