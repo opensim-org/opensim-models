@@ -8714,7 +8714,7 @@ ffor control values-->
 							<objects>
 								<DisplayGeometry name="">
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file> femur.vtp </geometry_file>
+									<geometry_file> femur_r.vtp </geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color>       1.00000000       1.00000000       1.00000000 </color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -9625,7 +9625,7 @@ ffor control values-->
 							<objects>
 								<DisplayGeometry name="">
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file> l_femur.vtp </geometry_file>
+									<geometry_file> femur_l.vtp </geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color>       1.00000000       1.00000000       1.00000000 </color>
 									<!--Name of texture file .jpg, .bmp-->
