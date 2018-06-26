@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="20303">
 	<Model name="Wrist_Model">
-  <!--See the credits section below for information about this model's authors, data sources, intended uses, and more. See the publications 
-	section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model. 
+  <!--See the credits section below for information about this model's authors, data sources, intended uses, and more. See the publications
+	section for the paper(s) you should cite when using this model. Do not remove either section if you modify or add to this model.
 	If you are this model's author(s), add or update the credits and publications sections before distributing your model.-->
     <credits>Gonzalez, R.V., Buchanan, T.S., Delp, S.L.</credits>
     <publications>How muscle architecture and moment arms affect wrist flexion-extension moments. Journal of Biomechanics, vol. 30, pp. 705-712, 1997.</publications>
@@ -574,15 +574,14 @@
 								<!--3 Axes for rotations are listed first.-->
 								<TransformAxis name="rotation1">
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>deviation</coordinates>
+									<coordinates>auxprfem-auxprrud_coord</coordinates>
 									<!--Rotation or translation axis for the transform.-->
 									<axis>1 0 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<SimmSpline>
-											<x> -0.436332 0 0.610865</x>
-											<y> -0.163625 0 0.305433</y>
-										</SimmSpline>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
 									</function>
 								</TransformAxis>
 								<TransformAxis name="rotation2">
@@ -655,7 +654,7 @@
 							<!--Generalized coordinates parameterizing this joint.-->
 							<CoordinateSet>
 								<objects>
-									<Coordinate name="deviation">
+									<Coordinate name="auxprfem-auxprrud_coord">
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
 										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
@@ -2745,21 +2744,20 @@
 					<inertia_yz>0</inertia_yz>
 					<!--Joint that connects this body with the parent body.-->
 					<Joint>
-						<CustomJoint name="updown">
+						<CustomJoint name="Wrist">
 							<!--Defines how the child body moves with respect to the parent as a function of the generalized coordinates.-->
 							<SpatialTransform>
 								<!--3 Axes for rotations are listed first.-->
 								<TransformAxis name="rotation1">
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates>flexion</coordinates>
+									<coordinates>deviation</coordinates>
 									<!--Rotation or translation axis for the transform.-->
 									<axis>1 0 0</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<SimmSpline>
-											<x> -1.5708 0 1.5708</x>
-											<y> -0.01 0 0.01</y>
-										</SimmSpline>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
 									</function>
 								</TransformAxis>
 								<TransformAxis name="rotation2">
@@ -2776,14 +2774,14 @@
 								</TransformAxis>
 								<TransformAxis name="rotation3">
 									<!--Names of the coordinates that serve as the independent variables         of the transform function.-->
-									<coordinates></coordinates>
+									<coordinates>flexion</coordinates>
 									<!--Rotation or translation axis for the transform.-->
 									<axis>0 0 1</axis>
 									<!--Transform function of the generalized coordinates used to        represent the amount of transformation along a specified axis.-->
 									<function>
-										<Constant>
-											<value>0</value>
-										</Constant>
+										<LinearFunction>
+											<coefficients> 1 0</coefficients>
+										</LinearFunction>
 									</function>
 								</TransformAxis>
 								<!--3 Axes for translations are listed next.-->
@@ -2828,10 +2826,26 @@
 							<location_in_parent> 0 0 0</location_in_parent>
 							<orientation_in_parent> -0 0 -0</orientation_in_parent>
 							<location> -0 0 0</location>
-							<orientation> -0 0 -1.5708</orientation>
+							<orientation> -0 0 0</orientation>
 							<!--Generalized coordinates parameterizing this joint.-->
 							<CoordinateSet>
 								<objects>
+									<Coordinate name="deviation">
+										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
+										<motion_type>rotational</motion_type>
+										<!--The value of this coordinate before any value has been set. Rotational coordinate value is in radians and Translational in meters.-->
+										<default_value>0</default_value>
+										<!--The speed value of this coordinate before any value has been set. Rotational coordinate value is in rad/s and Translational in m/s.-->
+										<default_speed_value>0</default_speed_value>
+										<!--The minimum and maximum values that the coordinate can range between. Rotational coordinate range in radians and Translational in meters.-->
+										<range>-0.436332 0.610865</range>
+										<!--Flag indicating whether or not the values of the coordinates should be limited to the range, above.-->
+										<clamped>false</clamped>
+										<!--Flag indicating whether or not the values of the coordinates should be constrained to the current (e.g. default) value, above.-->
+										<locked>false</locked>
+										<!--If specified, the coordinate can be prescribed by a function of time. It can be any OpenSim Function with valid second order derivatives.-->
+										<prescribed_function />
+									</Coordinate>
 									<Coordinate name="flexion">
 										<!--Coordinate can describe rotational, translational, or coupled motion. Defaults to rotational.-->
 										<motion_type>rotational</motion_type>
@@ -2900,8 +2914,20 @@
 							<y> -0.610865 0.610865</y>
 						</SimmSpline>
 					</coupled_coordinates_function>
-					<independent_coordinate_names> flexion</independent_coordinate_names>
+					<independent_coordinate_names>flexion</independent_coordinate_names>
 					<dependent_coordinate_name>auxprrud_auxdrfem_r3</dependent_coordinate_name>
+					<scale_factor>1</scale_factor>
+				</CoordinateCouplerConstraint>
+				<CoordinateCouplerConstraint name="auxprfem-auxprrud_coord_con">
+					<isDisabled>false</isDisabled>
+					<coupled_coordinates_function>
+						<SimmSpline>
+							<x> -0.436332 0 0.610865</x>
+							<y> -0.218166 0 0.3054325</y>
+						</SimmSpline>
+					</coupled_coordinates_function>
+					<independent_coordinate_names> deviation </independent_coordinate_names>
+					<dependent_coordinate_name>auxprfem-auxprrud_coord</dependent_coordinate_name>
 					<scale_factor>1</scale_factor>
 				</CoordinateCouplerConstraint>
 				<CoordinateCouplerConstraint name="auxdrfem_auxdrrud_r1_con">
@@ -2909,7 +2935,7 @@
 					<coupled_coordinates_function>
 						<SimmSpline>
 							<x> -0.436332 0 0.610865</x>
-							<y> -0.272708 0 0.305433</y>
+							<y> -0.218166 0 0.3054325</y>
 						</SimmSpline>
 					</coupled_coordinates_function>
 					<independent_coordinate_names> deviation</independent_coordinate_names>
@@ -3349,7 +3375,7 @@
 									<location> -0.00965 -0.00461 0.00733</location>
 									<body>triquetrum</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<PathPoint name="EDM-P6">
 									<location> -0.00895 -0.00546 -0.02267</location>
@@ -3547,7 +3573,7 @@
 									<location> -0.01349 0.01118 0.02204</location>
 									<body>metacarpal2</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<PathPoint name="ECRL-P6">
 									<location> -0.01108 -0.01106 0.02568</location>
@@ -4571,13 +4597,13 @@
 									<location> -0.01357 -0.0079 -0.01241</location>
 									<body>scaphoid</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<ConditionalPathPoint name="EDCL-P6">
 									<location> -0.00192 -0.01151 0.00084</location>
 									<body>capitate</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<ConditionalPathPoint name="EDCL-P7">
 									<location> -0.01096 -0.02472 -0.01035</location>
@@ -4687,7 +4713,7 @@
 									<location> -0.01286 -0.0042 -0.01106</location>
 									<body>scaphoid</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<ConditionalPathPoint name="EDCR-P6">
 									<location> -0.00903 0.00837 -0.00741</location>
@@ -4797,7 +4823,7 @@
 									<location> -0.01198 -0.00332 -0.01283</location>
 									<body>scaphoid</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<ConditionalPathPoint name="EDCM-P6">
 									<location> -0.01257 0.00659 -0.00208</location>
@@ -4907,13 +4933,13 @@
 									<location> -0.01359 -0.00761 -0.01108</location>
 									<body>scaphoid</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<ConditionalPathPoint name="EDCI-P6">
 									<location> -0.00196 -0.00655 0.00232</location>
 									<body>capitate</body>
 									<range> 0 0</range>
-									<coordinate>deviation</coordinate>
+									<coordinate>auxprfem-auxprrud_coord</coordinate>
 								</ConditionalPathPoint>
 								<ConditionalPathPoint name="EDCI-P7">
 									<location> -0.01421 -0.01886 0.0078</location>
