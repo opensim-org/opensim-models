@@ -87,3 +87,10 @@ install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
 
 install(FILES Models/WristModel/wrist.osim
         DESTINATION Models/WristModel)
+
+install(FILES Tutorials/Tutorial+1+-+Intro+to+Musculoskeletal+Modeling.pdf 
+        DESTINATION Tutorials)
+install(FILES Tutorials/Tutorial+2+-+Simulation+and+Analysis+of+a+Tendon+Transfer+Surgery.pdf 
+        DESTINATION Tutorials)
+install(FILES Tutorials/Tutorial+3+-+Scaling%2C+Inverse+Kinematics%2C+and+Inverse+Dynamics.pdf 
+        DESTINATION Tutorials)
