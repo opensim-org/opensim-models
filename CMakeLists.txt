@@ -87,3 +87,6 @@ install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
 
 install(FILES Models/WristModel/wrist.osim
         DESTINATION Models/WristModel)
+
+install(DIRECTORY Tutorials/doc/
+        DESTINATION doc)
