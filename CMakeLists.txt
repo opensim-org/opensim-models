@@ -90,7 +90,8 @@ install(FILES Models/WristModel/wrist.osim
 
 install(FILES Models/Leg39/Leg39.osim
         DESTINATION Models/Leg39)
-install(files
+
+install(FILES
         Pipelines/Leg39/leg39_swing.trc
         Pipelines/Leg39/leg39_swing_short.trc
         Pipelines/Leg39/leg39_swing_IK_Setup.xml
