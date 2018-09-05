@@ -2010,7 +2010,7 @@ Anderson F.C., Pandy M.G.: Dynamic optimization of human walking. Journal of Bio
 									<Coordinate name="knee_angle_pat_r">
 										<!--Cooridnate can describe rotational, translational, or coupled values.
 										    Defaults to rotational.-->
-										<motion_type> rotational </motion_type>
+										<motion_type> coupled </motion_type>
 										<default_value>      -0.64697628 </default_value>
 										<default_speed_value>       0.00000000 </default_speed_value>
 										<initial_value>      -0.64697628 </initial_value>
