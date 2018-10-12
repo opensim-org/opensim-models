@@ -6470,12 +6470,12 @@
 						<!--The wrap objecs that are associated with this path-->
 						<PathWrapSet>
 							<objects>
-								<PathWrap>
+								<PathWrap name="shank">
 									<wrap_object>GasLat_at_shank_r</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
 								</PathWrap>
-								<PathWrap>
+								<PathWrap name="condyles">
 									<wrap_object>Gastroc_at_condyles_r</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
@@ -6576,12 +6576,12 @@
 						<!--The wrap objecs that are associated with this path-->
 						<PathWrapSet>
 							<objects>
-								<PathWrap>
+								<PathWrap name="shank">
 									<wrap_object>GasMed_at_shank_r</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
 								</PathWrap>
-								<PathWrap>
+								<PathWrap name="condyles">
 									<wrap_object>Gastroc_at_condyles_r</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
@@ -10662,12 +10662,12 @@
 						<!--The wrap objecs that are associated with this path-->
 						<PathWrapSet>
 							<objects>
-								<PathWrap>
+								<PathWrap name="shank">
 									<wrap_object>GasLat_at_shank_l</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
 								</PathWrap>
-								<PathWrap>
+								<PathWrap name="condyles">
 									<wrap_object>Gastroc_at_condyles_l</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
@@ -10768,12 +10768,12 @@
 						<!--The wrap objecs that are associated with this path-->
 						<PathWrapSet>
 							<objects>
-								<PathWrap>
+								<PathWrap name="shank">
 									<wrap_object>GasMed_at_shank_l</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
 								</PathWrap>
-								<PathWrap>
+								<PathWrap name="condyles">
 									<wrap_object>Gastroc_at_condyles_l</wrap_object>
 									<method>hybrid</method>
 									<range> -1 -1</range>
