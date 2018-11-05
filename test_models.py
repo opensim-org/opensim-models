@@ -4,7 +4,7 @@
 import os
 import sys
 import unittest
-fropensim fnmatch import fnmatch
+import opensim
 #import opensim as opensim
 root = os.getcwd()
 pattern = "*.osim"
