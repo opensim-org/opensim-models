@@ -41,10 +41,10 @@ install(FILES Models/Gait10dof18musc/gait10dof18musc.osim
               Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Setup_CMC.xml
         DESTINATION Models/Gait10dof18musc)
 
-install(DIRECTORY Pipelines/Gait10dof18musc/OutputReference/RRA/
-        DESTINATION Models/Gait10dof18musc/ResultsRRA)
-install(DIRECTORY Tutorials/Design_to_Reduce_Metabolic_Cost/PlantarFlexorAssistCurves
-        DESTINATION Models/Gait10dof18musc/PlantarFlexorAssistCurves)
+install(DIRECTORY Pipelines/Gait10dof18musc/OutputReference/ResultsRRA
+                  Tutorials/Design_to_Reduce_Metabolic_Cost/Scripts
+                  Tutorials/Design_to_Reduce_Metabolic_Cost/PlantarFlexorAssistCurves
+        DESTINATION Models/Gait10dof18musc)
 
 install(FILES Models/Gait2354_Simbody/gait2354_simbody.osim
         DESTINATION Models/Gait2354_Simbody)
