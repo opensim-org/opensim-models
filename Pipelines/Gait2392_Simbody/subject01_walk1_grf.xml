@@ -48,12 +48,7 @@
 		    and point of application.Note: this file overrides the data source
 		    specified by the individual external forces if specified.-->
 		<datafile> subject01_walk1_grf.mot </datafile>
-	 <!--Optional low-pass cut-off frequency for filtering the model kinematics
-		    corresponding used to transform the point of application. A negative
-		    value results in no filtering. The default value is -1.0, so no
-		    filtering.-->
-		<lowpass_cutoff_frequency_for_load_kinematics>       6.00000000000000000000 </lowpass_cutoff_frequency_for_load_kinematics>
-		<defaults>
+	  <defaults>
 			<ControlLinear name="default">
 				<is_model_control> true </is_model_control>
 				<extrapolate> true </extrapolate>
