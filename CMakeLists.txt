@@ -25,6 +25,7 @@ install(FILES Models/BouncingBlock/run_forward_bouncingBlock.xml
 
 install(FILES Models/Gait10dof18musc/gait10dof18musc.osim
               Models/Gait10dof18musc/subject01.osim
+              Models/Gait10dof18musc/subject01_metabolics.osim
               Pipelines/Gait10dof18musc/ExperimentalData/subject01_static.trc
               Pipelines/Gait10dof18musc/ExperimentalData/subject01_walk.trc
               Pipelines/Gait10dof18musc/ExperimentalData/subject01_walk_grf.xml
@@ -32,12 +33,14 @@ install(FILES Models/Gait10dof18musc/gait10dof18musc.osim
               Pipelines/Gait10dof18musc/RRA/Setup_RRA.xml
               Pipelines/Gait10dof18musc/IK/Setup_IK.xml
               Pipelines/Gait10dof18musc/ID/Setup_ID.xml
+              Pipelines/Gait10dof18musc/OutputReference/IK/subject01_walk_IK.mot
               Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Controls_Constraints_43p_r.xml
               Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Gait10dof_Kinematics_Tracking_Tasks.xml
               Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Gait10dof_Reserve_Actuators.xml
               Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Setup_CMC_ActuatorConstraints.xml
               Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Setup_CMC.xml
         DESTINATION Models/Gait10dof18musc)
+
 install(DIRECTORY Pipelines/Gait10dof18musc/OutputReference/RRA/
         DESTINATION Models/Gait10dof18musc/ResultsRRA)
 install(DIRECTORY Tutorials/Design_to_Reduce_Metabolic_Cost/PlantarFlexorAssistCurves
