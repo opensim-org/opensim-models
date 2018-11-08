@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <OpenSimDocument Version="30000">
-	<CMCTool name="walk_subject">
+	<CMCTool name="Subject01">
 		<!--Name of the .osim file used to construct a model.-->
 		<model_file />
 		<!--Replace the model's force set with sets specified in <force_set_files>? If false, the force set is appended to.-->
@@ -40,11 +40,11 @@
 			<groups />
 		</ControllerSet>
 		<!--XML file (.xml) containing the forces applied to the model as ExternalLoads.-->
-		<external_loads_file>../ExperimentalData/subject01_walk_grf.xml</external_loads_file>
+		<external_loads_file>subject01_walk_grf.xml</external_loads_file>
 		<!--Motion (.mot) or storage (.sto) file containing the desired point trajectories.-->
 		<desired_points_file />
 		<!--Motion (.mot) or storage (.sto) file containing the desired kinematic trajectories.-->
-		<desired_kinematics_file>../RRA/ResultsRRA/subject_adjusted_Kinematics_q.sto</desired_kinematics_file>
+		<desired_kinematics_file>ResultsRRA/subject01_adjusted_Kinematics_q.sto</desired_kinematics_file>
 		<!--File containing the tracking tasks. Which coordinates are tracked and with what weights are specified here.-->
 		<task_set_file>Gait10dof_Kinematics_Tracking_Tasks.xml</task_set_file>
 		<!--File containing the constraints on the controls.-->
