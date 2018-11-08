@@ -25,13 +25,23 @@ install(FILES Models/BouncingBlock/run_forward_bouncingBlock.xml
 
 install(FILES Models/Gait10dof18musc/gait10dof18musc.osim
               Models/Gait10dof18musc/subject01.osim
+              Pipelines/Gait10dof18musc/ExperimentalData/subject01_static.trc
+              Pipelines/Gait10dof18musc/ExperimentalData/subject01_walk.trc
+              Pipelines/Gait10dof18musc/ExperimentalData/subject01_walk_grf.xml
+              Pipelines/Gait10dof18musc/ExperimentalData/subject01_walk_grf.mot
+              Pipelines/Gait10dof18musc/RRA/Setup_RRA.xml
+              Pipelines/Gait10dof18musc/IK/Setup_IK.xml
+              Pipelines/Gait10dof18musc/ID/Setup_ID.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Controls_Constraints_43p_r.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Gait10dof_Kinematics_Tracking_Tasks.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Gait10dof_Reserve_Actuators.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Setup_CMC_ActuatorConstraints.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/Setup_CMC.xml
         DESTINATION Models/Gait10dof18musc)
-# TODO subject01_metabolics* files?
-install(DIRECTORY Pipelines/Gait10dof18musc/
-        DESTINATION Models/Gait10dof18musc
-        PATTERN "CMC/ResultsCMC_*" EXCLUDE
-        PATTERN "CMC/controls_43p_r.xml" EXCLUDE
-        PATTERN "CMC/*.osim" EXCLUDE)
+install(DIRECTORY Pipelines/Gait10dof18musc/OutputReference/RRA/
+        DESTINATION Models/Gait10dof18musc/ResultsRRA)
+install(DIRECTORY Tutorials/Design_to_Reduce_Metabolic_Cost/PlantarFlexorAssistCurves
+        DESTINATION Models/Gait10dof18musc/PlantarFlexorAssistCurves)
 
 install(FILES Models/Gait2354_Simbody/gait2354_simbody.osim
         DESTINATION Models/Gait2354_Simbody)
