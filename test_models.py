@@ -48,7 +48,7 @@ for i in range(len(osimpaths)):
     # Remove the printed file
     os.remove(filename_new)
 
-    if ~reloadedModel.isEqualTo(model)
+    if not reloadedModel.isEqualTo(model):
         print("Initial instance of '%s' is not equal to :\n%s" % (modelName,modelName_new))
         raise Exception("Compared two instances of 4.0 models are not equal")
 
