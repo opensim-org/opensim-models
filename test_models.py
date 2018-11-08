@@ -4,6 +4,7 @@
 import os
 import sys
 import unittest
+from fnmatch import fnmatch
 import opensim
 #import opensim as opensim
 root = os.getcwd()
