@@ -11162,7 +11162,7 @@ Holzbaur, KR, WM Murray and SL Delp, 2005. A model of the upper extremity for si
 										<default_value>       0.00000000 </default_value>
 										<default_speed_value>       0.00000000 </default_speed_value>
 										<initial_value>       0.00000000 </initial_value>
-										<range>      -1.04719755       1.04719755 </range>
+										<range>      -1.57079633       1.57079633 </range>
 										<clamped> true </clamped>
 										<locked> false </locked>
 										<prescribed_function/>
@@ -11384,7 +11384,7 @@ Holzbaur, KR, WM Murray and SL Delp, 2005. A model of the upper extremity for si
 										<default_value>       0.00000000 </default_value>
 										<default_speed_value>       0.00000000 </default_speed_value>
 										<initial_value>       0.00000000 </initial_value>
-										<range>      -1.04719755       1.04719755 </range>
+										<range>      -1.57079633       1.57079633 </range>
 										<clamped> true </clamped>
 										<locked> true </locked>
 										<prescribed_function/>
