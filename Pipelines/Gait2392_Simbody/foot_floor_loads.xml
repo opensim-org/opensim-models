@@ -385,7 +385,5 @@
 			</PrescribedForce>
 		</objects>
 		<groups />
-		<external_loads_model_kinematics_file>subject01_walk1_RRA_Kinematics_q.sto</external_loads_model_kinematics_file>
-		<lowpass_cutoff_frequency_for_load_kinematics>-1</lowpass_cutoff_frequency_for_load_kinematics>
 	</ExternalLoads>
 </OpenSimDocument>
