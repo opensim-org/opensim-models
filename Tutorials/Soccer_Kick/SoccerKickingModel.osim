@@ -59,22 +59,6 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>Grass.vtp</geometry_file>
-									<!--Color used to display the geometry when visible-->
-									<color> 1 1 1</color>
-									<!--Name of texture file .jpg, .bmp-->
-									<texture_file>GrassPic3.JPG</texture_file>
-									<!--in body transform specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-									<transform> 0 0 0 -5 0 -8</transform>
-									<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-									<scale_factors> 1 1 3</scale_factors>
-									<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded-->
-									<display_preference>4</display_preference>
-									<!--Display opacity between 0.0 and 1.0-->
-									<opacity>1</opacity>
-								</DisplayGeometry>
-								<DisplayGeometry>
-									<!--Name of geometry file .vtp, .stl, .obj-->
 									<geometry_file>plane.vtp</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
