@@ -4413,7 +4413,7 @@
 			<groups />
 		</ContactGeometrySet>
 		<!--Controllers in the model.-->
-		<ControllerSet name="Controllers">
+		<ControllerSet name="controllerset">
 			<objects />
 			<groups />
 		</ControllerSet>
