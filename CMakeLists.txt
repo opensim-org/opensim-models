@@ -92,7 +92,6 @@ install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
         DESTINATION Models/Tug_of_War
         PATTERN "addPrescribedMotion.py" EXCLUDE # TODO leave in or not?
         )
-
 install(FILES Models/WristModel/wrist.osim
         DESTINATION Models/WristModel)
 
@@ -105,6 +104,9 @@ install(FILES
         Pipelines/Leg39/leg39_swing_IK_Setup.xml
         Pipelines/Leg39/leg39_swing_short_IK_Setup.xml
         DESTINATION Models/Leg39)
+
+install(DIRECTORY Tutorials/SoccerKick/
+        DESTINATION Models/SoccerKick)
 
 install(DIRECTORY Tutorials/doc/
         DESTINATION doc)
