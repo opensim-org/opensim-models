@@ -105,7 +105,12 @@ install(FILES
         Pipelines/Leg39/leg39_swing_short_IK_Setup.xml
         DESTINATION Models/Leg39)
 
-install(DIRECTORY Tutorials/SoccerKick/
+install(DIRECTORY Models/SoccerKick
+        DESTINATION Models/)
+install(FILES  
+        Tutorials/Soccer_Kick/controls_kick.xml
+        Tutorials/Soccer_Kick/runFD.xml
+        Tutorials/Soccer_Kick/SoccerDemoWithReset.py
         DESTINATION Models/SoccerKick)
 
 install(DIRECTORY Tutorials/doc/
