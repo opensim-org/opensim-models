@@ -88,6 +88,10 @@ install(DIRECTORY Tutorials/Prevention_of_Ankle_Injury/
 
 install(DIRECTORY Models/Tug_of_War/
         DESTINATION Models/Tug_of_War)
+
+install(DIRECTORY Models/DoublePendulum/
+        DESTINATION Models/DoublePendulum)
+
 install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
         DESTINATION Models/Tug_of_War
         PATTERN "addPrescribedMotion.py" EXCLUDE # TODO leave in or not?
