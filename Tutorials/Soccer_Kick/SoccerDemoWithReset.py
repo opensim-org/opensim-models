@@ -4,14 +4,14 @@
 # for more information. OpenSim is developed at Stanford University       #
 # and supported by the US National Institutes of Health (U54 GM072970,    #
 # R24 HD065690) and by DARPA through the Warrior Web program.             #
-#                                                                         #   
-# Copyright (c) 2005-2012 Stanford University and the Authors             #
-#                                                                         #   
+#                                                                         #
+# Copyright (c) 2005-2019 Stanford University and the Authors             #
+#                                                                         #
 # Licensed under the Apache License, Version 2.0 (the "License");         #
 # you may not use this file except in compliance with the License.        #
 # You may obtain a copy of the License at                                 #
 # http://www.apache.org/licenses/LICENSE-2.0.                             #
-#                                                                         # 
+#                                                                         #
 # Unless required by applicable law or agreed to in writing, software     #
 # distributed under the License is distributed on an "AS IS" BASIS,       #
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or         #
@@ -29,7 +29,8 @@ import java.util.ArrayList as ArrayList
 import javax.swing.JButton as JButton
 import javax.swing.JTextField as JTextField
 
-workDir = getInstallDir()+"\Models\SoccerKick" 
+# Get the Resource Directory path and specify the soccerkick resources dir
+workDir = getResourcesDir()+"/Models/SoccerKick"
 
 m = getCurrentModel()
 # Hide simulation toolbar so users run thru the custom GUI only
@@ -72,7 +73,7 @@ def getSpeed(event):
     ballspeed.setText(str(j))
     panel.validate()
 
-def createGUI() : 
+def createGUI() :
     parametersWindow.reset()
     # Create slider(s)
     parametersWindow.createKnobForProperty(maxBifemlhForceProperty, "Hamstrings Muscle Force (Newtons)", m, bifemlh, 0., 9000.)
@@ -92,10 +93,10 @@ def createGUI() :
     # Outputs
     # Create panel, with custom buttons added later that could control the contents of the plotWindow
     panelSpeed = parametersWindow.addOutputPanel("MaxSpeed");
-    # Add a button and a text field for the speed field. 	
+    # Add a button and a text field for the speed field.
     btn1 = JButton("Get Max Speed", actionPerformed=getSpeed)
     panelSpeed.add(btn1)
-    # ballspeed = JTextField() 
+    # ballspeed = JTextField()
     panelSpeed.add(ballspeed)
     parametersWindow.validate()
 
@@ -106,12 +107,12 @@ def resetMuscles(event) :
      modeling.PropertyHelper.setValueDouble(maxTibAntForceOriginal, maxTibAntForceProperty)
      createGUI()
      panel = parametersWindow.addOutputPanel("Reset model")
-     btn = JButton("Reset Muscles", actionPerformed=resetMuscles)   
+     btn = JButton("Reset Muscles", actionPerformed=resetMuscles)
      panel.add(btn)
      parametersWindow.validate()
 
 createGUI()
 panel = parametersWindow.addOutputPanel("Reset model")
-btn = JButton("Reset Muscles", actionPerformed=resetMuscles)   
+btn = JButton("Reset Muscles", actionPerformed=resetMuscles)
 panel.add(btn)
 parametersWindow.validate()

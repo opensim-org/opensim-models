@@ -25,13 +25,21 @@ install(FILES Models/BouncingBlock/run_forward_bouncingBlock.xml
 
 install(FILES Models/Gait10dof18musc/gait10dof18musc.osim
               Models/Gait10dof18musc/subject01.osim
+              Models/Gait10dof18musc/subject01_metabolics.osim
+              Models/Gait10dof18musc/subject01_metabolics_path_spring.osim
+              Models/Gait10dof18musc/subject01_metabolics_path_actuator.osim
+              Tutorials/Design_to_Reduce_Metabolic_Cost/ExperimentalData/subject01_static.trc
+              Tutorials/Design_to_Reduce_Metabolic_Cost/ExperimentalData/subject01_walk.trc
+              Tutorials/Design_to_Reduce_Metabolic_Cost/ExperimentalData/subject01_walk_grf.mot
+              Tutorials/Design_to_Reduce_Metabolic_Cost/ExperimentalData/subject01_walk_grf.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/walk_Setup_CMC.xml
+              Tutorials/Design_to_Reduce_Metabolic_Cost/CMC/walk_Setup_CMC_PathActuator.xml
         DESTINATION Models/Gait10dof18musc)
 # TODO subject01_metabolics* files?
-install(DIRECTORY Pipelines/Gait10dof18musc/
+install(DIRECTORY Tutorials/Design_to_Reduce_Metabolic_Cost/
         DESTINATION Models/Gait10dof18musc
-        PATTERN "CMC/ResultsCMC_*" EXCLUDE
-        PATTERN "CMC/controls_43p_r.xml" EXCLUDE
-        PATTERN "CMC/*.osim" EXCLUDE)
+				PATTERN "CMC/walk_Setup_CMC*" EXCLUDE
+				PATTERN "ExperimentalData" EXCLUDE)
 
 install(FILES Models/Gait2354_Simbody/gait2354_simbody.osim
         DESTINATION Models/Gait2354_Simbody)
@@ -80,15 +88,18 @@ install(DIRECTORY Tutorials/Prevention_of_Ankle_Injury/
 
 install(DIRECTORY Models/Tug_of_War/
         DESTINATION Models/Tug_of_War)
+
+install(DIRECTORY Models/DoublePendulum/
+        DESTINATION Models/DoublePendulum)
+
 install(DIRECTORY Tutorials/Pulling_Out_the_Stops_Tug_of_War/
         DESTINATION Models/Tug_of_War
         PATTERN "addPrescribedMotion.py" EXCLUDE # TODO leave in or not?
         )
-
 install(FILES Models/WristModel/wrist.osim
         DESTINATION Models/WristModel)
 
-install(FILES Models/Leg39/Leg39.osim
+install(FILES Models/Leg39/leg39.osim
         DESTINATION Models/Leg39)
 
 install(FILES
@@ -97,6 +108,14 @@ install(FILES
         Pipelines/Leg39/leg39_swing_IK_Setup.xml
         Pipelines/Leg39/leg39_swing_short_IK_Setup.xml
         DESTINATION Models/Leg39)
+
+install(DIRECTORY Models/SoccerKick
+        DESTINATION Models/)
+install(FILES  
+        Tutorials/Soccer_Kick/controls_kick.xml
+        Tutorials/Soccer_Kick/runFD.xml
+        Tutorials/Soccer_Kick/SoccerDemoWithReset.py
+        DESTINATION Models/SoccerKick)
 
 install(DIRECTORY Tutorials/doc/
         DESTINATION doc)

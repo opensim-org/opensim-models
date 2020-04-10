@@ -6,9 +6,9 @@
 		<!--Replace the model's force set with sets specified in <force_set_files>? If false, the force set is appended to.-->
 		<replace_force_set>false</replace_force_set>
 		<!--List of xml files used to construct an force set for the model.-->
-		<force_set_files>../gait10dof_Reserve_Actuators.xml</force_set_files>
+		<force_set_files>CMC/gait10dof_Reserve_Actuators.xml</force_set_files>
 		<!--Directory used for writing results.-->
-		<results_directory>ResultsCMC</results_directory>
+		<results_directory>CMC/ResultsCMC</results_directory>
 		<!--Output precision.  It is 8 by default.-->
 		<output_precision>8</output_precision>
 		<!--Initial time for the simulation.-->
@@ -40,13 +40,13 @@
 			<groups />
 		</ControllerSet>
 		<!--XML file (.xml) containing the forces applied to the model as ExternalLoads.-->
-		<external_loads_file>../ExperimentalData/subject01_walk_grf.xml</external_loads_file>
+		<external_loads_file>subject01_walk_grf.xml</external_loads_file>
 		<!--Motion (.mot) or storage (.sto) file containing the desired point trajectories.-->
 		<desired_points_file />
 		<!--Motion (.mot) or storage (.sto) file containing the desired kinematic trajectories.-->
-		<desired_kinematics_file>../RRA/ResultsRRA/subject_adjusted_Kinematics_q.sto</desired_kinematics_file>
+		<desired_kinematics_file>RRA/ResultsRRA/subject_adjusted_Kinematics_q.sto</desired_kinematics_file>
 		<!--File containing the tracking tasks. Which coordinates are tracked and with what weights are specified here.-->
-		<task_set_file>../gait10dof_Kinematics_Tracking_Tasks.xml</task_set_file>
+		<task_set_file>CMC/gait10dof_Kinematics_Tracking_Tasks.xml</task_set_file>
 		<!--File containing the constraints on the controls.-->
 		<constraints_file />
 		<!--File containing the controls output by RRA. These can be used to place constraints on the residuals during CMC.-->
