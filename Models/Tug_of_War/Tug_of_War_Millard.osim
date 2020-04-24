@@ -367,10 +367,10 @@
                     <default_activation>1</default_activation> 
                     <!--assumed initial fiber length if none is assigned.--> 
                     <default_fiber_length>0.1</default_fiber_length> 
-					<!--Activation time constant (in seconds).-->
-					<activation_time_constant>0.01</activation_time_constant>
-					<!--Deactivation time constant (in seconds).-->
-					<deactivation_time_constant>0.04</deactivation_time_constant>
+                    <!--Activation time constant (in seconds).-->
+                    <activation_time_constant>0.01</activation_time_constant>
+                    <!--Deactivation time constant (in seconds).-->
+                    <deactivation_time_constant>0.04</deactivation_time_constant>
                     <!--active force length curve--> 
                     <ActiveForceLengthCurve> 
                         <!--normalized fiber length which the steep ascending limb starts--> 
