@@ -13,6 +13,13 @@ install(DIRECTORY Geometry/
 
 install(DIRECTORY Models/Arm26/
         DESTINATION Models/Arm26)
+
+install(DIRECTORY Models/Rajagopal_OpenSense/
+        DESTINATION Models/Rajagopal_OpenSense)
+
+install(DIRECTORY Tutorials/Inverese_Kinematics_with_IMUs/
+        DESTINATION Models/Rajagopal_OpenSense)
+
 install(DIRECTORY Tutorials/Computed_Muscle_Control/
         DESTINATION Models/Arm26)
 
