@@ -27,7 +27,7 @@ init:
 
 install:
   ## install python-nose for python testing
-  # - C:\Python27-x64\Scripts\pip install nose
+  - "C:\Python37-x64\\Scripts\\pip install nose numpy"
 
   ## OpenSim (and Simbody).
   # OpenSim's installation is pushed to one of our Appveyor NuGet feeds.
