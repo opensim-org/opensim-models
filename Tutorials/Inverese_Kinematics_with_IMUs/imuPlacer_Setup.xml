@@ -8,6 +8,6 @@
 		<!--Space fixed Euler angles (XYZ order) from IMU Space to OpenSim. Default (0, 0, 0).-->
 		<sensor_to_opensim_rotations>-1.5707963267948966 0 0</sensor_to_opensim_rotations>
 		<!--Name/path to a .sto file of sensor frame orientations as quaternions to be used for calibration.-->
-		<orientation_file_for_calibration>MT_012005D6_009-001_orientations.sto</orientation_file_for_calibration>
+		<orientation_file_for_calibration>placement_orientations.sto</orientation_file_for_calibration>
 	</IMUPlacer>
 </OpenSimDocument>
