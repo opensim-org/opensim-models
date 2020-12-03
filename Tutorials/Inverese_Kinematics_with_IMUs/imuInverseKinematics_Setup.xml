@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<OpenSimDocument Version="40000">
+	<IMUInverseKinematicsTool>
+		<!--Name of the directory where results are written. Be default this is the directory in which the setup file is be  executed.-->
+		<results_directory></results_directory>
+		<!--The time range for the study.-->
+		<time_range>10.5 17</time_range>
+		<!--Name of the resulting inverse kinematics motion (.mot) file.-->
+		<output_motion_file>walking_motion.sto</output_motion_file>
+		<!--Flag (true or false) indicating whether or not to report errors from the inverse kinematics solution. Default is true.-->
+		<report_errors>false</report_errors>
+		<!--Space fixed Euler angles (XYZ order) from IMU Space to OpenSim. Default to (0, 0, 0).-->
+		<sensor_to_opensim_rotations>-1.5707963267948966 0 0</sensor_to_opensim_rotations>
+		<!--Name/path to a .sto file of sensor frame orientations as quaternions.-->
+		<orientations_file>walking_orientations.sto</orientations_file>
+	</IMUInverseKinematicsTool>
+</OpenSimDocument>
