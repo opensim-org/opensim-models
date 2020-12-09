@@ -1438,54 +1438,54 @@
 		<!--Forces in the model.-->
 		<ForceSet>
 			<objects>
-        <PathActuator name ="PlantarFlexAssist">
-          <!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
-          <isDisabled>false</isDisabled>
-          <!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
-          <min_control>-Inf</min_control>
-          <!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
-          <max_control>Inf</max_control>
-          <!--The set of points defining the path of the muscle.-->
-          <GeometryPath>
-            <!--The set of points defining the path-->
-            <PathPointSet>
-              <objects>
-                <PathPoint name="pfa_r-P1">
-                  <location> -0.004 -0.1 0.01</location>
-                  <body>tibia_r</body>
-                </PathPoint>
-                <PathPoint name="pfa_r-P2">
-                  <location> 0 0.0318395 -0.00544352</location>
-                  <body>calcn_r</body>
-                </PathPoint>
-              </objects>
-              <groups />
-            </PathPointSet>
-            <!--The wrap objecs that are associated with this path-->
-            <PathWrapSet>
-              <objects />
-              <groups />
-            </PathWrapSet>
-            <!--Used to display the path in the 3D window-->
-            <VisibleObject name="display">
-              <!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
-              <GeometrySet>
-                <objects />
-                <groups />
-              </GeometrySet>
-              <!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
-              <scale_factors> 1 1 1</scale_factors>
-              <!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
-              <transform> -0 0 -0 0 0 0</transform>
-              <!--Whether to show a coordinate frame-->
-              <show_axes>false</show_axes>
-              <!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
-              <display_preference>4</display_preference>
-            </VisibleObject>
-          </GeometryPath>
-          <!--The maximum force this actuator can produce.-->
-          <optimal_force>10</optimal_force>
-        </PathActuator>
+		<PathActuator name ="PlantarFlexAssist">
+			<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
+			<isDisabled>false</isDisabled>
+			<!--Minimum allowed value for control signal. Used primarily when solving for control values.-->
+			<min_control>-Inf</min_control>
+			<!--Maximum allowed value for control signal. Used primarily when solving for control values.-->
+			<max_control>Inf</max_control>
+			<!--The set of points defining the path of the muscle.-->
+			<GeometryPath>
+			<!--The set of points defining the path-->
+			<PathPointSet>
+				<objects>
+					<PathPoint name="pfa_r-P1">
+						<location> -0.004 -0.1 0.01</location>
+						<body>tibia_r</body>
+					</PathPoint>
+					<PathPoint name="pfa_r-P2">
+						<location> 0 0.0318395 -0.00544352</location>
+						<body>calcn_r</body>
+					</PathPoint>
+				</objects>
+				<groups />
+			</PathPointSet>
+			<!--The wrap objecs that are associated with this path-->
+			<PathWrapSet>
+				<objects />
+				<groups />
+			</PathWrapSet>
+			<!--Used to display the path in the 3D window-->
+			<VisibleObject name="display">
+				<!--Set of geometry files and associated attributes, allow .vtp, .stl, .obj-->
+				<GeometrySet>
+					<objects />
+					<groups />
+				</GeometrySet>
+				<!--Three scale factors for display purposes: scaleX scaleY scaleZ-->
+				<scale_factors> 1 1 1</scale_factors>
+				<!--transform relative to owner specified as 3 rotations (rad) followed by 3 translations rX rY rZ tx ty tz-->
+				<transform> -0 0 -0 0 0 0</transform>
+				<!--Whether to show a coordinate frame-->
+				<show_axes>false</show_axes>
+				<!--Display Pref. 0:Hide 1:Wire 3:Flat 4:Shaded Can be overriden for individual geometries-->
+				<display_preference>4</display_preference>
+			</VisibleObject>
+			</GeometryPath>
+			<!--The maximum force this actuator can produce.-->
+			<optimal_force>10</optimal_force>
+		</PathActuator>
 				<Millard2012EquilibriumMuscle name="hamstrings_r">
 					<!--Flag indicating whether the force is disabled or not. Disabled means that the force is not active in subsequent dynamics realizations.-->
 					<isDisabled>false</isDisabled>
