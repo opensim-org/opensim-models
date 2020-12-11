@@ -28,10 +28,5 @@
 		    and point of application.Note: this file overrides the data source
 		    specified by the individual external forces if specified.-->
 		<datafile> ..\leg69_stance_grf.mot </datafile>
-		<!--Optional motion file (.mot) or storage file (.sto) containing the
-		    model kinematics used to transform a point expressed in ground to the
-		    body of force application.If the point is not expressed in ground, the
-		    point is not transformed-->
-		<external_loads_model_kinematics_file> ..\leg69_IK_stance.mot </external_loads_model_kinematics_file>
 	</ExternalLoads>
 </OpenSimDocument>

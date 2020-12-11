@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSimDocument Version="20302">
-	<CMCTool name="leg6dof9musc_RRA_adjusted">
+	<CMCTool name="leg6dof9musc_CMC">
 		<defaults/>
 		<!--Name of the .osim file used to construct a model.-->
 		<model_file> RRA/leg6dof9musc_RRA_adjusted.osim </model_file>
@@ -48,7 +48,7 @@
 		<desired_points_file>  </desired_points_file>
 		<!--Motion (.mot) or storage (.sto) file containing the desired kinematic
 		    trajectories.-->
-		<desired_kinematics_file> RRA/leg6dof9musc_Kinematics_q.sto </desired_kinematics_file>
+		<desired_kinematics_file> RRA/leg6dof9musc_RRA_adjusted_Kinematics_q.sto </desired_kinematics_file>
 		<!--File containing the tracking tasks. Which coordinates are tracked and
 		    with what weights are specified here.-->
 		<task_set_file> leg69_Tracking_Tasks.xml </task_set_file>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSimDocument Version="20302">
-	<RRATool name="leg6dof9musc_added_mass">
+	<RRATool name="leg6dof9musc_RRA_adjusted">
 		<defaults/>
 		<!--Name of the .osim file used to construct a model.-->
 		<model_file> leg6dof9musc_added_mass.osim </model_file>
@@ -53,7 +53,7 @@
 		    with what weights are specified here.-->
 		<task_set_file> leg69_Tracking_Tasks.xml </task_set_file>
 		<!--File containing the constraints on the controls.-->
-		<constraints_file> leg69_residuals_motors_control_limits.xml </constraints_file>
+		<constraints_file> leg69_muscles_residuals_motor_control_limits.xml </constraints_file>
 		<!--File containing the controls output by RRA. These can be used to place
 		    constraints on the residuals during CMC.-->
 		<rra_controls_file>  </rra_controls_file>
@@ -93,7 +93,7 @@
 		    if the property adjust_com_to_reduce_residuals is set to true. If a
 		    name is not specified, the model is written out to a file called
 		    adjusted_model.osim.-->
-		<output_model_file> RRA/leg6dof9musc_final_RRAadjusted.osim </output_model_file>
+		<output_model_file> RRA/leg6dof9musc_RRA_adjusted.osim </output_model_file>
 		<!--True-false flag indicating whether or not to turn on verbose printing
 		    for cmc.-->
 		<use_verbose_printing> false </use_verbose_printing>
