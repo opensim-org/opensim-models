@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OpenSimDocument Version="20302">
-	<CMCTool name="subject01_walk1_RRA">
+	<RRATool name="subject01_walk1_RRA">
 	<!--Name of the .osim file used to construct a model.-->
 	<model_file> subject01_simbody.osim </model_file>
 	<!--Replace the model's force set with sets specified in
@@ -110,6 +110,6 @@
 			name is not specified, the model is written out to a file called
 			adjusted_model.osim.-->
 		<output_model_file> subject01_simbody_adjusted.osim </output_model_file>
-	</CMCTool>
+	</RRATool>
 </OpenSimDocument>
 
