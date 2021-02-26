@@ -267,7 +267,7 @@
                         <!--slope of the shallow ascending limb--> 
                         <shallow_ascending_slope>0.8616</shallow_ascending_slope> 
                         <!--minimum value of the active force length curve--> 
-                        <minimum_value>0.1</minimum_value> 
+                        <minimum_value>0</minimum_value> 
                     </ActiveForceLengthCurve> 
                     <!--force velocity inverse curve--> 
                     <ForceVelocityInverseCurve> 
@@ -381,7 +381,7 @@
                         <!--slope of the shallow ascending limb--> 
                         <shallow_ascending_slope>0.8616</shallow_ascending_slope> 
                         <!--minimum value of the active force length curve--> 
-                        <minimum_value>0.1</minimum_value> 
+                        <minimum_value>0</minimum_value> 
                     </ActiveForceLengthCurve> 
                     <!--force velocity inverse curve--> 
                     <ForceVelocityInverseCurve> 
