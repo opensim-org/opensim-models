@@ -12,7 +12,7 @@
 		<!--List of forces by individual or grouping name (e.g. All, actuators, muscles, ...) to be excluded when computing model dynamics.-->
 		<forces_to_exclude> Muscles</forces_to_exclude>
 		<!--XML file (.xml) containing the external loads applied to the model as a set of ExternalForce(s).-->
-		<external_loads_file>../ExperimentalData/subject01_walk_grf.xml</external_loads_file>
+		<external_loads_file>../subject01_walk_grf.xml</external_loads_file>
 		<!--The name of the file containing coordinate data. Can be a motion (.mot) or a states (.sto) file.-->
 		<coordinates_file>../IK/subject01_walk_IK.mot</coordinates_file>
 		<!--Low-pass cut-off frequency for filtering the coordinates_file data (currently does not apply to states_file or speeds_file). A negative value results in no filtering. The default value is -1.0, so no filtering.-->

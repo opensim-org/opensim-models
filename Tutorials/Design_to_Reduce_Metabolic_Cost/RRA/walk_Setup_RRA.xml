@@ -36,13 +36,13 @@
 			<groups />
 		</ControllerSet>
 		<!--XML file (.xml) containing the forces applied to the model as ExternalLoads.-->
-		<external_loads_file>../ExperimentalData/subject01_walk_grf.xml</external_loads_file>
+		<external_loads_file>../subject01_walk_grf.xml</external_loads_file>
 		<!--Motion (.mot) or storage (.sto) file containing the desired point trajectories.-->
 		<desired_points_file />
 		<!--Motion (.mot) or storage (.sto) file containing the desired kinematic trajectories.-->
 		<desired_kinematics_file>../IK/subject01_walk_IK.mot</desired_kinematics_file>
 		<!--File containing the tracking tasks. Which coordinates are tracked and with what weights are specified here.-->
-		<task_set_file>../gait10dof_Kinematics_Tracking_Tasks.xml</task_set_file>
+		<task_set_file>gait10dof_Kinematics_Tracking_Tasks.xml</task_set_file>
 		<!--DEPRECATED File containing the constraints on the controls.-->
 		<constraints_file />
 		<!--Low-pass cut-off frequency for filtering the desired kinematics. A negative value results in no filtering. The default value is -1.0, so no filtering.-->

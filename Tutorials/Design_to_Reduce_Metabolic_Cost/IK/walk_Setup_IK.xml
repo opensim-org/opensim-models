@@ -252,7 +252,7 @@
 			<groups />
 		</IKTaskSet>
 		<!--TRC file (.trc) containing the time history of observations of marker positions.-->
-		<marker_file>../ExperimentalData/subject01_walk.trc</marker_file>
+		<marker_file>../subject01_walk.trc</marker_file>
 		<!--The name of the storage (.sto or .mot) file containing coordinate observations.Coordinate values from this file are included if there is a corresponding coordinate task. -->
 		<coordinate_file>Unassigned</coordinate_file>
 		<!--Time range over which the inverse kinematics problem is solved.-->
