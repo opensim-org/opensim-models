@@ -143,7 +143,9 @@
 				<limit>0</limit>
 			</CMC_Joint>
 		</defaults>
-		<credits>Rajagopal, A, Dembia, C.L., DeMers, M.S., Delp, D.D., Hicks, J.L., and Delp, S.L.</credits>
+		<credits>Rajagopal, A, Dembia, C.L., DeMers, M.S., Delp, D.D., Hicks, J.L., and Delp, S.L.
+			Notes: P. van den Bos changed the fiber-damping from 0.01 to default of 0.1 as suggested in M. Millard (2013) "Flexing Computational Muscle: Modeling and Simulation of Musculotendon Dynamics".
+		</credits>
 		<publications> Rajagopal, Apoorva, et al. "Full-Body Musculoskeletal Model for Muscle-Driven Simulation of Human Gait." IEEE Transactions on Biomedical Engineering 63.10 (2016): 2068-2079. (2016) </publications>
 		<length_units>meters</length_units>
 		<force_units>N</force_units>
