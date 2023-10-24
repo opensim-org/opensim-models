@@ -5236,7 +5236,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5337,7 +5337,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5438,7 +5438,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5539,7 +5539,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5640,7 +5640,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5741,7 +5741,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5840,7 +5840,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -5941,7 +5941,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6052,7 +6052,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6171,7 +6171,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6290,7 +6290,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6405,7 +6405,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6511,7 +6511,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6617,7 +6617,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6726,7 +6726,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6835,7 +6835,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -6944,7 +6944,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7039,7 +7039,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7134,7 +7134,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7229,7 +7229,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7324,7 +7324,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7419,7 +7419,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7514,7 +7514,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7619,7 +7619,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7728,7 +7728,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7835,7 +7835,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -7950,7 +7950,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8049,7 +8049,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8158,7 +8158,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8271,7 +8271,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8378,7 +8378,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8479,7 +8479,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8584,7 +8584,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8679,7 +8679,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8782,7 +8782,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8885,7 +8885,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -8988,7 +8988,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9101,7 +9101,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9214,7 +9214,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9327,7 +9327,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9428,7 +9428,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9529,7 +9529,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9630,7 +9630,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9731,7 +9731,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9832,7 +9832,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -9933,7 +9933,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10032,7 +10032,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10133,7 +10133,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10244,7 +10244,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10363,7 +10363,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10482,7 +10482,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10597,7 +10597,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10703,7 +10703,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10800,7 +10800,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -10909,7 +10909,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11018,7 +11018,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11127,7 +11127,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11222,7 +11222,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11317,7 +11317,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11412,7 +11412,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11507,7 +11507,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11602,7 +11602,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11697,7 +11697,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11802,7 +11802,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -11911,7 +11911,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12018,7 +12018,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12133,7 +12133,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12232,7 +12232,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12341,7 +12341,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12454,7 +12454,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12561,7 +12561,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>true</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12662,7 +12662,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12767,7 +12767,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12862,7 +12862,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -12965,7 +12965,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -13068,7 +13068,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -13171,7 +13171,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -13284,7 +13284,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -13397,7 +13397,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
@@ -13510,7 +13510,7 @@
 					<!--Compute muscle dynamics ignoring tendon compliance. Tendon is assumed to be rigid.-->
 					<ignore_tendon_compliance>false</ignore_tendon_compliance>
 					<!--The linear damping of the fiber.-->
-					<fiber_damping>0.01</fiber_damping>
+					<fiber_damping>0.1</fiber_damping>
 					<!--Assumed initial activation level if none is assigned.-->
 					<default_activation>0.01</default_activation>
 					<!--Activation lower bound.-->
