@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ControlSet name="run">
+	<defaults>
+		<ControlLinear name="default">
+			<is_model_control> true </is_model_control>
+			<extrapolate> false </extrapolate>
+			<default_min> 0.02 </default_min>
+			<default_max> 1.0 </default_max>
+			<use_steps> true </use_steps>
+		</ControlLinear>
+	</defaults>
+	<objects>
+		<ControlLinear name="FX.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="FY.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="FZ.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="MX.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="MY.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="MZ.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="hip_flexion_r_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="hip_adduction_r_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="hip_rotation_r_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="knee_angle_r_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="ankle_angle_r_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="hip_flexion_l_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="hip_adduction_l_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="hip_rotation_l_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="knee_angle_l_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="ankle_angle_l_reserve.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="lumbar_ext.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="lumbar_bend.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="lumbar_rot.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="shoulder_flex_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="shoulder_add_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="shoulder_rot_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="elbow_flex_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="pro_sup_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="wrist_flex_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="wrist_dev_r.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="shoulder_flex_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="shoulder_add_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="shoulder_rot_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="elbow_flex_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="pro_sup_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="wrist_flex_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		<ControlLinear name="wrist_dev_l.excitation">
+			<default_min> -1000 </default_min>
+			<default_max>  1000 </default_max>
+			<use_steps> false </use_steps>
+		</ControlLinear>
+		
+		<ControlLinear name="addbrev_r.excitation"/>
+		<ControlLinear name="addlong_r.excitation"/>
+		<ControlLinear name="addmagDist_r.excitation"/>
+		<ControlLinear name="addmagIsch_r.excitation"/>
+		<ControlLinear name="addmagMid_r.excitation"/>
+		<ControlLinear name="addmagProx_r.excitation"/>
+		<ControlLinear name="bflh_r.excitation"/>
+		<ControlLinear name="bfsh_r.excitation"/>
+		<ControlLinear name="edl_r.excitation"/>
+		<ControlLinear name="ehl_r.excitation"/>
+		<ControlLinear name="fdl_r.excitation"/>
+		<ControlLinear name="fhl_r.excitation"/>
+		<ControlLinear name="gaslat_r.excitation">
+		    <min_nodes>
+		        <ControlLinearNode>
+		            <t>0.500</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.0</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.393</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		    </min_nodes>
+		    <max_nodes>
+		        <ControlLinearNode>
+		            <t>0.500</t>
+		            <value>1</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.0</t>
+		            <value>1</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.393</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		    </max_nodes>
+		</ControlLinear>
+		<ControlLinear name="gasmed_r.excitation">
+		    <min_nodes>
+		        <ControlLinearNode>
+		            <t>0.500</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.0</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.393</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		    </min_nodes>
+		    <max_nodes>
+		        <ControlLinearNode>
+		            <t>0.500</t>
+		            <value>1</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.0</t>
+		            <value>1</value>
+		        </ControlLinearNode>
+		        <ControlLinearNode>
+		            <t>1.393</t>
+		            <value>0.02</value>
+		        </ControlLinearNode>
+		    </max_nodes>
+		</ControlLinear>
+		<ControlLinear name="glmax1_r.excitation"/>
+		<ControlLinear name="glmax2_r.excitation"/>
+		<ControlLinear name="glmax3_r.excitation"/>
+		<ControlLinear name="glmed1_r.excitation"/>
+		<ControlLinear name="glmed2_r.excitation"/>
+		<ControlLinear name="glmed2_r.excitation"/>
+		<ControlLinear name="glmin1_r.excitation"/>
+		<ControlLinear name="glmin2_r.excitation"/>
+		<ControlLinear name="glmin3_r.excitation"/>
+		<ControlLinear name="grac_r.excitation"/>
+		<ControlLinear name="iliacus_r.excitation"/>
+		<ControlLinear name="perbrev_r.excitation"/>
+		<ControlLinear name="perlong_r.excitation"/>
+		<ControlLinear name="piri_r.excitation"/>
+		<ControlLinear name="psoas_r.excitation"/>
+		<ControlLinear name="recfem_r.excitation"/>
+		<ControlLinear name="sart_r.excitation"/>
+		<ControlLinear name="semimem_r.excitation"/>
+		<ControlLinear name="semiten_r.excitation"/>
+		<ControlLinear name="soleus_r.excitation"/>
+		<ControlLinear name="tfl_r.excitation"/>
+		<ControlLinear name="tib_ant_r.excitation"/>
+		<ControlLinear name="tib_post_r.excitation"/>
+		<ControlLinear name="vasint_r.excitation"/>
+		<ControlLinear name="vaslat_r.excitation"/>
+		<ControlLinear name="vasmed_r.excitation"/>
+
+		<ControlLinear name="addbrev_l.excitation"/>
+		<ControlLinear name="addlong_l.excitation"/>
+		<ControlLinear name="addmagDist_l.excitation"/>
+		<ControlLinear name="addmagIsch_l.excitation"/>
+		<ControlLinear name="addmagMid_l.excitation"/>
+		<ControlLinear name="addmagProx_l.excitation"/>
+		<ControlLinear name="bflh_l.excitation"/>
+		<ControlLinear name="bfsh_l.excitation"/>
+		<ControlLinear name="edl_l.excitation"/>
+		<ControlLinear name="ehl_l.excitation"/>
+		<ControlLinear name="fdl_l.excitation"/>
+		<ControlLinear name="fhl_l.excitation"/>
+		<ControlLinear name="gaslat_l.excitation"/>
+		<ControlLinear name="gasmed_l.excitation"/>
+		<ControlLinear name="glmax1_l.excitation"/>
+		<ControlLinear name="glmax2_l.excitation"/>
+		<ControlLinear name="glmax3_l.excitation"/>
+		<ControlLinear name="glmed1_l.excitation"/>
+		<ControlLinear name="glmed2_l.excitation"/>
+		<ControlLinear name="glmed2_l.excitation"/>
+		<ControlLinear name="glmin1_l.excitation"/>
+		<ControlLinear name="glmin2_l.excitation"/>
+		<ControlLinear name="glmin3_l.excitation"/>
+		<ControlLinear name="grac_l.excitation"/>
+		<ControlLinear name="iliacus_l.excitation"/>
+		<ControlLinear name="perbrev_l.excitation"/>
+		<ControlLinear name="perlong_l.excitation"/>
+		<ControlLinear name="piri_l.excitation"/>
+		<ControlLinear name="psoas_l.excitation"/>
+		<ControlLinear name="recfem_l.excitation"/>
+		<ControlLinear name="sart_l.excitation"/>
+		<ControlLinear name="semimem_l.excitation"/>
+		<ControlLinear name="semiten_l.excitation"/>
+		<ControlLinear name="soleus_l.excitation"/>
+		<ControlLinear name="tfl_l.excitation"/>
+		<ControlLinear name="tib_ant_l.excitation"/>
+		<ControlLinear name="tib_post_l.excitation"/>
+		<ControlLinear name="vasint_l.excitation"/>
+		<ControlLinear name="vaslat_l.excitation"/>
+		<ControlLinear name="vasmed_l.excitation"/>
+	
+	</objects>
+	
+</ControlSet>

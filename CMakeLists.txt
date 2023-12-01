@@ -126,3 +126,32 @@ install(FILES
 
 install(DIRECTORY Tutorials/doc/
         DESTINATION doc)
+
+install(DIRECTORY Models/Rajagopal/
+        DESTINATION Models/Rajagopal/)
+
+install(FILES Models/Rajagopal/Rajagopal2016.osim
+        DESTINATION Models/Rajagopal
+        RENAME generic_unscaled.osim)
+
+install(DIRECTORY Pipelines/Rajagopal/CMC/
+        DESTINATION Models/Rajagopal/CMC/)
+
+install(DIRECTORY Pipelines/Rajagopal/ExpData/
+        DESTINATION Models/Rajagopal/ExpData/)
+
+install(DIRECTORY Pipelines/Rajagopal/ID/
+        DESTINATION Models/Rajagopal/ID/)
+
+install(DIRECTORY Pipelines/Rajagopal/IK/
+        DESTINATION Models/Rajagopal/IK/)
+
+install(DIRECTORY Pipelines/Rajagopal/RRA/
+        DESTINATION Models/Rajagopal/RRA/)
+
+install(DIRECTORY Pipelines/Rajagopal/Scale/
+        DESTINATION Models/Rajagopal/Scale/)
+
+install(DIRECTORY Pipelines/Rajagopal/scripts/
+        DESTINATION Models/Rajagopal/scripts/)
+
