@@ -33,15 +33,24 @@ for i in range(len(osimpaths)):
         print("Oops, Model '%s' failed:\n%s" % (modelname, e.message))
         sys.exit(1)
 
+    # Print the 4.0 version to file and then read back into memory
+    filename_new = filename.replace('.osim','_new.osim')
+    modelname_new = modelname.replace('.osim','_new.osim')
     # Print the 4.0 model to file
-    model.printToXML(filename)
+    model.printToXML(filename_new)
     # Try and read back in the file
     try:
-        reloadedModel = opensim.Model(filename)
+        reloadedModel = opensim.Model(filename_new)
         s2 = reloadedModel.initSystem()
     except  Exception as e:
-        print("Oops, 4.0 written Model '%s' failed:\n%s" % (modelname, e.message))
+        print("Oops, 4.0 written Model '%s' failed:\n%s" % (modelname_new, e.message))
         sys.exit(1)
 
+    # Remove the printed file
+    os.remove(filename_new)
+
+    if not reloadedModel.isEqualTo(model):
+        print("Initial instance of '%s' is not equal to :\n%s" % (modelname,modelname_new))
+        raise Exception("Compared two instances of 4.0 models are not equal")
 
 print("All models loaded successfully.")
