@@ -1,5 +1,6 @@
 """ test models in the distribution
-
+    this script finds all osim files in the repo, instantiate opensim.Model from each
+    then call initSystem on it, roundtrips save/restore to compare.
 """
 import os
 import sys

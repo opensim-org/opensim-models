@@ -1,4 +1,8 @@
-""" test models in the distribution
+""" update models in this repository.
+    This script finds all osim files in the repo, instantiates an opensim.Model from each
+    then call initSystem on it, then overwrites the osim files.
+    It is used for the side-effect of writing the osim files in the format/version matching 
+    the opensim+python version it's run in. For example to upgrade to 4.x format, run in environment of python+opensim4.x
 
 """
 import os
@@ -33,14 +37,14 @@ for i in range(len(osimpaths)):
         print("Oops, Model '%s' failed:\n%s" % (modelname, e.message))
         sys.exit(1)
 
-    # Print the 4.0 model to file
+    # Print the latest model to file
     model.printToXML(filename)
     # Try and read back in the file
     try:
         reloadedModel = opensim.Model(filename)
         s2 = reloadedModel.initSystem()
     except  Exception as e:
-        print("Oops, 4.0 written Model '%s' failed:\n%s" % (modelname, e.message))
+        print("Oops, written Model '%s' failed:\n%s" % (modelname, e.message))
         sys.exit(1)
 
 
