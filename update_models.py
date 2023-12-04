@@ -1,6 +1,9 @@
-""" test models in the distribution
-    this script finds all osim files in the repo, instantiate opensim.Model from each
-    then call initSystem on it, roundtrips save/restore to compare.
+""" update models in this repository.
+    This script finds all osim files in the repo, instantiates an opensim.Model from each
+    then call initSystem on it, then overwrites the osim files.
+    It is used for the side-effect of writing the osim files in the format/version matching 
+    the opensim+python version it's run in. For example to upgrade to 4.x format, run in environment of python+opensim4.x
+
 """
 import os
 import sys
@@ -34,24 +37,15 @@ for i in range(len(osimpaths)):
         print("Oops, Model '%s' failed:\n%s" % (modelname, e.message))
         sys.exit(1)
 
-    # Print the 4.0 version to file and then read back into memory
-    filename_new = filename.replace('.osim','_new.osim')
-    modelname_new = modelname.replace('.osim','_new.osim')
-    # Print the 4.0 model to file
-    model.printToXML(filename_new)
+    # Print the latest model to file
+    model.printToXML(filename)
     # Try and read back in the file
     try:
-        reloadedModel = opensim.Model(filename_new)
+        reloadedModel = opensim.Model(filename)
         s2 = reloadedModel.initSystem()
     except  Exception as e:
-        print("Oops, 4.0 written Model '%s' failed:\n%s" % (modelname_new, e.message))
+        print("Oops, written Model '%s' failed:\n%s" % (modelname, e.message))
         sys.exit(1)
 
-    # Remove the printed file
-    os.remove(filename_new)
-
-    if not reloadedModel.isEqualTo(model):
-        print("Initial instance of '%s' is not equal to :\n%s" % (modelname,modelname_new))
-        raise Exception("Compared two instances of 4.0 models are not equal")
 
 print("All models loaded successfully.")
