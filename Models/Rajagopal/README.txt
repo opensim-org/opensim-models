@@ -18,7 +18,7 @@ Rajagopal et al. (2016) model. The model includes modifications from Lai et al. 
 enable simulations of high knee and hip flexion. The modifications include increased range
 of knee flexion, updated knee muscle paths, and modified force-generating properties of
 eleven muscles. The model also includes modifications from Uhlrich et al. (2022). These
-modifications included calibrated assive muscle force curves to better match experimental
+modifications included calibrated passive muscle force curves to better match experimental
 data published by Silder et al. (2007), and updated hip abductor muscle paths that more closely
 align with MRI and experimental data.
 
