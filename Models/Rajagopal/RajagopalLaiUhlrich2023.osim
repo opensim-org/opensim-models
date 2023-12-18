@@ -21,13 +21,10 @@
 		<!--Acceleration due to gravity, expressed in ground.-->
 		<gravity>0 -9.8066499999999994 0</gravity>
 		<!--Credits (e.g., model author names) associated with the model.-->
-		<credits>Rajagopal et al. (2016), Lai et al. (2017), Uhlrich et al. (2022) 
-				 Notes: P. van den Bos changed the fiber-damping from 0.01 to default of 0.1 as suggested in M. Millard (2013) "Flexing Computational Muscle: Modeling and Simulation of Musculotendon Dynamics".
+		<credits>Rajagopal et al. (2016), Lai et al. (2017), Uhlrich et al. (2022) | Notes: P. van den Bos changed the fiber-damping from 0.01 to default of 0.1 as suggested in M. Millard (2013) "Flexing Computational Muscle: Modeling and Simulation of Musculotendon Dynamics".
 		</credits>
 		<!--Publications and references associated with the model.-->
-		<publications>Rajagopal, A., Dembia, C.L., DeMers, M.S., Delp, D.D., Hicks, J.L., Delp, S.L. (2016) Full-body musculoskeletal model for muscle-driven simulation of human gait. IEEE Transactions on Biomedical Engineering.</publications>
-		<publications>Lai, A.K.M., Arnold, A.S., Wakeling, J.M. (2017) Why are antagonist muscles co-activated in my simulation? A musculoskeletal model for analysing human locomotor tasks. Annals of Biomedical Engineering.</publications>
-		<publications>Uhlrich, S.D., Jackson, R.W., Seth, A., Kolesar, J.A., Delp, S.L. (2022) Muscle coordination retraining inspired by musculoskeletal simulations reduces knee contact force. Scientific Reports.</publications>
+		<publications>Rajagopal, A., Dembia, C.L., DeMers, M.S., Delp, D.D., Hicks, J.L., Delp, S.L. (2016) Full-body musculoskeletal model for muscle-driven simulation of human gait. IEEE Transactions on Biomedical Engineering. | Lai, A.K.M., Arnold, A.S., Wakeling, J.M. (2017) Why are antagonist muscles co-activated in my simulation? A musculoskeletal model for analysing human locomotor tasks. Annals of Biomedical Engineering. | Uhlrich, S.D., Jackson, R.W., Seth, A., Kolesar, J.A., Delp, S.L. (2022) Muscle coordination retraining inspired by musculoskeletal simulations reduces knee contact force. Scientific Reports.</publications>
 		<!--Units for all lengths.-->
 		<length_units>meters</length_units>
 		<!--Units for all forces.-->
