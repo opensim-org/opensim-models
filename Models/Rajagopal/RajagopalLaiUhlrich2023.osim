@@ -6854,7 +6854,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="gaslat_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.119</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="gasmed_r">
@@ -6967,7 +6968,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="gasmed_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.119</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="glmax1_r">
@@ -9131,7 +9133,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="soleus_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.119</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="tfl_r">
@@ -11287,7 +11290,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="gaslat_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.119</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="gasmed_l">
@@ -11400,7 +11404,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="gasmed_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.119</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="glmax1_l">
@@ -13564,7 +13569,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="soleus_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.119</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="tfl_l">
