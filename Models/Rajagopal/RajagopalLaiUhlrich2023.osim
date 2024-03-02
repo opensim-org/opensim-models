@@ -8704,7 +8704,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="recfem_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="sart_r">
@@ -9577,7 +9578,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="vasint_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="vaslat_r">
@@ -9700,7 +9702,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="vaslat_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="vasmed_r">
@@ -9823,7 +9826,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="vasmed_r_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="addbrev_l">
@@ -13133,7 +13137,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="recfem_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="sart_l">
@@ -14006,7 +14011,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="vasint_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="vaslat_l">
@@ -14129,7 +14135,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="vaslat_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<Millard2012EquilibriumMuscle name="vasmed_l">
@@ -14252,7 +14259,8 @@
 					</FiberForceLengthCurve>
 					<!--Tendon-force-length curve.-->
 					<TendonForceLengthCurve name="vasmed_l_TendonForceLengthCurve">
-						<!--All properties of this object have their default values.-->
+                        <!--Tendon strain at a tension of 1 normalized force-->
+                        <strain_at_one_norm_force>0.089</strain_at_one_norm_force>
 					</TendonForceLengthCurve>
 				</Millard2012EquilibriumMuscle>
 				<CoordinateActuator name="lumbar_ext">
