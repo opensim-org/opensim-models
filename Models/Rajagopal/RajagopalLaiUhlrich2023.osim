@@ -24,6 +24,7 @@
 		<credits>
 			Rajagopal et al. (2016), Lai et al. (2017), Uhlrich et al. (2022).
 			Notes: P. van den Bos changed the fiber-damping from 0.01 to default of 0.1 as suggested in M. Millard (2013) "Flexing Computational Muscle: Modeling and Simulation of Musculotendon Dynamics".
+            The strain_at_one_norm_force of triceps surae and quadriceps tendons was set to 0.119 and 0.089, respectively as suggested in Luis et al. (2022) "Evaluation of musculoskeletal models, scaling methods, and performance criteria for estimating muscle excitations and fiber lengths across walking speeds".
 		</credits>
 		<!--Publications and references associated with the model.-->
 		<publications>

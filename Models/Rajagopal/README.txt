@@ -20,7 +20,9 @@ of knee flexion, updated knee muscle paths, and modified force-generating proper
 eleven muscles. The model also includes modifications from Uhlrich et al. (2022). These
 modifications included calibrated passive muscle force curves to better match experimental
 data published by Silder et al. (2007), and updated hip abductor muscle paths that more closely
-align with MRI and experimental data.
+align with MRI and experimental data. Furthermore, the `strain_at_one_norm_force` of triceps surae
+and quadriceps tendons was set to 0.119 and 0.089, respectively, as suggested in Luis et al. (2022)
+according to ultrasound studies on muscle fascicle length changes during walking.
 
 The SimTK project pages for the Lai et al. (2017) and Uhlrich et al. (2022)
 publications can be found here:
@@ -67,3 +69,9 @@ Silder, A., Whittington, B., Heiderscheit, B., Thelen, D.G. (2007)
     Identification of passive elastic joint moment-angle relationships in the lower extremity.
     Journal of Biomechanics.
     doi: https://doi.org/10.1016/j.jbiomech.2006.12.017
+
+Luis, I., Afschrift, M., De Groote, F., Gutierrez-Farewik, E. M. (2022)
+    Evaluation of musculoskeletal models, scaling methods, and performance criteria for 
+    estimating muscle excitations and fiber lengths across walking speeds. Frontiers in 
+    bioengineering and biotechnology.
+    doi: https://doi.org/10.3389/fbioe.2022.1002731
