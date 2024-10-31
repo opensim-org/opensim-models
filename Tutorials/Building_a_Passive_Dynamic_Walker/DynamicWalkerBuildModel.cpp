@@ -51,7 +51,7 @@ int main()
 		platformJoints[0].setDefaultValue(convertDegreesToRadians(-10.0));
 		platformJoints[0].setDefaultLocked(true);
 		// Add and scale model for display in GUI
-		platform->addDisplayGeometry("box.vtp");
+		platform->addDisplayGeometry("box.obj");
 		platform->updDisplayer()->setScaleFactors(Vec3(1, 0.05, 1));
 		// Add the platform to the Model
 		osimModel.addBody(platform);

@@ -54,7 +54,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_pelvis.vtp</mesh_file>
+							<mesh_file>r_pelvis.obj</mesh_file>
 						</Mesh>
 						<Mesh name="pelvis_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -69,7 +69,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>l_pelvis.vtp</mesh_file>
+							<mesh_file>l_pelvis.obj</mesh_file>
 						</Mesh>
 						<Mesh name="pelvis_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -84,7 +84,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>sacrum.vtp</mesh_file>
+							<mesh_file>sacrum.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -403,7 +403,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>femur_r.vtp</mesh_file>
+							<mesh_file>femur_r.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -694,7 +694,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>tibia_r.vtp</mesh_file>
+							<mesh_file>tibia_r.obj</mesh_file>
 						</Mesh>
 						<Mesh name="tibia_r_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -709,7 +709,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_fibula.vtp</mesh_file>
+							<mesh_file>r_fibula.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -916,7 +916,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_patella.vtp</mesh_file>
+							<mesh_file>r_patella.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -956,7 +956,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_talus.vtp</mesh_file>
+							<mesh_file>r_talus.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -994,7 +994,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_foot.vtp</mesh_file>
+							<mesh_file>r_foot.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1032,7 +1032,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_bofoot.vtp</mesh_file>
+							<mesh_file>r_bofoot.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1070,7 +1070,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>femur_l.vtp</mesh_file>
+							<mesh_file>femur_l.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1361,7 +1361,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>tibia_l.vtp</mesh_file>
+							<mesh_file>tibia_l.obj</mesh_file>
 						</Mesh>
 						<Mesh name="tibia_l_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1376,7 +1376,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>l_fibula.vtp</mesh_file>
+							<mesh_file>l_fibula.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1583,7 +1583,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>l_patella.vtp</mesh_file>
+							<mesh_file>l_patella.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1623,7 +1623,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>l_talus.vtp</mesh_file>
+							<mesh_file>l_talus.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1661,7 +1661,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>l_foot.vtp</mesh_file>
+							<mesh_file>l_foot.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1699,7 +1699,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>l_bofoot.vtp</mesh_file>
+							<mesh_file>l_bofoot.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1737,7 +1737,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>hat_spine.vtp</mesh_file>
+							<mesh_file>hat_spine.obj</mesh_file>
 						</Mesh>
 						<Mesh name="torso_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1752,7 +1752,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>hat_jaw.vtp</mesh_file>
+							<mesh_file>hat_jaw.obj</mesh_file>
 						</Mesh>
 						<Mesh name="torso_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1767,7 +1767,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>hat_skull.vtp</mesh_file>
+							<mesh_file>hat_skull.obj</mesh_file>
 						</Mesh>
 						<Mesh name="torso_geom_4">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1782,7 +1782,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>hat_ribs_scap.vtp</mesh_file>
+							<mesh_file>hat_ribs_scap.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1820,7 +1820,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>humerus_rv.vtp</mesh_file>
+							<mesh_file>humerus_rv.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1858,7 +1858,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ulna_rv.vtp</mesh_file>
+							<mesh_file>ulna_rv.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1896,7 +1896,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>radius_rv.vtp</mesh_file>
+							<mesh_file>radius_rv.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1934,7 +1934,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>pisiform_rvs.vtp</mesh_file>
+							<mesh_file>pisiform_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1949,7 +1949,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>lunate_rvs.vtp</mesh_file>
+							<mesh_file>lunate_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1964,7 +1964,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>scaphoid_rvs.vtp</mesh_file>
+							<mesh_file>scaphoid_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_4">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1979,7 +1979,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>triquetrum_rvs.vtp</mesh_file>
+							<mesh_file>triquetrum_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_5">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1994,7 +1994,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>hamate_rvs.vtp</mesh_file>
+							<mesh_file>hamate_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_6">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2009,7 +2009,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>capitate_rvs.vtp</mesh_file>
+							<mesh_file>capitate_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_7">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2024,7 +2024,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>trapezoid_rvs.vtp</mesh_file>
+							<mesh_file>trapezoid_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_8">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2039,7 +2039,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>trapezium_rvs.vtp</mesh_file>
+							<mesh_file>trapezium_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_9">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2054,7 +2054,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal2_rvs.vtp</mesh_file>
+							<mesh_file>metacarpal2_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_10">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2069,7 +2069,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>index_proximal_rvs.vtp</mesh_file>
+							<mesh_file>index_proximal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_11">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2084,7 +2084,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>index_medial_rvs.vtp</mesh_file>
+							<mesh_file>index_medial_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_12">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2099,7 +2099,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>index_distal_rvs.vtp</mesh_file>
+							<mesh_file>index_distal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_13">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2114,7 +2114,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal3_rvs.vtp</mesh_file>
+							<mesh_file>metacarpal3_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_14">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2129,7 +2129,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>middle_proximal_rvs.vtp</mesh_file>
+							<mesh_file>middle_proximal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_15">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2144,7 +2144,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>middle_medial_rvs.vtp</mesh_file>
+							<mesh_file>middle_medial_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_16">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2159,7 +2159,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>middle_distal_rvs.vtp</mesh_file>
+							<mesh_file>middle_distal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_17">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2174,7 +2174,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal4_rvs.vtp</mesh_file>
+							<mesh_file>metacarpal4_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_18">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2189,7 +2189,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ring_proximal_rvs.vtp</mesh_file>
+							<mesh_file>ring_proximal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_19">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2204,7 +2204,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ring_medial_rvs.vtp</mesh_file>
+							<mesh_file>ring_medial_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_20">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2219,7 +2219,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ring_distal_rvs.vtp</mesh_file>
+							<mesh_file>ring_distal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_21">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2234,7 +2234,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal5_rvs.vtp</mesh_file>
+							<mesh_file>metacarpal5_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_22">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2249,7 +2249,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>little_proximal_rvs.vtp</mesh_file>
+							<mesh_file>little_proximal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_23">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2264,7 +2264,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>little_medial_rvs.vtp</mesh_file>
+							<mesh_file>little_medial_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_24">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2279,7 +2279,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>little_distal_rvs.vtp</mesh_file>
+							<mesh_file>little_distal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_25">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2294,7 +2294,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal1_rvs.vtp</mesh_file>
+							<mesh_file>metacarpal1_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_26">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2309,7 +2309,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>thumb_proximal_rvs.vtp</mesh_file>
+							<mesh_file>thumb_proximal_rvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_r_geom_27">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2324,7 +2324,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>thumb_distal_rvs.vtp</mesh_file>
+							<mesh_file>thumb_distal_rvs.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -2362,7 +2362,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>humerus_lv.vtp</mesh_file>
+							<mesh_file>humerus_lv.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -2400,7 +2400,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ulna_lv.vtp</mesh_file>
+							<mesh_file>ulna_lv.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -2438,7 +2438,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>radius_lv.vtp</mesh_file>
+							<mesh_file>radius_lv.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -2476,7 +2476,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>pisiform_lvs.vtp</mesh_file>
+							<mesh_file>pisiform_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2491,7 +2491,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>lunate_lvs.vtp</mesh_file>
+							<mesh_file>lunate_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2506,7 +2506,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>scaphoid_lvs.vtp</mesh_file>
+							<mesh_file>scaphoid_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_4">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2521,7 +2521,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>triquetrum_lvs.vtp</mesh_file>
+							<mesh_file>triquetrum_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_5">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2536,7 +2536,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>hamate_lvs.vtp</mesh_file>
+							<mesh_file>hamate_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_6">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2551,7 +2551,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>capitate_lvs.vtp</mesh_file>
+							<mesh_file>capitate_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_7">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2566,7 +2566,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>trapezoid_lvs.vtp</mesh_file>
+							<mesh_file>trapezoid_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_8">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2581,7 +2581,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>trapezium_lvs.vtp</mesh_file>
+							<mesh_file>trapezium_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_9">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2596,7 +2596,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal2_lvs.vtp</mesh_file>
+							<mesh_file>metacarpal2_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_10">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2611,7 +2611,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>index_proximal_lvs.vtp</mesh_file>
+							<mesh_file>index_proximal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_11">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2626,7 +2626,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>index_medial_lvs.vtp</mesh_file>
+							<mesh_file>index_medial_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_12">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2641,7 +2641,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>index_distal_lvs.vtp</mesh_file>
+							<mesh_file>index_distal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_13">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2656,7 +2656,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal3_lvs.vtp</mesh_file>
+							<mesh_file>metacarpal3_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_14">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2671,7 +2671,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>middle_proximal_lvs.vtp</mesh_file>
+							<mesh_file>middle_proximal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_15">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2686,7 +2686,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>middle_medial_lvs.vtp</mesh_file>
+							<mesh_file>middle_medial_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_16">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2701,7 +2701,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>middle_distal_lvs.vtp</mesh_file>
+							<mesh_file>middle_distal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_17">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2716,7 +2716,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal4_lvs.vtp</mesh_file>
+							<mesh_file>metacarpal4_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_18">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2731,7 +2731,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ring_proximal_lvs.vtp</mesh_file>
+							<mesh_file>ring_proximal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_19">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2746,7 +2746,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ring_medial_lvs.vtp</mesh_file>
+							<mesh_file>ring_medial_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_20">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2761,7 +2761,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ring_distal_lvs.vtp</mesh_file>
+							<mesh_file>ring_distal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_21">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2776,7 +2776,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal5_lvs.vtp</mesh_file>
+							<mesh_file>metacarpal5_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_22">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2791,7 +2791,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>little_proximal_lvs.vtp</mesh_file>
+							<mesh_file>little_proximal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_23">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2806,7 +2806,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>little_medial_lvs.vtp</mesh_file>
+							<mesh_file>little_medial_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_24">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2821,7 +2821,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>little_distal_lvs.vtp</mesh_file>
+							<mesh_file>little_distal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_25">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2836,7 +2836,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>metacarpal1_lvs.vtp</mesh_file>
+							<mesh_file>metacarpal1_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_26">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2851,7 +2851,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>thumb_proximal_lvs.vtp</mesh_file>
+							<mesh_file>thumb_proximal_lvs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="hand_l_geom_27">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -2866,7 +2866,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>thumb_distal_lvs.vtp</mesh_file>
+							<mesh_file>thumb_distal_lvs.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->

@@ -28,7 +28,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>humerus.vtp</mesh_file>
+							<mesh_file>humerus.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
@@ -90,7 +90,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ulna.vtp</mesh_file>
+							<mesh_file>ulna.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -128,7 +128,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>radius.vtp</mesh_file>
+							<mesh_file>radius.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -276,7 +276,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_scaph.vtp</mesh_file>
+							<mesh_file>r_scaph.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -314,7 +314,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_lun.vtp</mesh_file>
+							<mesh_file>r_lun.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -352,7 +352,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_trpzm.vtp</mesh_file>
+							<mesh_file>r_trpzm.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -390,7 +390,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_trpzd.vtp</mesh_file>
+							<mesh_file>r_trpzd.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -428,7 +428,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_cap.vtp</mesh_file>
+							<mesh_file>r_cap.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -466,7 +466,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_pis.vtp</mesh_file>
+							<mesh_file>r_pis.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -504,7 +504,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_triq.vtp</mesh_file>
+							<mesh_file>r_triq.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -542,7 +542,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>r_ham.vtp</mesh_file>
+							<mesh_file>r_ham.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -602,7 +602,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers1.vtp</mesh_file>
+							<mesh_file>fingers1.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -640,7 +640,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers2.vtp</mesh_file>
+							<mesh_file>fingers2.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -678,7 +678,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers3.vtp</mesh_file>
+							<mesh_file>fingers3.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -716,7 +716,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers4.vtp</mesh_file>
+							<mesh_file>fingers4.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -754,7 +754,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers8.vtp</mesh_file>
+							<mesh_file>fingers8.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -792,7 +792,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers6.vtp</mesh_file>
+							<mesh_file>fingers6.obj</mesh_file>
 						</Mesh>
 						<Mesh name="midfinger_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -807,7 +807,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers7.vtp</mesh_file>
+							<mesh_file>fingers7.obj</mesh_file>
 						</Mesh>
 						<Mesh name="midfinger_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -822,7 +822,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers5.vtp</mesh_file>
+							<mesh_file>fingers5.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -860,7 +860,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers12.vtp</mesh_file>
+							<mesh_file>fingers12.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -898,7 +898,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers10.vtp</mesh_file>
+							<mesh_file>fingers10.obj</mesh_file>
 						</Mesh>
 						<Mesh name="ringfinger_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -913,7 +913,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers11.vtp</mesh_file>
+							<mesh_file>fingers11.obj</mesh_file>
 						</Mesh>
 						<Mesh name="ringfinger_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -928,7 +928,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers9.vtp</mesh_file>
+							<mesh_file>fingers9.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -966,7 +966,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers16.vtp</mesh_file>
+							<mesh_file>fingers16.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1004,7 +1004,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers14.vtp</mesh_file>
+							<mesh_file>fingers14.obj</mesh_file>
 						</Mesh>
 						<Mesh name="littlefinger_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1019,7 +1019,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers15.vtp</mesh_file>
+							<mesh_file>fingers15.obj</mesh_file>
 						</Mesh>
 						<Mesh name="littlefinger_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1034,7 +1034,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers13.vtp</mesh_file>
+							<mesh_file>fingers13.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -1072,7 +1072,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers17.vtp</mesh_file>
+							<mesh_file>fingers17.obj</mesh_file>
 						</Mesh>
 						<Mesh name="thumb_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1087,7 +1087,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers18.vtp</mesh_file>
+							<mesh_file>fingers18.obj</mesh_file>
 						</Mesh>
 						<Mesh name="thumb_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -1102,7 +1102,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>fingers19.vtp</mesh_file>
+							<mesh_file>fingers19.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->

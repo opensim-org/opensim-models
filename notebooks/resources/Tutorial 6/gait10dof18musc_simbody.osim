@@ -215,7 +215,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>sacrum.vtp</geometry_file>
+									<geometry_file>sacrum.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -231,7 +231,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>pelvis.vtp</geometry_file>
+									<geometry_file>pelvis.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -247,7 +247,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_pelvis.vtp</geometry_file>
+									<geometry_file>l_pelvis.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -334,7 +334,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>femur_r.vtp</geometry_file>
+									<geometry_file>femur_r.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -515,7 +515,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>tibia_r.vtp</geometry_file>
+									<geometry_file>tibia_r.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -531,7 +531,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>fibula.vtp</geometry_file>
+									<geometry_file>fibula.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -618,7 +618,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>talus.vtp</geometry_file>
+									<geometry_file>talus.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -686,7 +686,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>foot.vtp</geometry_file>
+									<geometry_file>foot.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -754,7 +754,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>bofoot.vtp</geometry_file>
+									<geometry_file>bofoot.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -841,7 +841,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>femur_l.vtp</geometry_file>
+									<geometry_file>femur_l.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1022,7 +1022,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>tibia_l.vtp</geometry_file>
+									<geometry_file>tibia_l.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1038,7 +1038,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_fibula.vtp</geometry_file>
+									<geometry_file>l_fibula.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1125,7 +1125,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_talus.vtp</geometry_file>
+									<geometry_file>l_talus.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1193,7 +1193,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_foot.vtp</geometry_file>
+									<geometry_file>l_foot.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1261,7 +1261,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>l_bofoot.vtp</geometry_file>
+									<geometry_file>l_bofoot.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1348,7 +1348,7 @@
 							<objects>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>hat_spine.vtp</geometry_file>
+									<geometry_file>hat_spine.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1364,7 +1364,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>hat_jaw.vtp</geometry_file>
+									<geometry_file>hat_jaw.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1380,7 +1380,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>hat_skull.vtp</geometry_file>
+									<geometry_file>hat_skull.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
@@ -1396,7 +1396,7 @@
 								</DisplayGeometry>
 								<DisplayGeometry>
 									<!--Name of geometry file .vtp, .stl, .obj-->
-									<geometry_file>hat_ribs.vtp</geometry_file>
+									<geometry_file>hat_ribs.obj</geometry_file>
 									<!--Color used to display the geometry when visible-->
 									<color> 1 1 1</color>
 									<!--Name of texture file .jpg, .bmp-->
