@@ -25,7 +25,7 @@
 						<color>1 1 1</color>
 					</Appearance>
 					<!--Name of geometry file.-->
-					<mesh_file>checkered_floor.vtp</mesh_file>
+					<mesh_file>checkered_floor.obj</mesh_file>
 				</Mesh>
 			</attached_geometry>
 			<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -70,7 +70,7 @@
 								<color>0.86274499999999998 0.117647 0.117647</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>block.vtp</mesh_file>
+							<mesh_file>block.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -111,7 +111,7 @@
 										<color>0.86274499999999998 0.117647 0.117647</color>
 									</Appearance>
 									<!--Name of geometry file.-->
-									<mesh_file>block.vtp</mesh_file>
+									<mesh_file>block.obj</mesh_file>
 								</Mesh>
 							</attached_geometry>
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->
@@ -144,7 +144,7 @@
 								<color>0.86274499999999998 0.117647 0.117647</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>sphere.vtp</mesh_file>
+							<mesh_file>sphere.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -185,7 +185,7 @@
 										<color>0.86274499999999998 0.117647 0.117647</color>
 									</Appearance>
 									<!--Name of geometry file.-->
-									<mesh_file>block.vtp</mesh_file>
+									<mesh_file>block.obj</mesh_file>
 								</Mesh>
 							</attached_geometry>
 							<!--Path to a Component that satisfies the Socket 'parent' of type C (description: The parent frame to this frame.).-->

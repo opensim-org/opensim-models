@@ -16,7 +16,7 @@ glob_patterns = ['**/*.osim', '**/*.cpp']
 
 for p in glob_patterns:
     for f in glob.glob(p, recursive=True):
-        with open(f, 'r') as fd:
+        with open(f, 'r', newline='') as fd:
             content = fd.read()
 
         new_content = content
@@ -24,6 +24,6 @@ for p in glob_patterns:
             new_content = re.sub(pattern, r'\1.obj', new_content)
     
         if new_content != content:
-            with open(f, 'w') as fd:
+            with open(f, 'w', newline='') as fd:
                 fd.write(new_content)
 

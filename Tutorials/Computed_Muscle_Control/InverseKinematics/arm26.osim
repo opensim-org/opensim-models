@@ -47,7 +47,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ground_ribs.vtp</mesh_file>
+							<mesh_file>ground_ribs.obj</mesh_file>
 						</Mesh>
 						<Mesh name="base_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -62,7 +62,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ground_spine.vtp</mesh_file>
+							<mesh_file>ground_spine.obj</mesh_file>
 						</Mesh>
 						<Mesh name="base_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -77,7 +77,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ground_skull.vtp</mesh_file>
+							<mesh_file>ground_skull.obj</mesh_file>
 						</Mesh>
 						<Mesh name="base_geom_4">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -92,7 +92,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ground_jaw.vtp</mesh_file>
+							<mesh_file>ground_jaw.obj</mesh_file>
 						</Mesh>
 						<Mesh name="base_geom_5">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -107,7 +107,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ground_r_clavicle.vtp</mesh_file>
+							<mesh_file>ground_r_clavicle.obj</mesh_file>
 						</Mesh>
 						<Mesh name="base_geom_6">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -122,7 +122,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>ground_r_scapula.vtp</mesh_file>
+							<mesh_file>ground_r_scapula.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -175,7 +175,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_humerus.vtp</mesh_file>
+							<mesh_file>arm_r_humerus.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->
@@ -252,7 +252,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_ulna.vtp</mesh_file>
+							<mesh_file>arm_r_ulna.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_2">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -267,7 +267,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_radius.vtp</mesh_file>
+							<mesh_file>arm_r_radius.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_3">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -282,7 +282,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_lunate.vtp</mesh_file>
+							<mesh_file>arm_r_lunate.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_4">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -297,7 +297,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_scaphoid.vtp</mesh_file>
+							<mesh_file>arm_r_scaphoid.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_5">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -312,7 +312,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_pisiform.vtp</mesh_file>
+							<mesh_file>arm_r_pisiform.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_6">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -327,7 +327,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_triquetrum.vtp</mesh_file>
+							<mesh_file>arm_r_triquetrum.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_7">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -342,7 +342,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_capitate.vtp</mesh_file>
+							<mesh_file>arm_r_capitate.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_8">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -357,7 +357,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_trapezium.vtp</mesh_file>
+							<mesh_file>arm_r_trapezium.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_9">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -372,7 +372,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_trapezoid.vtp</mesh_file>
+							<mesh_file>arm_r_trapezoid.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_10">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -387,7 +387,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_hamate.vtp</mesh_file>
+							<mesh_file>arm_r_hamate.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_11">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -402,7 +402,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_1mc.vtp</mesh_file>
+							<mesh_file>arm_r_1mc.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_12">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -417,7 +417,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_2mc.vtp</mesh_file>
+							<mesh_file>arm_r_2mc.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_13">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -432,7 +432,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_3mc.vtp</mesh_file>
+							<mesh_file>arm_r_3mc.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_14">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -447,7 +447,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_4mc.vtp</mesh_file>
+							<mesh_file>arm_r_4mc.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_15">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -462,7 +462,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_5mc.vtp</mesh_file>
+							<mesh_file>arm_r_5mc.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_16">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -477,7 +477,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_thumbprox.vtp</mesh_file>
+							<mesh_file>arm_r_thumbprox.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_17">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -492,7 +492,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_thumbdist.vtp</mesh_file>
+							<mesh_file>arm_r_thumbdist.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_18">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -507,7 +507,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_2proxph.vtp</mesh_file>
+							<mesh_file>arm_r_2proxph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_19">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -522,7 +522,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_2midph.vtp</mesh_file>
+							<mesh_file>arm_r_2midph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_20">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -537,7 +537,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_2distph.vtp</mesh_file>
+							<mesh_file>arm_r_2distph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_21">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -552,7 +552,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_3proxph.vtp</mesh_file>
+							<mesh_file>arm_r_3proxph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_22">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -567,7 +567,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_3midph.vtp</mesh_file>
+							<mesh_file>arm_r_3midph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_23">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -582,7 +582,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_3distph.vtp</mesh_file>
+							<mesh_file>arm_r_3distph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_24">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -597,7 +597,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_4proxph.vtp</mesh_file>
+							<mesh_file>arm_r_4proxph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_25">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -612,7 +612,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_4midph.vtp</mesh_file>
+							<mesh_file>arm_r_4midph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_26">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -627,7 +627,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_4distph.vtp</mesh_file>
+							<mesh_file>arm_r_4distph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_27">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -642,7 +642,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_5proxph.vtp</mesh_file>
+							<mesh_file>arm_r_5proxph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_28">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -657,7 +657,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_5midph.vtp</mesh_file>
+							<mesh_file>arm_r_5midph.obj</mesh_file>
 						</Mesh>
 						<Mesh name="r_ulna_radius_hand_geom_29">
 							<!--Path to a Component that satisfies the Socket 'frame' of type Frame.-->
@@ -672,7 +672,7 @@
 								<color>1 1 1</color>
 							</Appearance>
 							<!--Name of geometry file.-->
-							<mesh_file>arm_r_5distph.vtp</mesh_file>
+							<mesh_file>arm_r_5distph.obj</mesh_file>
 						</Mesh>
 					</attached_geometry>
 					<!--Set of wrap objects fixed to this body that GeometryPaths can wrap over.This property used to be a member of Body but was moved up with the introduction of Frames.-->

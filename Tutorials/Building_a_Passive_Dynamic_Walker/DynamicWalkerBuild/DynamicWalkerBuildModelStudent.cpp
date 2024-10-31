@@ -58,7 +58,7 @@ int main()
         platformJoints[0].setDefaultLocked(true);
 
         // Add and scale model for display in GUI
-        platform->addDisplayGeometry("box.vtp");
+        platform->addDisplayGeometry("box.obj");
         platform->updDisplayer()->setScaleFactors(Vec3(1,0.05,1));
 
         // Add the platform to the Model
@@ -94,7 +94,7 @@ int main()
         // **********  END CODE  **********
 
         // Add and scale model for display in GUI
-        pelvis->addDisplayGeometry("sphere.vtp");
+        pelvis->addDisplayGeometry("sphere.obj");
         pelvis->updDisplayer()->setScaleFactors(Vec3(pelvisWidth/2.0,pelvisWidth/2.0,pelvisWidth));
 
         // Add the pelvis to the Model
