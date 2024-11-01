@@ -3,7 +3,7 @@
 import argparse
 import re
 
-_normals_pattern = re.compile(r'\s*<PointData Normals="Normals">.+?</PointData>', flags=re.DOTALL)
+_normals_pattern = re.compile(r'\s*<PointData Normals="Normals".+?</PointData>', flags=re.DOTALL)
 
 def remove_normals_node(vtp_content):
     return re.sub(_normals_pattern, '', vtp_content)
